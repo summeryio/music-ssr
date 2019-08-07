@@ -125,7 +125,7 @@ class Album extends Component {
 
         return (
             <div id="album">
-                <Header title="新碟上架" />
+                {/* <Header title="新碟上架" /> */}
                 <div className="scroll_wrapper" ref="onPullUp" onTouchStart={this.touchStart.bind(this)} onTouchEnd={this.touchEnd.bind(this)}>
                     <ul className="list">
                         {
