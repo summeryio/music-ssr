@@ -26,4 +26,3 @@ const rank = (state = initialState, action) => {
 }
 
 export default rank
-

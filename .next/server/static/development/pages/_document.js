@@ -2258,7 +2258,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\NextJS-master\\pages\\_document.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/pages/_document.js";
 
 
 

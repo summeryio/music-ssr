@@ -25,7 +25,3 @@ export function* rank() {
 export default [
   fork(rank)
 ];
-
-
-
-

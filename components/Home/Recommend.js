@@ -8,6 +8,7 @@ import HomeModule from './HomeModule'
 import Loading from '../Loading'
 import Img from '../Img'
 
+
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -115,7 +116,9 @@ class Home extends Component {
                                                         </span>
                                                     </div>
                                                     <p className="desc">{play.name}</p>
-                                                    <Link href={`/playlist-detail/${play.id}`}><a className="mask"></a></Link>
+                                                    <Link href={{ pathname: '/detail/playlist', query: { id: play.id } }}>
+                                                        <a className="mask"></a>
+                                                    </Link>
                                                 </li>
                                             )
                                         })
@@ -140,7 +143,9 @@ class Home extends Component {
                                                         </LazyLoad>
                                                     </div>
                                                     <p className="desc">{play.name}</p>
-                                                    <Link href={`/album-detail/${play.id}`}><a className="mask"></a></Link>
+                                                    <Link href={{ pathname: '/detail/album', query: { id: play.id } }}>
+                                                        <a className="mask"></a>
+                                                    </Link>
                                                 </li>
                                             )
                                         })
@@ -177,5 +182,5 @@ const mapDispatchToProps = dispatch => ({
     }
 });
   
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Home)
   

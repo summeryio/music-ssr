@@ -10,4 +10,5 @@ export const RouterTitle = {
   '/home/singer': '歌手 - ',
   '/list/playlist': '推荐歌单 - ',
   '/list/album': '新碟上架 - ',
+  '/detail/playlist': '歌单详情 - ',
 };

@@ -428,13 +428,6 @@ button, input {
 				}
 				em {}
 			}
-			.mask {
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 100%;
-				height: 100%;
-			}
 		}
 		.desc {
 			overflow: hidden;
@@ -442,6 +435,13 @@ button, input {
 			padding-top: .1rem;
 			line-height: .32rem;
 			font-size: .26rem;
+		}
+		.mask {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
 		}
 	}
 }

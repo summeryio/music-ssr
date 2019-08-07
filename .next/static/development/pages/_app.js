@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\_app.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_app.js"],{
 
 /***/ "./components/Layout.js":
 /*!******************************!*\
@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _static_css_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../static/css/style.scss */ "./static/css/style.scss");
 /* harmony import */ var _static_css_style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_static_css_style_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\NextJS-master\\components\\Layout.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Layout.js";
 
 
 
@@ -50,7 +50,7 @@ var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\NextJS-master\\components\\La
 /*!**********************************!*\
   !*** ./constants/ActionTypes.js ***!
   \**********************************/
-/*! exports provided: FETCH_HOME_BANNER, FETCH_HOME_BANNER_FAIL, FETCH_HOME_BANNER_SUCCESS, FETCH_HOME_PLAYLIST, FETCH_HOME_PLAYLIST_FAIL, FETCH_HOME_PLAYLIST_SUCCESS, FETCH_HOME_ALBUM, FETCH_HOME_ALBUM_FAIL, FETCH_HOME_ALBUM_SUCCESS, FETCH_HOME_NEWSONG, FETCH_HOME_NEWSONG_FAIL, FETCH_HOME_NEWSONG_SUCCESS, FETCH_HOME_RANK, FETCH_HOME_RANK_FAIL, FETCH_HOME_RANK_SUCCESS, FETCH_LIST_PLSYLIST, FETCH_LIST_PLSYLIST_FAIL, FETCH_LIST_PLSYLIST_SUCCESS, FETCH_LIST_ALBUM, FETCH_LIST_ALBUM_FAIL, FETCH_LIST_ALBUM_SUCCESS */
+/*! exports provided: FETCH_HOME_BANNER, FETCH_HOME_BANNER_FAIL, FETCH_HOME_BANNER_SUCCESS, FETCH_HOME_PLAYLIST, FETCH_HOME_PLAYLIST_FAIL, FETCH_HOME_PLAYLIST_SUCCESS, FETCH_HOME_ALBUM, FETCH_HOME_ALBUM_FAIL, FETCH_HOME_ALBUM_SUCCESS, FETCH_HOME_NEWSONG, FETCH_HOME_NEWSONG_FAIL, FETCH_HOME_NEWSONG_SUCCESS, FETCH_HOME_RANK, FETCH_HOME_RANK_FAIL, FETCH_HOME_RANK_SUCCESS, FETCH_LIST_PLSYLIST, FETCH_LIST_PLSYLIST_FAIL, FETCH_LIST_PLSYLIST_SUCCESS, FETCH_LIST_ALBUM, FETCH_LIST_ALBUM_FAIL, FETCH_LIST_ALBUM_SUCCESS, FETCH_DETAIL_PLSYLIST, FETCH_DETAIL_PLSYLIST_FAIL, FETCH_DETAIL_PLSYLIST_SUCCESS, FETCH_DETAIL_ALBUM, FETCH_DETAIL_ALBUM_FAIL, FETCH_DETAIL_ALBUM_SUCCESS */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76,7 +76,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_ALBUM", function() { return FETCH_LIST_ALBUM; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_ALBUM_FAIL", function() { return FETCH_LIST_ALBUM_FAIL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_ALBUM_SUCCESS", function() { return FETCH_LIST_ALBUM_SUCCESS; });
-// ================= 首页部分 ==================== //
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_PLSYLIST", function() { return FETCH_DETAIL_PLSYLIST; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_PLSYLIST_FAIL", function() { return FETCH_DETAIL_PLSYLIST_FAIL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_PLSYLIST_SUCCESS", function() { return FETCH_DETAIL_PLSYLIST_SUCCESS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_ALBUM", function() { return FETCH_DETAIL_ALBUM; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_ALBUM_FAIL", function() { return FETCH_DETAIL_ALBUM_FAIL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_ALBUM_SUCCESS", function() { return FETCH_DETAIL_ALBUM_SUCCESS; });
+// ================= 首页 ==================== //
 var FETCH_HOME_BANNER = 'FETCH_HOME_BANNER';
 var FETCH_HOME_BANNER_FAIL = 'FETCH_HOME_BANNER_FAIL';
 var FETCH_HOME_BANNER_SUCCESS = 'FETCH_HOME_BANNER_SUCCESS';
@@ -91,14 +97,21 @@ var FETCH_HOME_NEWSONG_FAIL = 'FETCH_HOME_NEWSONG_FAIL';
 var FETCH_HOME_NEWSONG_SUCCESS = 'FETCH_HOME_NEWSONG_SUCCESS';
 var FETCH_HOME_RANK = 'FETCH_HOME_RANK';
 var FETCH_HOME_RANK_FAIL = 'FETCH_HOME_RANK_FAIL';
-var FETCH_HOME_RANK_SUCCESS = 'FETCH_HOME_RANK_SUCCESS'; // ================= 歌单/专辑 列表部分 ==================== //
+var FETCH_HOME_RANK_SUCCESS = 'FETCH_HOME_RANK_SUCCESS'; // ================= 歌单/专辑 列表 ==================== //
 
 var FETCH_LIST_PLSYLIST = 'FETCH_LIST_PLSYLIST';
 var FETCH_LIST_PLSYLIST_FAIL = 'FETCH_LIST_PLSYLIST_FAIL';
 var FETCH_LIST_PLSYLIST_SUCCESS = 'FETCH_LIST_PLSYLIST_SUCCESS';
 var FETCH_LIST_ALBUM = 'FETCH_LIST_ALBUM';
 var FETCH_LIST_ALBUM_FAIL = 'FETCH_LIST_ALBUM_FAIL';
-var FETCH_LIST_ALBUM_SUCCESS = 'FETCH_LIST_ALBUM_SUCCESS';
+var FETCH_LIST_ALBUM_SUCCESS = 'FETCH_LIST_ALBUM_SUCCESS'; // ================= 歌单/专辑 详情 ==================== //
+
+var FETCH_DETAIL_PLSYLIST = 'FETCH_DETAIL_PLSYLIST';
+var FETCH_DETAIL_PLSYLIST_FAIL = 'FETCH_DETAIL_PLSYLIST_FAIL';
+var FETCH_DETAIL_PLSYLIST_SUCCESS = 'FETCH_DETAIL_PLSYLIST_SUCCESS';
+var FETCH_DETAIL_ALBUM = 'FETCH_DETAIL_ALBUM';
+var FETCH_DETAIL_ALBUM_FAIL = 'FETCH_DETAIL_ALBUM_FAIL';
+var FETCH_DETAIL_ALBUM_SUCCESS = 'FETCH_DETAIL_ALBUM_SUCCESS';
 
 /***/ }),
 
@@ -123,7 +136,8 @@ var RouterTitle = {
   '/home/rank': '排行榜 - ',
   '/home/singer': '歌手 - ',
   '/list/playlist': '推荐歌单 - ',
-  '/list/album': '新碟上架 - '
+  '/list/album': '新碟上架 - ',
+  '/detail/playlist': '歌单详情 - '
 };
 
 /***/ }),
@@ -16993,7 +17007,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\NextJS-master\\pages\\_app.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/pages/_app.js";
 
 
 
@@ -17102,6 +17116,69 @@ function (_App) {
 }(next_app__WEBPACK_IMPORTED_MODULE_8___default.a);
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(next_redux_wrapper__WEBPACK_IMPORTED_MODULE_11__["default"])(_redux_store__WEBPACK_IMPORTED_MODULE_13__["default"])(Object(next_redux_saga__WEBPACK_IMPORTED_MODULE_12__["default"])(MyApp)));
+
+/***/ }),
+
+/***/ "./redux/actions/detail.js":
+/*!*********************************!*\
+  !*** ./redux/actions/detail.js ***!
+  \*********************************/
+/*! exports provided: fetchDetailPlaylist, fetchDetailPlaylistSuccess, fetchDetailPlaylistFail, fetchDetailAlbum, fetchDetailAlbumSuccess, fetchDetailAlbumFail */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDetailPlaylist", function() { return fetchDetailPlaylist; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDetailPlaylistSuccess", function() { return fetchDetailPlaylistSuccess; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDetailPlaylistFail", function() { return fetchDetailPlaylistFail; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDetailAlbum", function() { return fetchDetailAlbum; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDetailAlbumSuccess", function() { return fetchDetailAlbumSuccess; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDetailAlbumFail", function() { return fetchDetailAlbumFail; });
+/* harmony import */ var _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../constants/ActionTypes */ "./constants/ActionTypes.js");
+
+function fetchDetailPlaylist(id) {
+  return {
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_DETAIL_PLSYLIST"],
+    payload: {
+      id: id
+    }
+  };
+}
+function fetchDetailPlaylistSuccess(data) {
+  return {
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_DETAIL_PLSYLIST_SUCCESS"],
+    payload: {
+      data: data
+    }
+  };
+}
+function fetchDetailPlaylistFail() {
+  return {
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_DETAIL_PLSYLIST_FAIL"]
+  };
+}
+function fetchDetailAlbum(id) {
+  return {
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_DETAIL_ALBUM"],
+    payload: {
+      id: id
+    }
+  };
+}
+function fetchDetailAlbumSuccess(data, more) {
+  return {
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_DETAIL_ALBUM_SUCCESS"],
+    payload: {
+      data: data,
+      more: more
+    }
+  };
+}
+function fetchDetailAlbumFail() {
+  return {
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_DETAIL_ALBUM_FAIL"]
+  };
+}
 
 /***/ }),
 
@@ -17280,6 +17357,122 @@ function fetchListAlbumFail() {
     type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_LIST_ALBUM_FAIL"]
   };
 }
+
+/***/ }),
+
+/***/ "./redux/reducers/detail/album.js":
+/*!****************************************!*\
+  !*** ./redux/reducers/detail/album.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../constants/ActionTypes */ "./constants/ActionTypes.js");
+
+
+var initialState = {
+  albums: {},
+  id: null
+};
+
+var album = function album() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+  var type = action.type,
+      payload = action.payload;
+
+  switch (type) {
+    case _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_1__["FETCH_DETAIL_ALBUM"]:
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
+        id: payload.id
+      });
+
+    case _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_1__["FETCH_DETAIL_ALBUM_FAIL"]:
+      return initialState;
+
+    case _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_1__["FETCH_DETAIL_ALBUM_SUCCESS"]:
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
+        albums: payload.data
+      });
+
+    default:
+      return state;
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (album);
+
+/***/ }),
+
+/***/ "./redux/reducers/detail/index.js":
+/*!****************************************!*\
+  !*** ./redux/reducers/detail/index.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+/* harmony import */ var _playlist__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./playlist */ "./redux/reducers/detail/playlist.js");
+/* harmony import */ var _album__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./album */ "./redux/reducers/detail/album.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
+  playlist: _playlist__WEBPACK_IMPORTED_MODULE_1__["default"],
+  album: _album__WEBPACK_IMPORTED_MODULE_2__["default"]
+}));
+
+/***/ }),
+
+/***/ "./redux/reducers/detail/playlist.js":
+/*!*******************************************!*\
+  !*** ./redux/reducers/detail/playlist.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../constants/ActionTypes */ "./constants/ActionTypes.js");
+
+
+var initialState = {
+  playlists: {},
+  id: null
+};
+
+var playlist = function playlist() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+  var type = action.type,
+      payload = action.payload;
+
+  switch (type) {
+    case _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_1__["FETCH_DETAIL_PLSYLIST"]:
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
+        id: payload.id
+      });
+
+    case _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_1__["FETCH_DETAIL_PLSYLIST_FAIL"]:
+      return initialState;
+
+    case _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_1__["FETCH_DETAIL_PLSYLIST_SUCCESS"]:
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
+        playlists: payload.data
+      });
+
+    default:
+      return state;
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (playlist);
 
 /***/ }),
 
@@ -17541,12 +17734,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ "./redux/reducers/home/index.js");
 /* harmony import */ var _list__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./list */ "./redux/reducers/list/index.js");
+/* harmony import */ var _detail__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./detail */ "./redux/reducers/detail/index.js");
+
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
   home: _home__WEBPACK_IMPORTED_MODULE_1__["default"],
-  list: _list__WEBPACK_IMPORTED_MODULE_2__["default"]
+  list: _list__WEBPACK_IMPORTED_MODULE_2__["default"],
+  detail: _detail__WEBPACK_IMPORTED_MODULE_3__["default"]
 }));
 
 /***/ }),
@@ -17668,6 +17864,206 @@ var playlist = function playlist() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (playlist);
+
+/***/ }),
+
+/***/ "./redux/sagas/detail/album.js":
+/*!*************************************!*\
+  !*** ./redux/sagas/detail/album.js ***!
+  \*************************************/
+/*! exports provided: album, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "album", function() { return album; });
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux-saga/effects */ "./node_modules/redux-saga/dist/redux-saga-effects-npm-proxy.esm.js");
+/* harmony import */ var _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../constants/ActionTypes */ "./constants/ActionTypes.js");
+/* harmony import */ var _constants_ConstTypes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../constants/ConstTypes */ "./constants/ConstTypes.js");
+/* harmony import */ var _actions_detail__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../actions/detail */ "./redux/actions/detail.js");
+
+
+var _marked =
+/*#__PURE__*/
+_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(album);
+
+
+
+
+
+
+function album() {
+  var query, res, data;
+  return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function album$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          if (false) {}
+
+          _context.next = 3;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["select"])(function (state) {
+            return state.detail.album;
+          });
+
+        case 3:
+          query = _context.sent;
+          _context.prev = 4;
+          _context.next = 7;
+          return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()("".concat(_constants_ConstTypes__WEBPACK_IMPORTED_MODULE_4__["URL_HEADER"], "/album?id=").concat(query.id));
+
+        case 7:
+          res = _context.sent;
+          _context.next = 10;
+          return res.json();
+
+        case 10:
+          data = _context.sent;
+
+          if (!(data.code === 200)) {
+            _context.next = 14;
+            break;
+          }
+
+          _context.next = 14;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["put"])(Object(_actions_detail__WEBPACK_IMPORTED_MODULE_5__["fetchDetailAlbumSuccess"])(data));
+
+        case 14:
+          _context.next = 20;
+          break;
+
+        case 16:
+          _context.prev = 16;
+          _context.t0 = _context["catch"](4);
+          _context.next = 20;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["put"])(Object(_actions_detail__WEBPACK_IMPORTED_MODULE_5__["fetchDetailAlbumFail"])(_context.t0));
+
+        case 20:
+          _context.next = 22;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["take"])(_constants_ActionTypes__WEBPACK_IMPORTED_MODULE_3__["FETCH_DETAIL_ALBUM"]);
+
+        case 22:
+          _context.next = 0;
+          break;
+
+        case 24:
+        case "end":
+          return _context.stop();
+      }
+    }
+  }, _marked, null, [[4, 16]]);
+}
+/* harmony default export */ __webpack_exports__["default"] = ([Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["fork"])(album)]);
+
+/***/ }),
+
+/***/ "./redux/sagas/detail/index.js":
+/*!*************************************!*\
+  !*** ./redux/sagas/detail/index.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _playlist__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./playlist */ "./redux/sagas/detail/playlist.js");
+/* harmony import */ var _album__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./album */ "./redux/sagas/detail/album.js");
+
+
+
+var listSagas = [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_playlist__WEBPACK_IMPORTED_MODULE_1__["default"]), Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_album__WEBPACK_IMPORTED_MODULE_2__["default"]));
+/* harmony default export */ __webpack_exports__["default"] = (listSagas);
+
+/***/ }),
+
+/***/ "./redux/sagas/detail/playlist.js":
+/*!****************************************!*\
+  !*** ./redux/sagas/detail/playlist.js ***!
+  \****************************************/
+/*! exports provided: playlist, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "playlist", function() { return playlist; });
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux-saga/effects */ "./node_modules/redux-saga/dist/redux-saga-effects-npm-proxy.esm.js");
+/* harmony import */ var _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../constants/ActionTypes */ "./constants/ActionTypes.js");
+/* harmony import */ var _constants_ConstTypes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../constants/ConstTypes */ "./constants/ConstTypes.js");
+/* harmony import */ var _actions_detail__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../actions/detail */ "./redux/actions/detail.js");
+
+
+var _marked =
+/*#__PURE__*/
+_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(playlist);
+
+
+
+
+
+
+function playlist() {
+  var query, res, data;
+  return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function playlist$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          if (false) {}
+
+          _context.next = 3;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["select"])(function (state) {
+            return state.detail.playlist;
+          });
+
+        case 3:
+          query = _context.sent;
+          _context.prev = 4;
+          _context.next = 7;
+          return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()("".concat(_constants_ConstTypes__WEBPACK_IMPORTED_MODULE_4__["URL_HEADER"], "/playlist/detail?id=").concat(query.id));
+
+        case 7:
+          res = _context.sent;
+          _context.next = 10;
+          return res.json();
+
+        case 10:
+          data = _context.sent;
+          _context.next = 13;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["put"])(Object(_actions_detail__WEBPACK_IMPORTED_MODULE_5__["fetchDetailPlaylistSuccess"])(data.playlist));
+
+        case 13:
+          _context.next = 19;
+          break;
+
+        case 15:
+          _context.prev = 15;
+          _context.t0 = _context["catch"](4);
+          _context.next = 19;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["put"])(Object(_actions_detail__WEBPACK_IMPORTED_MODULE_5__["fetchDetailPlaylistFail"])(_context.t0));
+
+        case 19:
+          _context.next = 21;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["take"])(_constants_ActionTypes__WEBPACK_IMPORTED_MODULE_3__["FETCH_DETAIL_PLSYLIST"]);
+
+        case 21:
+          _context.next = 0;
+          break;
+
+        case 23:
+        case "end":
+          return _context.stop();
+      }
+    }
+  }, _marked, null, [[4, 15]]);
+}
+/* harmony default export */ __webpack_exports__["default"] = ([Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["fork"])(playlist)]);
 
 /***/ }),
 
@@ -18139,6 +18535,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux-saga/effects */ "./node_modules/redux-saga/dist/redux-saga-effects-npm-proxy.esm.js");
 /* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home */ "./redux/sagas/home/index.js");
 /* harmony import */ var _list__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./list */ "./redux/sagas/list/index.js");
+/* harmony import */ var _detail__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./detail */ "./redux/sagas/detail/index.js");
 
 
 
@@ -18149,13 +18546,14 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(r
 
 
 
+
 function rootSagas() {
   return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function rootSagas$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["all"])([].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_home__WEBPACK_IMPORTED_MODULE_3__["default"]), Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_list__WEBPACK_IMPORTED_MODULE_4__["default"])));
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["all"])([].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_home__WEBPACK_IMPORTED_MODULE_3__["default"]), Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_list__WEBPACK_IMPORTED_MODULE_4__["default"]), Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_detail__WEBPACK_IMPORTED_MODULE_5__["default"])));
 
         case 2:
         case "end":

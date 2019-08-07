@@ -30,7 +30,7 @@ module.exports = {"fl":"fl","fr":"fr","clearfix":"clearfix","iconfont":"iconfont
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1565016196146");
+            injectCss(link, link.href.split("?")[0] + "?unix=1565163768112");
           });
       }
     }

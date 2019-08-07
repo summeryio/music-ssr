@@ -142,11 +142,11 @@ class Playlist extends Component {
                                                 <i className="icon-headset"></i>
                                                 <em>{playCount}</em>
                                             </span>
-                                            <Link href={`/playlist-detail/${play.id}`}><a className="mask"></a></Link>
                                         </div>
-                                        <p className="desc">
-                                            <Link href={`/playlist-detail/${play.id}`}><a>{play.name}</a></Link>
-                                        </p>
+                                        <p className="desc">{play.name}</p>
+                                        <Link href={{ pathname: '/detail/playlist', query: { id: play.id } }}>
+                                            <a className="mask"></a>
+                                        </Link>
                                     </li>
                                 )
                             })

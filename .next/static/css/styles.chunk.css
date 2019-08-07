@@ -346,18 +346,18 @@ button, input {
       font-size: .24rem; }
       #playlist .list .pic .count i, #album .list .pic .count i {
         margin-right: .04rem; }
-    #playlist .list .pic .mask, #album .list .pic .mask {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%; }
   #playlist .list .desc, #album .list .desc {
     overflow: hidden;
     height: .7rem;
     padding-top: .1rem;
     line-height: .32rem;
     font-size: .26rem; }
+  #playlist .list .mask, #album .list .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
 
 #playlist_detail #header_title,
 #album_detail #header_title {

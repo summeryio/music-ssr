@@ -136,11 +136,11 @@ class Album extends Component {
                                             <LazyLoad height="3.72rem" placeholder={<img src="/static/images/img_default.svg" />}>
                                                 <Img imgUrl={play.picUrl + '?param=400y400'} />
                                             </LazyLoad>
-                                            <Link href={`/album-detail/${play.id}`}><a className="mask"></a></Link>
                                         </div>
-                                        <p className="desc">
-                                            <Link href={`/album-detail/${play.id}`}><a>{play.name}</a></Link>
-                                        </p>
+                                        <p className="desc">{play.name}</p>
+                                        <Link href={{ pathname: '/detail/album', query: { id: play.id } }}>
+                                            <a className="mask"></a>
+                                        </Link>
                                     </li>
                                 )
                             })
