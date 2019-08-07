@@ -35,10 +35,7 @@ class Playlist extends Component {
     }
 
     componentDidMount() {
-        if(this.props.isServer && !this.state.playlistData.length) {
-            this.setState({
-                playlistData: []
-            })
+        if(this.props.isServer) {
             this.props.fetchListPlaylist(0)
         }
     }

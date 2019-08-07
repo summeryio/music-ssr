@@ -6,17 +6,14 @@ import { fetchDetailPlaylist } from '../../redux/actions/detail';
 import {formatDateYMD} from '../../core/util'
 import Header from '../Header'
 import Loading from '../Loading'
-import Img from '../Img'
 import SongList from '../SongList'
 
 class Playlist extends Component {
     constructor(props) {
         super(props)
-        
-        // const { router: { query } } = props;
 
         this.state = {
-            playlistData: {}
+            playlistData: props.playlist
         }
     }
 
@@ -33,11 +30,14 @@ class Playlist extends Component {
     componentDidMount() {
         const { router: { query } } = this.props;
         
-        fetchDetailPlaylist(query.id)
+        if (this.props.isServer) {
+            fetchDetailPlaylist(query.id)
+        }
     }
     
     render() {
         let {playlistData} = this.state
+        console.log(playlistData);
         
         return (
             <div id="playlist_detail">

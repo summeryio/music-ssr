@@ -11,7 +11,15 @@ export function* playlist() {
     try {
       const res = yield fetch(`${URL_HEADER}/playlist/detail?id=${query.id}`);
       const data = yield res.json();
-      yield put(fetchDetailPlaylistSuccess(data.playlist));
+      if (data.code === 200) {
+        if (data.playlist.tracks.length > 30) {
+          data.playlist.tracks = data.playlist.tracks.filter((song, i) => {
+            return i < 30
+          })
+        }
+        
+        yield put(fetchDetailPlaylistSuccess(data.playlist));
+      }
     } catch(error) {
       yield put(fetchDetailPlaylistFail(error));
     }

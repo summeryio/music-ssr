@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_app.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\_app.js"],{
 
 /***/ "./components/Layout.js":
 /*!******************************!*\
@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _static_css_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../static/css/style.scss */ "./static/css/style.scss");
 /* harmony import */ var _static_css_style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_static_css_style_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Layout.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Layout.js";
 
 
 
@@ -14475,7 +14475,7 @@ exports.devToolsEnhancer = (
 /*!***********************************************************************!*\
   !*** ./node_modules/redux-saga/dist/redux-saga-core-npm-proxy.esm.js ***!
   \***********************************************************************/
-/*! exports provided: default, CANCEL, SAGA_LOCATION, buffers, detach, runSaga, END, isEnd, eventChannel, channel, multicastChannel, stdChannel */
+/*! exports provided: CANCEL, SAGA_LOCATION, buffers, detach, runSaga, END, isEnd, eventChannel, channel, multicastChannel, stdChannel, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17007,7 +17007,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/pages/_app.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\pages\\_app.js";
 
 
 
@@ -18035,33 +18035,45 @@ function playlist() {
 
         case 10:
           data = _context.sent;
-          _context.next = 13;
+
+          if (!(data.code === 200)) {
+            _context.next = 15;
+            break;
+          }
+
+          if (data.playlist.tracks.length > 30) {
+            data.playlist.tracks = data.playlist.tracks.filter(function (song, i) {
+              return i < 30;
+            });
+          }
+
+          _context.next = 15;
           return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["put"])(Object(_actions_detail__WEBPACK_IMPORTED_MODULE_5__["fetchDetailPlaylistSuccess"])(data.playlist));
 
-        case 13:
-          _context.next = 19;
+        case 15:
+          _context.next = 21;
           break;
 
-        case 15:
-          _context.prev = 15;
+        case 17:
+          _context.prev = 17;
           _context.t0 = _context["catch"](4);
-          _context.next = 19;
+          _context.next = 21;
           return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["put"])(Object(_actions_detail__WEBPACK_IMPORTED_MODULE_5__["fetchDetailPlaylistFail"])(_context.t0));
 
-        case 19:
-          _context.next = 21;
+        case 21:
+          _context.next = 23;
           return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["take"])(_constants_ActionTypes__WEBPACK_IMPORTED_MODULE_3__["FETCH_DETAIL_PLSYLIST"]);
 
-        case 21:
+        case 23:
           _context.next = 0;
           break;
 
-        case 23:
+        case 25:
         case "end":
           return _context.stop();
       }
     }
-  }, _marked, null, [[4, 15]]);
+  }, _marked, null, [[4, 17]]);
 }
 /* harmony default export */ __webpack_exports__["default"] = ([Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["fork"])(playlist)]);
 

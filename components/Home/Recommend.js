@@ -116,7 +116,7 @@ class Home extends Component {
                                                         </span>
                                                     </div>
                                                     <p className="desc">{play.name}</p>
-                                                    <Link href={{ pathname: '/detail/playlist', query: { id: play.id } }}>
+                                                    <Link prefetch href={{ pathname: '/detail/playlist', query: { id: play.id } }}>
                                                         <a className="mask"></a>
                                                     </Link>
                                                 </li>
@@ -143,7 +143,7 @@ class Home extends Component {
                                                         </LazyLoad>
                                                     </div>
                                                     <p className="desc">{play.name}</p>
-                                                    <Link href={{ pathname: '/detail/album', query: { id: play.id } }}>
+                                                    <Link prefetch href={{ pathname: '/detail/album', query: { id: play.id } }}>
                                                         <a className="mask"></a>
                                                     </Link>
                                                 </li>

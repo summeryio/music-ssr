@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/detail/playlist.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\detail\\playlist.js"],{
 
 /***/ "./components/Detail/Playlist.js":
 /*!***************************************!*\
@@ -25,16 +25,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _core_util__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../core/util */ "./core/util.js");
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../Header */ "./components/Header.js");
 /* harmony import */ var _Loading__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../Loading */ "./components/Loading.js");
-/* harmony import */ var _Img__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../Img */ "./components/Img.js");
-/* harmony import */ var _SongList__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../SongList */ "./components/SongList.js");
+/* harmony import */ var _SongList__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../SongList */ "./components/SongList.js");
 
 
 
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Detail/Playlist.js";
-
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Detail\\Playlist.js";
 
 
 
@@ -54,10 +52,9 @@ function (_Component) {
 
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Playlist);
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Playlist).call(this, props)); // const { router: { query } } = props;
-
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Playlist).call(this, props));
     _this.state = {
-      playlistData: {}
+      playlistData: props.playlist
     };
     return _this;
   }
@@ -67,12 +64,15 @@ function (_Component) {
     value: function componentDidMount() {
       var query = this.props.router.query;
 
-      Object(_redux_actions_detail__WEBPACK_IMPORTED_MODULE_9__["fetchDetailPlaylist"])(query.id);
+      if (this.props.isServer) {
+        Object(_redux_actions_detail__WEBPACK_IMPORTED_MODULE_9__["fetchDetailPlaylist"])(query.id);
+      }
     }
   }, {
     key: "render",
     value: function render() {
       var playlistData = this.state.playlistData;
+      console.log(playlistData);
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         id: "playlist_detail",
         __source: {
@@ -149,7 +149,7 @@ function (_Component) {
           lineNumber: 55
         },
         __self: this
-      }, "\u521B\u5EFA\u65F6\u95F4\uFF1A", Object(_core_util__WEBPACK_IMPORTED_MODULE_10__["formatDateYMD"])(playlistData.createTime))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_SongList__WEBPACK_IMPORTED_MODULE_14__["default"], {
+      }, "\u521B\u5EFA\u65F6\u95F4\uFF1A", Object(_core_util__WEBPACK_IMPORTED_MODULE_10__["formatDateYMD"])(playlistData.createTime))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_SongList__WEBPACK_IMPORTED_MODULE_13__["default"], {
         songs: playlistData.tracks,
         __source: {
           fileName: _jsxFileName,
@@ -225,7 +225,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Header.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Header.js";
 
 
 
@@ -320,7 +320,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Img.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Img.js";
 
 
 var Img =
@@ -395,7 +395,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Loading.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Loading.js";
 
 
 var Loading =
@@ -464,7 +464,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/SongList.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\SongList.js";
 
 
 
@@ -6485,10 +6485,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdetail%2Fplaylist&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fdetail%2Fplaylist.js!./":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdetail%2Fplaylist&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fdetail%2Fplaylist.js ***!
-  \********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdetail%2Fplaylist&absolutePagePath=C%3A%5CUsers%5Csummeryio%5CDesktop%5Cmusic-ssr%5Cpages%5Cdetail%5Cplaylist.js!./":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdetail%2Fplaylist&absolutePagePath=C%3A%5CUsers%5Csummeryio%5CDesktop%5Cmusic-ssr%5Cpages%5Cdetail%5Cplaylist.js ***!
+  \***********************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14562,12 +14562,13 @@ function () {
         switch (_context.prev = _context.next) {
           case 0:
             _props$ctx = props.ctx, store = _props$ctx.store, isServer = _props$ctx.isServer, query = _props$ctx.query;
+            store.getState().detail.playlist.playlists = {};
             store.dispatch(Object(_redux_actions_detail__WEBPACK_IMPORTED_MODULE_3__["fetchDetailPlaylist"])(query.id));
             return _context.abrupt("return", {
               isServer: isServer
             });
 
-          case 3:
+          case 4:
           case "end":
             return _context.stop();
         }
@@ -14647,14 +14648,14 @@ function fetchDetailAlbumFail() {
 
 /***/ }),
 
-/***/ 1:
-/*!************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fdetail%2Fplaylist&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fdetail%2Fplaylist.js ***!
-  \************************************************************************************************************************************************************/
+/***/ 3:
+/*!***************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fdetail%2Fplaylist&absolutePagePath=C%3A%5CUsers%5Csummeryio%5CDesktop%5Cmusic-ssr%5Cpages%5Cdetail%5Cplaylist.js ***!
+  \***************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fdetail%2Fplaylist&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fdetail%2Fplaylist.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdetail%2Fplaylist&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fdetail%2Fplaylist.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fdetail%2Fplaylist&absolutePagePath=C%3A%5CUsers%5Csummeryio%5CDesktop%5Cmusic-ssr%5Cpages%5Cdetail%5Cplaylist.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdetail%2Fplaylist&absolutePagePath=C%3A%5CUsers%5Csummeryio%5CDesktop%5Cmusic-ssr%5Cpages%5Cdetail%5Cplaylist.js!./");
 
 
 /***/ }),
@@ -14670,5 +14671,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=playlist.js.map

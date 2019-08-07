@@ -35,10 +35,7 @@ class Album extends Component {
     }
 
     componentDidMount() {
-        if(this.props.isServer && !this.state.albumData.length) {
-            this.setState({
-                albumData: []
-            })
+        if(this.props.isServer) {
             this.props.fetchListAlbum(0)
         }
     }
@@ -125,7 +122,7 @@ class Album extends Component {
 
         return (
             <div id="album">
-                {/* <Header title="新碟上架" /> */}
+                <Header title="新碟上架" />
                 <div className="scroll_wrapper" ref="onPullUp" onTouchStart={this.touchStart.bind(this)} onTouchEnd={this.touchEnd.bind(this)}>
                     <ul className="list">
                         {
