@@ -119,20 +119,21 @@ class Playlist extends Component {
     
     render () {
         let {playlistData, finished, isFoot} = this.state
+        console.log(playlistData);
 
         return (
             <div id="playlist">
                 <Header title="推荐歌单" />
                 <div className="scroll_wrapper" ref="onPullUp" onTouchStart={this.touchStart.bind(this)} onTouchEnd={this.touchEnd.bind(this)}>
-                    <ul className="list">
+                    <ul className="list m-music__list">
                         {
-                            playlistData.map((play, i) => {
+                            playlistData.length ? playlistData.map((play, i) => {
                                 let playCount = play.playCount > 100000 ? parseInt(play.playCount / 10000) + '万' : parseInt(play.playCount)
                                 
                                 return (
                                     <li key={play.id}>
                                         <div className="pic">
-                                            <LazyLoad height="3.72rem" placeholder={<img src="/static/images/img_default.svg" />}>
+                                            <LazyLoad>
                                                 <Img imgUrl={play.coverImgUrl + '?param=400y400'} />
                                             </LazyLoad>
                                             <span className="count">
@@ -146,7 +147,7 @@ class Playlist extends Component {
                                         </Link>
                                     </li>
                                 )
-                            })
+                            }) : <Loading />
                         }
                     </ul>
                     {

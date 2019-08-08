@@ -99,7 +99,7 @@ class Home extends Component {
                                         <i className="iconfont icon-right_"></i>
                                     </a></Link>
                                 </div>
-                                <ul className="list m-music__list">
+                                <ul className="list">
                                     {
                                         playlistData.map(play => {
                                             let playCount = play.playCount > 100000 ? parseInt(play.playCount / 10000) + '万' : parseInt(play.playCount)
@@ -107,9 +107,7 @@ class Home extends Component {
                                             return (
                                                 <li key={play.id}>
                                                     <div className="pic">
-                                                        <LazyLoad height='2.34rem' placeholder={<img src="/static/images/img_default.svg" />}>    
-                                                            <Img imgUrl={play.picUrl + '?param=400y400'} />
-                                                        </LazyLoad>
+                                                        <Img imgUrl={play.picUrl + '?param=400y400'} />
                                                         <span className="count">
                                                             <i className="iconfont icon-earphonee"></i>
                                                             <em>{playCount}</em>

@@ -84,21 +84,30 @@
 	}
 }
 
-
+// =============歌单/专辑列表=============
 .m-music__list {
 	@include dflex();
 	flex-wrap: wrap;
 	
 	li {
 		width: 49.6%;
+		box-sizing: border-box;
 	}
 	.pic {
 		position: relative;
+		height: 0;
 		padding-bottom: 100%;
 		
 		img {
 			@include ab_full();
+			width: 100%;
+			vertical-align: middle;
 		}
 	}
-	.desc {}
+	.desc {
+		line-height: 20px;
+		height: 40px;
+		margin: 5px 2px;
+		@include line_hide();
+	}
 }

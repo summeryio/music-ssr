@@ -68,3 +68,9 @@ $lightColor: #999; // 淡灰色
     right: 0;
     bottom: 0;
 }
+@mixin line_hide {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}

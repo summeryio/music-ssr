@@ -162,16 +162,28 @@ p {
   align-items: center;
   flex-wrap: wrap; }
   .m-music__list li {
-    width: 49.6%; }
+    width: 49.6%;
+    box-sizing: border-box; }
   .m-music__list .pic {
     position: relative;
+    height: 0;
     padding-bottom: 100%; }
     .m-music__list .pic img {
       position: absolute;
       left: 0;
       top: 0;
       right: 0;
-      bottom: 0; }
+      bottom: 0;
+      width: 100%;
+      vertical-align: middle; }
+  .m-music__list .desc {
+    line-height: 0.4rem;
+    height: 0.8rem;
+    margin: 0.1rem 0.04rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; }
 
 #home_header {
   display: none;
@@ -214,91 +226,99 @@ p {
 
 #home .banner {
   height: 2.92rem; }
+  #home .banner .swiper-slide {
+    position: relative; }
   #home .banner img {
-    width: 100%; }
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  #home .banner .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    width: .2rem;
+    height: .04rem;
+    border-radius: .2rem; }
   #home .banner .swiper-pagination-bullet-active {
-    background-color: #e9203d; }
+    background-color: #ffffff; }
 
-#home .home-list {
-  /* .list {
-			overflow: hidden;
-			
-			li {
-				position: relative;
-				float: left;
-				width: 33.3%;
-				margin-bottom: .2rem;
-				box-sizing: border-box;
+#home .home-list .title {
+  margin: .28rem 0; }
+  #home .home-list .title span {
+    display: inline-block;
+    position: relative;
+    padding-left: .2rem; }
+    #home .home-list .title span:before {
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -.16rem;
+      width: .04rem;
+      height: .32rem;
+      background-color: #d33a31; }
+  #home .home-list .title i {
+    display: inline-block;
+    font-size: .48rem;
+    vertical-align: -.09rem; }
 
-				&:nth-child(2n + 1),
-				&:nth-child(2n){ 
-					padding-left: 0;
-    				padding-right: 2px;
-				}
-				&:nth-child(3n - 1){ 
-					padding: 0 1px;
-				}
-				&:nth-child(3n){ 
-					padding-left: 2px;
-    				padding-right: 0;
-				}
-			}
-			.pic {
-				position: relative;
-				img {
-					width: 100%;
-					height: 2.34rem;
-				}
-				.count {
-					position: absolute;
-					right: .04rem;
-					top: .04rem;
-					width: 100%;
-					height: .04rem;
-					text-align: right;
-					color: #fff;
-					font-size: .24rem;
-					
-					i {
-						margin-right: .04rem;
-					}
-					em {}
-				}
-			}
-			.desc {
-				overflow: hidden;
-				padding-top: .1rem;
-				line-height: .32rem;
-				font-size: .26rem;
-				height: .74rem;
-			}
-			.mask {
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 100%;
-				height: 100%;
-			}
-		} */ }
-  #home .home-list .title {
-    margin: .28rem 0; }
-    #home .home-list .title span {
-      display: inline-block;
-      position: relative;
-      padding-left: .2rem; }
-      #home .home-list .title span:before {
-        content: " ";
-        position: absolute;
-        left: 0;
-        top: 50%;
-        margin-top: -.16rem;
-        width: .04rem;
-        height: .32rem;
-        background-color: #d33a31; }
-    #home .home-list .title i {
-      display: inline-block;
-      font-size: .48rem;
-      vertical-align: -.09rem; }
+#home .home-list .list {
+  overflow: hidden; }
+  #home .home-list .list li {
+    position: relative;
+    float: left;
+    width: 33.3%;
+    margin-bottom: .2rem;
+    box-sizing: border-box; }
+    #home .home-list .list li:nth-child(2n + 1), #home .home-list .list li:nth-child(2n) {
+      padding-left: 0;
+      padding-right: 0.04rem; }
+    #home .home-list .list li:nth-child(3n - 1) {
+      padding: 0 0.02rem; }
+    #home .home-list .list li:nth-child(3n) {
+      padding-left: 0.04rem;
+      padding-right: 0; }
+  #home .home-list .list .pic {
+    position: relative;
+    height: 0;
+    padding-bottom: 100%; }
+    #home .home-list .list .pic img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%; }
+    #home .home-list .list .pic .count {
+      position: absolute;
+      right: .04rem;
+      top: .04rem;
+      width: 100%;
+      height: .04rem;
+      text-align: right;
+      color: #fff;
+      font-size: .24rem; }
+      #home .home-list .list .pic .count i {
+        margin-right: .04rem; }
+  #home .home-list .list .desc {
+    padding-top: .1rem;
+    line-height: .32rem;
+    font-size: .26rem;
+    height: .64rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; }
+  #home .home-list .list .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
 
 #rank .list a {
   display: flex;
@@ -336,48 +356,6 @@ p {
     color: #b0b0b0; }
   #singer .category .mb {
     margin-bottom: .4rem; }
-
-#playlist .list, #album .list {
-  overflow: hidden; }
-  #playlist .list li, #album .list li {
-    position: relative;
-    float: left;
-    width: 50%;
-    padding-bottom: 0.08rem;
-    margin-bottom: .1rem;
-    box-sizing: border-box; }
-    #playlist .list li:nth-child(2n), #album .list li:nth-child(2n) {
-      padding-left: 0.04rem; }
-    #playlist .list li:nth-child(2n + 1), #album .list li:nth-child(2n + 1) {
-      padding-right: 0.04rem; }
-  #playlist .list .pic, #album .list .pic {
-    position: relative; }
-    #playlist .list .pic img, #album .list .pic img {
-      width: 100%;
-      height: 3.72rem; }
-    #playlist .list .pic .count, #album .list .pic .count {
-      position: absolute;
-      top: .04rem;
-      right: .04rem;
-      width: 100%;
-      height: .04rem;
-      text-align: right;
-      color: #fff;
-      font-size: .24rem; }
-      #playlist .list .pic .count i, #album .list .pic .count i {
-        margin-right: .04rem; }
-  #playlist .list .desc, #album .list .desc {
-    overflow: hidden;
-    height: .7rem;
-    padding-top: .1rem;
-    line-height: .32rem;
-    font-size: .26rem; }
-  #playlist .list .mask, #album .list .mask {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%; }
 
 #playlist_detail #header_title,
 #album_detail #header_title {

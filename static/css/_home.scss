@@ -51,12 +51,26 @@
 	}
 	.banner {
 		height: 2.92rem;
+		
 
+		.swiper-slide {
+			position: relative;
+		}
 		img {
+			@include ab_full();
 			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.swiper-pagination-bullet{
+			background: rgba(255,255,255,0.5);
+			opacity: 1;
+			width: .2rem;
+			height: .04rem;
+			border-radius: .2rem;
 		}
 		.swiper-pagination-bullet-active {
-			background-color: #e9203d;
+			background-color: #ffffff;
 		}
 	}
 	.home-list {
@@ -85,7 +99,7 @@
 				vertical-align: -.09rem;
 			}
 		}
-		/* .list {
+		.list {
 			overflow: hidden;
 			
 			li {
@@ -110,9 +124,11 @@
 			}
 			.pic {
 				position: relative;
+				height: 0;
+				padding-bottom: 100%;
 				img {
+					@include ab_full();
 					width: 100%;
-					height: 2.34rem;
 				}
 				.count {
 					position: absolute;
@@ -131,11 +147,11 @@
 				}
 			}
 			.desc {
-				overflow: hidden;
 				padding-top: .1rem;
 				line-height: .32rem;
 				font-size: .26rem;
-				height: .74rem;
+				height: .64rem;
+				@include line_hide();
 			}
 			.mask {
 				position: absolute;
@@ -144,7 +160,7 @@
 				width: 100%;
 				height: 100%;
 			}
-		} */
+		}
 	}
 }
 // 榜单
