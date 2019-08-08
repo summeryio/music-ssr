@@ -10,7 +10,7 @@ export function* playlist() {
   while(true) {
     yield take(FETCH_HOME_PLAYLIST);
     try {
-      const res = yield fetch(`${URL_HEADER}/personalized?limit=9`);
+      const res = yield fetch(`${URL_HEADER}/personalized?limit=6`);
       const data = yield res.json();
       if (data.code === 200) {
         yield put(fetchHomePlaylistSuccess(data.result));

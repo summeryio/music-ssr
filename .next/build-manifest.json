@@ -13,11 +13,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/detail/playlist": [
+    "/home/recommend": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/home/recommend": [
+    "/list/playlist": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

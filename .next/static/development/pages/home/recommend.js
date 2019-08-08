@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\home\\recommend.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/home/recommend.js"],{
 
 /***/ "./components/Home/HomeModule.js":
 /*!***************************************!*\
@@ -24,7 +24,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Home\\HomeModule.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Home/HomeModule.js";
 
 
 
@@ -193,7 +193,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Home\\Recommend.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Home/Recommend.js";
 
 
 
@@ -356,7 +356,7 @@ function (_Component) {
         },
         __self: this
       })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
-        className: "list",
+        className: "list m-music__list",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 102
@@ -645,7 +645,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Img.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Img.js";
 
 
 var Img =
@@ -720,7 +720,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Loading.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Loading.js";
 
 
 var Loading =
@@ -6707,10 +6707,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhome%2Frecommend&absolutePagePath=C%3A%5CUsers%5Csummeryio%5CDesktop%5Cmusic-ssr%5Cpages%5Chome%5Crecommend.js!./":
-/*!*********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhome%2Frecommend&absolutePagePath=C%3A%5CUsers%5Csummeryio%5CDesktop%5Cmusic-ssr%5Cpages%5Chome%5Crecommend.js ***!
-  \*********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhome%2Frecommend&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fhome%2Frecommend.js!./":
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhome%2Frecommend&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fhome%2Frecommend.js ***!
+  \******************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14932,14 +14932,14 @@ function fetchRankFail() {
 
 /***/ }),
 
-/***/ 4:
-/*!*************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fhome%2Frecommend&absolutePagePath=C%3A%5CUsers%5Csummeryio%5CDesktop%5Cmusic-ssr%5Cpages%5Chome%5Crecommend.js ***!
-  \*************************************************************************************************************************************************************/
+/***/ 1:
+/*!**********************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fhome%2Frecommend&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fhome%2Frecommend.js ***!
+  \**********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fhome%2Frecommend&absolutePagePath=C%3A%5CUsers%5Csummeryio%5CDesktop%5Cmusic-ssr%5Cpages%5Chome%5Crecommend.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhome%2Frecommend&absolutePagePath=C%3A%5CUsers%5Csummeryio%5CDesktop%5Cmusic-ssr%5Cpages%5Chome%5Crecommend.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fhome%2Frecommend&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fhome%2Frecommend.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhome%2Frecommend&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fhome%2Frecommend.js!./");
 
 
 /***/ }),
@@ -14955,5 +14955,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=recommend.js.map

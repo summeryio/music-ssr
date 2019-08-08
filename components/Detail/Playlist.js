@@ -37,7 +37,8 @@ class Playlist extends Component {
     
     render() {
         let {playlistData} = this.state
-        console.log(playlistData);
+        let creator = playlistData.creator || {}
+        console.log(creator.avatarUrl);
         
         return (
             <div id="playlist_detail">
@@ -48,11 +49,20 @@ class Playlist extends Component {
                             <div className="header">
                                 <div className="bg" style={{backgroundImage: `url(${playlistData.coverImgUrl + '?param=400y400'})`}}></div>
                                 <div className="cont">
-                                    <img src={playlistData.coverImgUrl + '?param=400y400'} />
+                                    <div className="pic">
+                                        <img src={playlistData.coverImgUrl + '?param=400y400'} />
+                                        <span className="count">
+                                            <i className="iconfont icon-earphonee"></i>
+                                            <em>55万</em>
+                                        </span>
+                                        <i className="icon-cat">歌单</i>
+                                    </div>
                                     <div className="info">
-                                        <p>{playlistData.name}</p>
-                                        <p>{playlistData.creator.nickname}</p>
-                                        <p>创建时间：{formatDateYMD(playlistData.createTime)}</p>
+                                        <p className="t">{playlistData.name}</p>
+                                        <p className="u-img">
+                                            <img src={creator.avatarUrl + '?param=60y60'} />{creator.nickname}
+                                        </p>
+                                        {/* <p>创建时间：{formatDateYMD(playlistData.createTime)}</p> */}
                                     </div>
                                 </div>
                                 {/* <PlayAll songs={playlistData.tracks} /> */}

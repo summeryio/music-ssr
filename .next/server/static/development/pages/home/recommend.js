@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -117,7 +117,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Home\\HomeModule.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Home/HomeModule.js";
 
 
 
@@ -287,7 +287,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Home\\Recommend.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Home/Recommend.js";
 
 
 
@@ -450,7 +450,7 @@ function (_Component) {
         },
         __self: this
       })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
-        className: "list",
+        className: "list m-music__list",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 102
@@ -739,7 +739,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Img.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Img.js";
 
 
 var Img =
@@ -814,7 +814,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Loading.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Loading.js";
 
 
 var Loading =
@@ -1999,14 +1999,14 @@ function fetchRankFail() {
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!***************************************!*\
   !*** multi ./pages/home/recommend.js ***!
   \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\summeryio\Desktop\music-ssr\pages\home\recommend.js */"./pages/home/recommend.js");
+module.exports = __webpack_require__(/*! /Users/a123/Desktop/Web/music-ssr/pages/home/recommend.js */"./pages/home/recommend.js");
 
 
 /***/ }),

@@ -1,5 +1,5 @@
 //postcss.config.js
-/* const pxtorem = require("postcss-pxtorem");
+const pxtorem = require("postcss-pxtorem");
 module.exports = {
   plugins: [
     pxtorem({
@@ -12,4 +12,4 @@ module.exports = {
       minPixelValue: 0
     })
   ]
-} */
+}

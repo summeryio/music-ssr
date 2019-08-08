@@ -1,0 +1,70 @@
+$highColor: #f13745; // 高亮颜色
+$lightColor: #999; // 淡灰色
+
+// 字体大小
+@mixin f_lg() {font-size: .36rem;}
+@mixin f_md() {font-size: .32rem;}
+@mixin f_sm() {font-size: .28rem;}
+@mixin f_xs() {font-size: .24rem;}
+
+@mixin f_bold() {font-weight: bold;}
+
+// 字体颜色
+@mixin c_high() {color: $highColor;}
+@mixin c_light() {color: $lightColor;}
+
+
+// 背景颜色
+@mixin bc_high() {background: $highColor;}
+@mixin bc_light() {background: $lightColor;}
+
+// 盒子阴影
+@mixin box_sd() {box-shadow: 0 1px .2rem rgba(100,100,100,.2);}
+
+
+// 其他
+@mixin fl {
+    float: left;
+}
+@mixin fr {
+    float: right;
+}
+@mixin border_b() {
+    border-bottom: 1px solid #eeeeee;
+}
+@mixin border_t() {
+    border-top: 1px solid #eeeeee;
+}
+@mixin clearfix() {
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+}
+@mixin t_hide($width: 100%) {
+    max-width: $width;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@mixin box_sizing($boxmodel) {
+    -webkit-box-sizing: $boxmodel;
+       -moz-box-sizing: $boxmodel;
+            box-sizing: $boxmodel;
+}
+@mixin dflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin ab_full {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}

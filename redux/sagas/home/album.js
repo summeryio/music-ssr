@@ -10,7 +10,7 @@ export function* album() {
   while(true) {
     yield take(FETCH_HOME_ALBUM);
     try {
-      const res = yield fetch(`${URL_HEADER}/top/album?limit=9`);
+      const res = yield fetch(`${URL_HEADER}/top/album?limit=6`);
       const data = yield res.json();
       if (data.code === 200) {
         yield put(fetchHomeAlbumSuccess(data.albums));

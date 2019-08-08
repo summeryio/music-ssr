@@ -99,7 +99,7 @@ class Home extends Component {
                                         <i className="iconfont icon-right_"></i>
                                     </a></Link>
                                 </div>
-                                <ul className="list">
+                                <ul className="list m-music__list">
                                     {
                                         playlistData.map(play => {
                                             let playCount = play.playCount > 100000 ? parseInt(play.playCount / 10000) + '万' : parseInt(play.playCount)

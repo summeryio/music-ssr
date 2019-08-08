@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\_app.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_app.js"],{
 
 /***/ "./components/Layout.js":
 /*!******************************!*\
@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _static_css_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../static/css/style.scss */ "./static/css/style.scss");
 /* harmony import */ var _static_css_style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_static_css_style_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Layout.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Layout.js";
 
 
 
@@ -139,6 +139,61 @@ var RouterTitle = {
   '/list/album': '新碟上架 - ',
   '/detail/playlist': '歌单详情 - '
 };
+
+/***/ }),
+
+/***/ "./core/mobile.js":
+/*!************************!*\
+  !*** ./core/mobile.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__);
+
+/**
+ * @param {Boolean} [normal = false] - 默认开启页面压缩以使页面高清;  
+ * @param {Number} [baseFontSize = 100] - 基础fontSize, 默认100px;
+ * @param {Number} [fontscale = 1] - 有的业务希望能放大一定比例的字体;
+ */
+
+
+
+var winFlex = function winFlex(win, normal, baseFontSize, fontscale) {
+  var _baseFontSize = baseFontSize || 100;
+
+  var _fontscale = fontscale || 1;
+
+  var doc = win.document;
+  var ua = navigator.userAgent;
+  var matches = ua.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i);
+  var UCversion = ua.match(/U3\/((\d+|\.){5,})/i);
+  var isUCHd = UCversion && _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(UCversion[1].split('.').join(''), 10) >= 80;
+  var isIos = navigator.appVersion.match(/(iphone|ipad|ipod)/gi);
+  var dpr = win.devicePixelRatio || 1;
+
+  if (!isIos && !(matches && matches[1] > 534) && !isUCHd) {
+    // 如果非iOS, 非Android4.3以上, 非UC内核, 就不执行高清, dpr设为1;
+    dpr = 1;
+  }
+
+  var scale = normal ? 1 : 1 / dpr;
+  var metaEl = doc.querySelector('meta[name="viewport"]');
+
+  if (!metaEl) {
+    metaEl = doc.createElement('meta');
+    metaEl.setAttribute('name', 'viewport');
+    doc.head.appendChild(metaEl);
+  }
+
+  metaEl.setAttribute('content', "width=device-width,user-scalable=no,initial-scale=".concat(scale, ",maximum-scale=").concat(scale, ",minimum-scale=").concat(scale));
+  doc.documentElement.style.fontSize = normal ? '50px' : "".concat(_baseFontSize / 2 * dpr * _fontscale, "px");
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (winFlex);
 
 /***/ }),
 
@@ -271,6 +326,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "./no
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/set-prototype-of */ "./node_modules/core-js/library/fn/object/set-prototype-of.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/parse-int.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/parse-int */ "./node_modules/core-js/library/fn/parse-int.js");
 
 /***/ }),
 
@@ -4342,6 +4408,19 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/parse-int.js":
+/*!******************************************************!*\
+  !*** ./node_modules/core-js/library/fn/parse-int.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../modules/es6.parse-int */ "./node_modules/core-js/library/modules/es6.parse-int.js");
+module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/core-js/library/modules/_core.js").parseInt;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/promise.js":
 /*!****************************************************!*\
   !*** ./node_modules/core-js/library/fn/promise.js ***!
@@ -6135,6 +6214,26 @@ module.exports = function (KEY, exec) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/_parse-int.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_parse-int.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $parseInt = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js").parseInt;
+var $trim = __webpack_require__(/*! ./_string-trim */ "./node_modules/core-js/library/modules/_string-trim.js").trim;
+var ws = __webpack_require__(/*! ./_string-ws */ "./node_modules/core-js/library/modules/_string-ws.js");
+var hex = /^[-+]?0[xX]/;
+
+module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? function parseInt(str, radix) {
+  var string = $trim(String(str), 3);
+  return $parseInt(string, (radix >>> 0) || (hex.test(string) ? 16 : 10));
+} : $parseInt;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/_perform.js":
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_perform.js ***!
@@ -6452,6 +6551,60 @@ module.exports = function (TO_STRING) {
       : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
   };
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_string-trim.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_string-trim.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+var defined = __webpack_require__(/*! ./_defined */ "./node_modules/core-js/library/modules/_defined.js");
+var fails = __webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js");
+var spaces = __webpack_require__(/*! ./_string-ws */ "./node_modules/core-js/library/modules/_string-ws.js");
+var space = '[' + spaces + ']';
+var non = '\u200b\u0085';
+var ltrim = RegExp('^' + space + space + '*');
+var rtrim = RegExp(space + space + '*$');
+
+var exporter = function (KEY, exec, ALIAS) {
+  var exp = {};
+  var FORCE = fails(function () {
+    return !!spaces[KEY]() || non[KEY]() != non;
+  });
+  var fn = exp[KEY] = FORCE ? exec(trim) : spaces[KEY];
+  if (ALIAS) exp[ALIAS] = fn;
+  $export($export.P + $export.F * FORCE, 'String', exp);
+};
+
+// 1 -> String#trimLeft
+// 2 -> String#trimRight
+// 3 -> String#trim
+var trim = exporter.trim = function (string, TYPE) {
+  string = String(defined(string));
+  if (TYPE & 1) string = string.replace(ltrim, '');
+  if (TYPE & 2) string = string.replace(rtrim, '');
+  return string;
+};
+
+module.exports = exporter;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_string-ws.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_string-ws.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003' +
+  '\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF';
 
 
 /***/ }),
@@ -7052,6 +7205,21 @@ $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(/*! ./_set-pr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.parse-int.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.parse-int.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+var $parseInt = __webpack_require__(/*! ./_parse-int */ "./node_modules/core-js/library/modules/_parse-int.js");
+// 18.2.5 parseInt(string, radix)
+$export($export.G + $export.F * (parseInt != $parseInt), { parseInt: $parseInt });
 
 
 /***/ }),
@@ -16999,6 +17167,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _redux_store__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../redux/store */ "./redux/store.js");
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var _constants_ConstTypes__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../constants/ConstTypes */ "./constants/ConstTypes.js");
+/* harmony import */ var _core_mobile__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../core/mobile */ "./core/mobile.js");
 
 
 
@@ -17007,7 +17176,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\pages\\_app.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/pages/_app.js";
+
 
 
 
@@ -17029,6 +17199,42 @@ function (_App) {
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(MyApp, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      Object(_core_mobile__WEBPACK_IMPORTED_MODULE_16__["default"])(window);
+
+      if (/iphone/i.test(navigator.userAgent)) {
+        document.body.style.webkitTapHighlightColor = 'rgba(0,0,0,.05)';
+        document.body.classList.add('iPhone');
+      } else {
+        document.body.classList.add('Android');
+      }
+
+      (function () {
+        if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
+          handleFontSize();
+        } else {
+          if (document.addEventListener) {
+            document.addEventListener("WeixinJSBridgeReady", handleFontSize, false);
+          } else if (document.attachEvent) {
+            document.attachEvent("WeixinJSBridgeReady", handleFontSize);
+            document.attachEvent("onWeixinJSBridgeReady", handleFontSize);
+          }
+        }
+
+        function handleFontSize() {
+          WeixinJSBridge.invoke('setFontSizeCallback', {
+            'fontSize': 0
+          });
+          WeixinJSBridge.on('menu:setfont', function () {
+            WeixinJSBridge.invoke('setFontSizeCallback', {
+              'fontSize': 0
+            });
+          });
+        }
+      })();
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this$props = this.props,
@@ -17039,27 +17245,27 @@ function (_App) {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_8__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 58
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_10__["Provider"], {
         store: store,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 59
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_14__["default"], {
         title: _constants_ConstTypes__WEBPACK_IMPORTED_MODULE_15__["RouterTitle"][router.pathname] + '网易云音乐',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 60
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 61
         },
         __self: this
       })))));
@@ -18119,7 +18325,7 @@ function album() {
         case 3:
           _context.prev = 3;
           _context.next = 6;
-          return fetch("".concat(_constants_ConstTypes__WEBPACK_IMPORTED_MODULE_3__["URL_HEADER"], "/top/album?limit=9"));
+          return fetch("".concat(_constants_ConstTypes__WEBPACK_IMPORTED_MODULE_3__["URL_HEADER"], "/top/album?limit=6"));
 
         case 6:
           res = _context.sent;
@@ -18405,7 +18611,7 @@ function playlist() {
         case 3:
           _context.prev = 3;
           _context.next = 6;
-          return fetch("".concat(_constants_ConstTypes__WEBPACK_IMPORTED_MODULE_3__["URL_HEADER"], "/personalized?limit=9"));
+          return fetch("".concat(_constants_ConstTypes__WEBPACK_IMPORTED_MODULE_3__["URL_HEADER"], "/personalized?limit=6"));
 
         case 6:
           res = _context.sent;

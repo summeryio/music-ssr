@@ -2258,7 +2258,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\pages\\_document.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/pages/_document.js";
 
 
 
@@ -2279,13 +2279,13 @@ function (_Document) {
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("html", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 12
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["Head"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 13
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
@@ -2293,14 +2293,14 @@ function (_Document) {
         content: "width=device-width, initial-scale=1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 14
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
         charSet: "utf-8",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 15
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
@@ -2309,15 +2309,7 @@ function (_Document) {
         type: "image/ico",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
-        href: "https://cdn.bootcss.com/minireset.css/0.0.2/minireset.min.css",
-        rel: "stylesheet",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 16
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
@@ -2325,7 +2317,7 @@ function (_Document) {
         href: "//at.alicdn.com/t/font_1109994_0tzn40s76zsk.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 17
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
@@ -2333,32 +2325,32 @@ function (_Document) {
         href: "https://cdn.jsdelivr.net/npm/swiper@4.5.0/dist/css/swiper.min.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 18
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
         src: "https://cdn.jsdelivr.net/npm/swiper@4.5.0/dist/js/swiper.min.js",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 19
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("body", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 21
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["Main"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 22
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 23
         },
         __self: this
       })));
