@@ -94,10 +94,14 @@ class Home extends Component {
                         <div>
                             <div className="playlist home-list">
                                 <div className="title">
-                                    <Link href="/list/playlist"><a>
+                                    {/* <Link href="/list/playlist"><a>
                                         <span>推荐歌单</span>
                                         <i className="iconfont icon-right_"></i>
-                                    </a></Link>
+                                    </a></Link> */}
+                                    <a href="/list/playlist">
+                                        <span>推荐歌单</span>
+                                        <i className="iconfont icon-right_"></i>
+                                    </a>
                                 </div>
                                 <ul className="list">
                                     {
@@ -107,16 +111,24 @@ class Home extends Component {
                                             return (
                                                 <li key={play.id}>
                                                     <div className="pic">
-                                                        <Img imgUrl={play.picUrl + '?param=400y400'} />
+                                                        <Img 
+                                                            {...{
+                                                                url: play.picUrl,
+                                                                size: 400,
+                                                            }}
+                                                        />
                                                         <span className="count">
                                                             <i className="iconfont icon-earphonee"></i>
                                                             <em>{playCount}</em>
                                                         </span>
                                                     </div>
                                                     <p className="desc">{play.name}</p>
-                                                    <Link prefetch href={{ pathname: '/detail/playlist', query: { id: play.id } }}>
+                                                    {/* <Link prefetch href={{ pathname: '/detail/playlist', query: { id: play.id } }}>
                                                         <a className="mask"></a>
-                                                    </Link>
+                                                    </Link> */}
+                                                    <a href={`/detail/playlist?id=${play.id}`}>
+                                                        <a className="mask"></a>
+                                                    </a>
                                                 </li>
                                             )
                                         })
@@ -136,9 +148,12 @@ class Home extends Component {
                                             return (
                                                 <li key={play.id}>
                                                     <div className="pic">
-                                                        <LazyLoad height='2.34rem' placeholder={<img src="/static/images/img_default.svg" />}>    
-                                                            <Img imgUrl={play.picUrl + '?param=400y400'} />
-                                                        </LazyLoad>
+                                                        <Img 
+                                                            {...{
+                                                                url: play.picUrl,
+                                                                size: 400,
+                                                            }}
+                                                        />
                                                     </div>
                                                     <p className="desc">{play.name}</p>
                                                     <Link prefetch href={{ pathname: '/detail/album', query: { id: play.id } }}>

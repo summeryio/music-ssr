@@ -12,9 +12,9 @@ export function* playlist() {
       const res = yield fetch(`${URL_HEADER}/playlist/detail?id=${query.id}`);
       const data = yield res.json();
       if (data.code === 200) {
-        if (data.playlist.tracks.length > 30) {
+        if (data.playlist.tracks.length > 20) {
           data.playlist.tracks = data.playlist.tracks.filter((song, i) => {
-            return i < 30
+            return i < 20
           })
         }
         

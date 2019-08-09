@@ -119,7 +119,6 @@ class Playlist extends Component {
     
     render () {
         let {playlistData, finished, isFoot} = this.state
-        console.log(playlistData);
 
         return (
             <div id="playlist">
@@ -133,17 +132,16 @@ class Playlist extends Component {
                                 return (
                                     <li key={play.id}>
                                         <div className="pic">
-                                            <LazyLoad>
-                                                <Img imgUrl={play.coverImgUrl + '?param=400y400'} />
-                                            </LazyLoad>
-                                            <span className="count">
-                                                <i className="icon-headset"></i>
-                                                <em>{playCount}</em>
-                                            </span>
+                                            <Img 
+                                                {...{
+                                                    url: play.coverImgUrl,
+                                                    size: 400,
+                                                }}
+                                            />
                                         </div>
                                         <p className="desc">{play.name}</p>
                                         <Link href={{ pathname: '/detail/playlist', query: { id: play.id } }}>
-                                            <a className="mask"></a>
+                                            <a className="link"></a>
                                         </Link>
                                     </li>
                                 )

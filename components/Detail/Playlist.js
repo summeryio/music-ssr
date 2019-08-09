@@ -5,7 +5,7 @@ import { fetchDetailPlaylist } from '../../redux/actions/detail';
 
 import {formatDateYMD} from '../../core/util'
 import Header from '../Header'
-import Loading from '../Loading'
+import Img from '../Img'
 import SongList from '../SongList'
 
 class Playlist extends Component {
@@ -38,40 +38,46 @@ class Playlist extends Component {
     render() {
         let {playlistData} = this.state
         let creator = playlistData.creator || {}
-        console.log(creator.avatarUrl);
+        let playCount = playlistData.playCount > 100000 ? parseInt(playlistData.playCount / 10000) + '万' : parseInt(playlistData.playCount)
+
+        console.log(playCount);
         
         return (
             <div id="playlist_detail">
                 <Header title=""/>
-                {
-                    Object.keys(playlistData).length ? (
-                        <div>
-                            <div className="header">
-                                <div className="bg" style={{backgroundImage: `url(${playlistData.coverImgUrl + '?param=400y400'})`}}></div>
-                                <div className="cont">
-                                    <div className="pic">
-                                        <img src={playlistData.coverImgUrl + '?param=400y400'} />
-                                        <span className="count">
-                                            <i className="iconfont icon-earphonee"></i>
-                                            <em>55万</em>
-                                        </span>
-                                        <i className="icon-cat">歌单</i>
-                                    </div>
-                                    <div className="info">
-                                        <p className="t">{playlistData.name}</p>
-                                        <p className="u-img">
-                                            <img src={creator.avatarUrl + '?param=60y60'} />{creator.nickname}
-                                        </p>
-                                        {/* <p>创建时间：{formatDateYMD(playlistData.createTime)}</p> */}
-                                    </div>
-                                </div>
-                                {/* <PlayAll songs={playlistData.tracks} /> */}
+                <div className="header">
+                    <div className="bg" style={{backgroundImage: `url(${playlistData.coverImgUrl + '?param=400y400'})`}}></div>
+                    <div className="cont">
+                        <div className="pic">
+                            <Img 
+                                {...{
+                                    url: playlistData.coverImgUrl,
+                                    size: 400,
+                                }}
+                            />
+                            <span className="count">
+                                <i className="iconfont icon-earphonee"></i>
+                                <em>{playCount || null}</em>
+                            </span>
+                            <i className="icon-cat">歌单</i>
+                        </div>
+                        <div className="info">
+                            <p className="t">{playlistData.name}</p>
+                            <div className="u-img">
+                                <Img 
+                                    {...{
+                                        url: creator.avatarUrl,
+                                        size: 60,
+                                    }}
+                                />
+                                {creator.nickname}
                             </div>
-                            <SongList songs={playlistData.tracks} />
-                         </div>
-                    ) : <Loading full={true}/>
-                }
-                
+                            {/* <p>创建时间：{formatDateYMD(playlistData.createTime)}</p> */}
+                        </div>
+                    </div>
+                    {/* <PlayAll songs={playlistData.tracks} /> */}
+                </div>
+                <SongList songs={playlistData.tracks} />
             </div>
         )
     }

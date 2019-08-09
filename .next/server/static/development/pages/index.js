@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -117,7 +117,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Home\\HomeModule.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Home/HomeModule.js";
 
 
 
@@ -287,7 +287,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Home\\Recommend.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Home/Recommend.js";
 
 
 
@@ -423,37 +423,31 @@ function (_Component) {
           lineNumber: 96
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
         href: "/list/playlist",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 101
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 102
         },
         __self: this
       }, "\u63A8\u8350\u6B4C\u5355"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
         className: "iconfont icon-right_",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 103
         },
         __self: this
-      })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
+      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         className: "list",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 106
         },
         __self: this
       }, playlistData.map(function (play) {
@@ -462,68 +456,64 @@ function (_Component) {
           key: play.id,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 108
+            lineNumber: 112
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
           className: "pic",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 109
+            lineNumber: 113
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_14__["default"], {
-          imgUrl: play.picUrl + '?param=400y400',
+        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_14__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+          url: play.picUrl,
+          size: 400
+        }, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 110
+            lineNumber: 114
           },
           __self: this
-        }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
+        })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
           className: "count",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 111
+            lineNumber: 120
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
           className: "iconfont icon-earphonee",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 112
+            lineNumber: 121
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("em", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 113
+            lineNumber: 122
           },
           __self: this
         }, playCount))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
           className: "desc",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 116
+            lineNumber: 125
           },
           __self: this
-        }, play.name), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-          prefetch: true,
-          href: {
-            pathname: '/detail/playlist',
-            query: {
-              id: play.id
-            }
-          },
+        }, play.name), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+          href: "/detail/playlist?id=".concat(play.id),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 117
+            lineNumber: 129
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
           className: "mask",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 118
+            lineNumber: 130
           },
           __self: this
         })));
@@ -531,47 +521,47 @@ function (_Component) {
         className: "albumlist home-list",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126
+          lineNumber: 138
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 139
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
         href: "/list/album",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 140
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 140
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
+          lineNumber: 141
         },
         __self: this
       }, "\u65B0\u789F\u4E0A\u67B6"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
         className: "iconfont icon-right_",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130
+          lineNumber: 142
         },
         __self: this
       })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         className: "list",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 133
+          lineNumber: 145
         },
         __self: this
       }, albumData.map(function (play) {
@@ -579,43 +569,30 @@ function (_Component) {
           key: play.id,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 137
+            lineNumber: 149
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
           className: "pic",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 138
+            lineNumber: 150
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_lazyload__WEBPACK_IMPORTED_MODULE_9___default.a, {
-          height: "2.34rem",
-          placeholder: react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-            src: "/static/images/img_default.svg",
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 139
-            },
-            __self: this
-          }),
+        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_14__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+          url: play.picUrl,
+          size: 400
+        }, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 139
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_14__["default"], {
-          imgUrl: play.picUrl + '?param=400y400',
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 140
+            lineNumber: 151
           },
           __self: this
         }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
           className: "desc",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 143
+            lineNumber: 158
           },
           __self: this
         }, play.name), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
@@ -628,21 +605,21 @@ function (_Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 144
+            lineNumber: 159
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
           className: "mask",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 145
+            lineNumber: 160
           },
           __self: this
         })));
       })))) : react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Loading__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 154
+          lineNumber: 169
         },
         __self: this
       }));
@@ -719,12 +696,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_lazyload__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-lazyload */ "react-lazyload");
+/* harmony import */ var react_lazyload__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_lazyload__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Img.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Img.js";
+
 
 
 var Img =
@@ -739,7 +719,7 @@ function (_React$Component) {
 
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Img).call(this, props));
     _this.state = {
-      imgUrl: _this.props.imgUrl
+      imgUrl: '/static/images/img_default.svg'
     };
     return _this;
   }
@@ -757,16 +737,36 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
-        src: this.state.imgUrl,
+      var imgUrl = this.state.imgUrl;
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_lazyload__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        once: true,
+        height: "100%",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: imgUrl,
         onLoad: this.handleImageLoaded.bind(this),
         onError: this.handleImageErrored.bind(this),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 36
         },
         __self: this
-      });
+      }));
+    }
+  }], [{
+    key: "getDerivedStateFromProps",
+    value: function getDerivedStateFromProps(nextProps, prevState) {
+      if (nextProps.url && nextProps.url !== prevState.imgUrl) {
+        return {
+          imgUrl: nextProps.url + "?param=".concat(nextProps.size, "y").concat(nextProps.size)
+        };
+      }
+
+      return null;
     }
   }]);
 
@@ -799,7 +799,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Loading.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Loading.js";
 
 
 var Loading =
@@ -1984,14 +1984,14 @@ function fetchRankFail() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 6:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\summeryio\Desktop\music-ssr\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/a123/Desktop/Web/music-ssr/pages/index.js */"./pages/index.js");
 
 
 /***/ }),

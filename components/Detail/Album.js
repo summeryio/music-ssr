@@ -43,24 +43,30 @@ class Album extends Component {
         return (
             <div id="album_detail">
                 <Header title=""/>
-                {
-                    Object.keys(albumData).length ? (
-                        <div>
-                            <div className="header">
-                                <div className="bg" style={{backgroundImage: `url(${album.picUrl})`}}></div>
-                                <div className="cont">
-                                    <img src={album.picUrl + '?param=400y400'} />
-                                    <div className="info">
-                                        <p>{album.name}</p>
-                                        {album.company ? <p>发行公司：{album.company}</p> : null}
-                                        <p>创建时间：{formatDateYMD(album.createTime)}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <SongList songs={albumData.songs} />
-                         </div>
-                    ) : <Loading full={true}/>
-                }
+                <div className="header">
+                    <div className="bg" style={{backgroundImage: `url(${album.picUrl})`}}></div>
+                    <div className="cont">
+                        <div className="pic">
+                            <Img 
+                                {...{
+                                    url: album.picUrl,
+                                    size: 400,
+                                }}
+                            />
+                            <span className="count">
+                                <i className="iconfont icon-earphonee"></i>
+                                <em>55万</em>
+                            </span>
+                            <i className="icon-cat">专辑</i>
+                        </div>
+                        <div className="info">
+                            <p className="t">{album.name}</p>
+                            {album.company ? <p>发行公司：{album.company}</p> : null}
+                            <p>创建时间：{formatDateYMD(album.createTime)}</p>
+                        </div>
+                    </div>
+                </div>
+                <SongList songs={albumData.songs} />
             </div>
         )
     }

@@ -52,9 +52,12 @@ class Rank extends Component {
                             rankData.map(rank => {
                                 return (
                                     <li key={rank.id}><Link href={{ pathname: '/detail/playlist', query: { id: rank.id } }}><a>
-                                        <LazyLoad height='100%' once placeholder={<img src="/static/images/img_default.svg" />}>
-                                            <Img imgUrl={rank.coverImgUrl + '?param=400y400'} />
-                                        </LazyLoad>
+                                        <Img 
+                                            {...{
+                                                url: rank.coverImgUrl,
+                                                size: 200,
+                                            }}
+                                        />
                                         <p>{rank.name}</p>
                                         <i className="iconfont icon-right"></i>
                                     </a></Link></li>

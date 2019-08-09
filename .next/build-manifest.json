@@ -1,41 +1,67 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_599a58a60c43245180de.js"
-  ],
+  "devFiles": [],
   "pages": {
     "/": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.47a28379677650413d1b.js",
+      "static/runtime/main-aaf1541444c7e3a662c9.js"
     ],
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.47a28379677650413d1b.js",
+      "static/css/styles.a42fdc4b.chunk.css",
+      "static/chunks/styles.beea3d2701da3cdf9e25.js",
+      "static/runtime/main-aaf1541444c7e3a662c9.js"
     ],
     "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.47a28379677650413d1b.js",
+      "static/runtime/main-aaf1541444c7e3a662c9.js"
+    ],
+    "/detail/album": [
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.47a28379677650413d1b.js",
+      "static/runtime/main-aaf1541444c7e3a662c9.js"
     ],
     "/detail/playlist": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.47a28379677650413d1b.js",
+      "static/runtime/main-aaf1541444c7e3a662c9.js"
     ],
     "/home/newsong": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.47a28379677650413d1b.js",
+      "static/runtime/main-aaf1541444c7e3a662c9.js"
     ],
     "/home/rank": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.47a28379677650413d1b.js",
+      "static/runtime/main-aaf1541444c7e3a662c9.js"
+    ],
+    "/home/recommend": [
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.47a28379677650413d1b.js",
+      "static/runtime/main-aaf1541444c7e3a662c9.js"
+    ],
+    "/home/singer": [
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.47a28379677650413d1b.js",
+      "static/runtime/main-aaf1541444c7e3a662c9.js"
     ],
     "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.47a28379677650413d1b.js",
+      "static/runtime/main-aaf1541444c7e3a662c9.js"
+    ],
+    "/list/album": [
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.47a28379677650413d1b.js",
+      "static/runtime/main-aaf1541444c7e3a662c9.js"
     ],
     "/list/playlist": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-8ed9452df514b4d17d80.js",
+      "static/chunks/commons.47a28379677650413d1b.js",
+      "static/runtime/main-aaf1541444c7e3a662c9.js"
     ]
   }
 }

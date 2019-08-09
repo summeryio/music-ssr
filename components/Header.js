@@ -8,12 +8,11 @@ export default class Header extends Component {
         
         return (
             <div id="header_title">
-                <i 
-                    className="iconfont icon-left"
-                    onClick={() => {
-                        Router.back()
-                    }}
-                ></i>
+                <a onClick={() => {
+                    Router.back()
+                }}>
+                    <i className="iconfont icon-left"></i>
+                </a>
                 <p>{title}</p>
                 <Link href="/"><a>
                     <i className="iconfont icon-home"></i>

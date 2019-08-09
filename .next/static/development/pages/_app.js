@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\_app.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_app.js"],{
 
 /***/ "./components/Layout.js":
 /*!******************************!*\
@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _static_css_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../static/css/style.scss */ "./static/css/style.scss");
 /* harmony import */ var _static_css_style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_static_css_style_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Layout.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Layout.js";
 
 
 
@@ -127,7 +127,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "URL_HEADER", function() { return URL_HEADER; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterTitle", function() { return RouterTitle; });
 // 用户级别
-var URL_HEADER = 'http://localhost:3001'; // 路由对应页面标题
+// export const URL_HEADER = 'http://localhost:3001'
+var URL_HEADER = 'http://192.168.0.147:3001'; // 路由对应页面标题
 
 var RouterTitle = {
   '/': '',
@@ -17176,7 +17177,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\pages\\_app.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/pages/_app.js";
 
 
 
@@ -18247,9 +18248,9 @@ function playlist() {
             break;
           }
 
-          if (data.playlist.tracks.length > 30) {
+          if (data.playlist.tracks.length > 20) {
             data.playlist.tracks = data.playlist.tracks.filter(function (song, i) {
-              return i < 30;
+              return i < 20;
             });
           }
 
@@ -18541,7 +18542,7 @@ function newsong() {
           }
 
           data.playlist.tracks = data.playlist.tracks.filter(function (item, i) {
-            return i < 50;
+            return i < 20;
           });
           _context.next = 14;
           return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["put"])(Object(_actions_home__WEBPACK_IMPORTED_MODULE_4__["fetchNewsongSuccess"])(data.playlist.tracks));

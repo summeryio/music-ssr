@@ -41,7 +41,7 @@ class Newsong extends Component {
                 id: 'new_song',
                 nav: 'song'
             }}>
-                {newsongData.length ? <SongList songs={newsongData} /> : <Loading full={true}/>}
+                <SongList songs={newsongData} />
             </HomeModule>
         )
     }

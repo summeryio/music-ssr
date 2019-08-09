@@ -1,16 +1,26 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 
 class Img extends React.Component {
     constructor(props) {
         super(props);
+        
         this.state = { 
-            imgUrl: this.props.imgUrl
+            imgUrl: '/static/images/img_default.svg'
         };
     }
 
-    handleImageLoaded() {
-     
+    static getDerivedStateFromProps(nextProps, prevState) {
+        if (nextProps.url && nextProps.url !== prevState.imgUrl) {
+            return {
+                imgUrl: nextProps.url + `?param=${nextProps.size}y${nextProps.size}`
+            };
+        }
+        
+        return null; 
     }
+
+    handleImageLoaded() {}
 
     handleImageErrored() {
         this.setState({ 
@@ -19,12 +29,16 @@ class Img extends React.Component {
     }
 
     render() {
+        let {imgUrl} = this.state
+        
         return (
+            <LazyLoad once height="100%">
             <img
-                src={this.state.imgUrl}
+                src={imgUrl}
                 onLoad={this.handleImageLoaded.bind(this)}
                 onError={this.handleImageErrored.bind(this)}
             />
+            </LazyLoad>
         );
     }
 }

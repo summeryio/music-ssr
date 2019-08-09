@@ -14,7 +14,7 @@ export function* newsong() {
       const data = yield res.json();
       if (data.code === 200) {
         data.playlist.tracks = data.playlist.tracks.filter((item, i) => {
-          return i < 50
+          return i < 20
         })
         
         yield put(fetchNewsongSuccess(data.playlist.tracks));

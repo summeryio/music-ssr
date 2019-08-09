@@ -1,5 +1,6 @@
 // 用户级别
-export const URL_HEADER = 'http://localhost:3001'
+// export const URL_HEADER = 'http://localhost:3001'
+export const URL_HEADER = 'http://192.168.0.147:3001'
 
 // 路由对应页面标题
 export const RouterTitle = {
