@@ -94,14 +94,10 @@ class Home extends Component {
                         <div>
                             <div className="playlist home-list">
                                 <div className="title">
-                                    {/* <Link href="/list/playlist"><a>
+                                    <Link href="/list/playlist"><a>
                                         <span>推荐歌单</span>
                                         <i className="iconfont icon-right_"></i>
-                                    </a></Link> */}
-                                    <a href="/list/playlist">
-                                        <span>推荐歌单</span>
-                                        <i className="iconfont icon-right_"></i>
-                                    </a>
+                                    </a></Link>
                                 </div>
                                 <ul className="list">
                                     {
@@ -123,12 +119,9 @@ class Home extends Component {
                                                         </span>
                                                     </div>
                                                     <p className="desc">{play.name}</p>
-                                                    {/* <Link prefetch href={{ pathname: '/detail/playlist', query: { id: play.id } }}>
+                                                    <Link prefetch href={{ pathname: '/detail/playlist', query: { id: play.id } }}>
                                                         <a className="mask"></a>
-                                                    </Link> */}
-                                                    <a href={`/detail/playlist?id=${play.id}`}>
-                                                        <a className="mask"></a>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             )
                                         })

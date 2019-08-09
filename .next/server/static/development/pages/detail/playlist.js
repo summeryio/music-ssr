@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -128,7 +128,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Detail/Playlist.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Detail\\Playlist.js";
 
 
 
@@ -170,26 +170,25 @@ function (_Component) {
       var playlistData = this.state.playlistData;
       var creator = playlistData.creator || {};
       var playCount = playlistData.playCount > 100000 ? _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(playlistData.playCount / 10000) + '万' : _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(playlistData.playCount);
-      console.log(playCount);
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         id: "playlist_detail",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 44
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_12__["default"], {
         title: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 45
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "header",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
@@ -199,21 +198,21 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 47
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "cont",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 48
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "pic",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 49
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -222,55 +221,55 @@ function (_Component) {
       }, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 50
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
         className: "count",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 56
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
         className: "iconfont icon-earphonee",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 57
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("em", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 58
         },
         __self: this
       }, playCount || null)), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
         className: "icon-cat",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 60
         },
         __self: this
       }, "\u6B4C\u5355")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "info",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 62
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
         className: "t",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 63
         },
         __self: this
       }, playlistData.name), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "u-img",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 64
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -279,14 +278,14 @@ function (_Component) {
       }, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 65
         },
         __self: this
       })), creator.nickname)))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_SongList__WEBPACK_IMPORTED_MODULE_14__["default"], {
         songs: playlistData.tracks,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 78
         },
         __self: this
       }));
@@ -351,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Header.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Header.js";
 
 
 
@@ -454,7 +453,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Img.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Img.js";
 
 
 
@@ -550,7 +549,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Loading.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Loading.js";
 
 
 var Loading =
@@ -622,7 +621,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/SongList.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\SongList.js";
 
 
 
@@ -1938,14 +1937,14 @@ function fetchDetailAlbumFail() {
 
 /***/ }),
 
-/***/ 7:
+/***/ 5:
 /*!****************************************!*\
   !*** multi ./pages/detail/playlist.js ***!
   \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/a123/Desktop/Web/music-ssr/pages/detail/playlist.js */"./pages/detail/playlist.js");
+module.exports = __webpack_require__(/*! C:\Users\summeryio\Desktop\music-ssr\pages\detail\playlist.js */"./pages/detail/playlist.js");
 
 
 /***/ }),

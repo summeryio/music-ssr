@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -117,7 +117,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Home/HomeModule.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Home\\HomeModule.js";
 
 
 
@@ -287,7 +287,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Home/Recommend.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Home\\Recommend.js";
 
 
 
@@ -423,31 +423,37 @@ function (_Component) {
           lineNumber: 96
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
         href: "/list/playlist",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 97
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 97
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 98
         },
         __self: this
       }, "\u63A8\u8350\u6B4C\u5355"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
         className: "iconfont icon-right_",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 99
         },
         __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
+      })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         className: "list",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 102
         },
         __self: this
       }, playlistData.map(function (play) {
@@ -456,14 +462,14 @@ function (_Component) {
           key: play.id,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 112
+            lineNumber: 108
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
           className: "pic",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 113
+            lineNumber: 109
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_14__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -472,48 +478,54 @@ function (_Component) {
         }, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 114
+            lineNumber: 110
           },
           __self: this
         })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
           className: "count",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 120
+            lineNumber: 116
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
           className: "iconfont icon-earphonee",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 121
+            lineNumber: 117
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("em", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 122
+            lineNumber: 118
           },
           __self: this
         }, playCount))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
           className: "desc",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 125
+            lineNumber: 121
           },
           __self: this
-        }, play.name), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-          href: "/detail/playlist?id=".concat(play.id),
+        }, play.name), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
+          prefetch: true,
+          href: {
+            pathname: '/detail/playlist',
+            query: {
+              id: play.id
+            }
+          },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 129
+            lineNumber: 122
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
           className: "mask",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 130
+            lineNumber: 123
           },
           __self: this
         })));
@@ -521,47 +533,47 @@ function (_Component) {
         className: "albumlist home-list",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138
+          lineNumber: 131
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 139
+          lineNumber: 132
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
         href: "/list/album",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 133
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 133
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 141
+          lineNumber: 134
         },
         __self: this
       }, "\u65B0\u789F\u4E0A\u67B6"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
         className: "iconfont icon-right_",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 142
+          lineNumber: 135
         },
         __self: this
       })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         className: "list",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 145
+          lineNumber: 138
         },
         __self: this
       }, albumData.map(function (play) {
@@ -569,14 +581,14 @@ function (_Component) {
           key: play.id,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 149
+            lineNumber: 142
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
           className: "pic",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 150
+            lineNumber: 143
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_14__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -585,14 +597,14 @@ function (_Component) {
         }, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 151
+            lineNumber: 144
           },
           __self: this
         }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
           className: "desc",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 158
+            lineNumber: 151
           },
           __self: this
         }, play.name), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
@@ -605,21 +617,21 @@ function (_Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 159
+            lineNumber: 152
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
           className: "mask",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 160
+            lineNumber: 153
           },
           __self: this
         })));
       })))) : react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Loading__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 169
+          lineNumber: 162
         },
         __self: this
       }));
@@ -703,7 +715,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Img.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Img.js";
 
 
 
@@ -799,7 +811,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Loading.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Loading.js";
 
 
 var Loading =
@@ -1984,14 +1996,14 @@ function fetchRankFail() {
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/a123/Desktop/Web/music-ssr/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! C:\Users\summeryio\Desktop\music-ssr\pages\index.js */"./pages/index.js");
 
 
 /***/ }),

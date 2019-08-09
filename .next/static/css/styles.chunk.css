@@ -95,7 +95,7 @@ p {
   height: .8rem;
   line-height: .8rem;
   color: #fff;
-  background-color: #f13745; }
+  background-color: #f13746; }
   #header_title a {
     display: block;
     width: .8rem;
@@ -208,6 +208,23 @@ p {
     top: 0;
     right: 0;
     bottom: 0; }
+
+#back_top {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  border-radius: 100%;
+  color: #fff;
+  background-color: rgba(241, 55, 70, 0.8);
+  visibility: hidden; }
+  #back_top.show {
+    visibility: visible; }
+  #back_top i {
+    font-size: 0.52rem; }
 
 #home_header {
   display: none;

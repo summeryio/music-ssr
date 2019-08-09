@@ -40,8 +40,6 @@ class Playlist extends Component {
         let creator = playlistData.creator || {}
         let playCount = playlistData.playCount > 100000 ? parseInt(playlistData.playCount / 10000) + '万' : parseInt(playlistData.playCount)
 
-        console.log(playCount);
-        
         return (
             <div id="playlist_detail">
                 <Header title=""/>
