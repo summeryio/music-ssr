@@ -117,7 +117,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\BackTop.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/BackTop.js";
 
 
 var Layout =
@@ -210,7 +210,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _BackTop__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BackTop */ "./components/BackTop.js");
 /* harmony import */ var _static_css_style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../static/css/style.scss */ "./static/css/style.scss");
 /* harmony import */ var _static_css_style_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_static_css_style_scss__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Layout.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Layout.js";
 
 
 
@@ -328,8 +328,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "URL_HEADER", function() { return URL_HEADER; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterTitle", function() { return RouterTitle; });
 // 用户级别
-var URL_HEADER = 'http://localhost:3001'; // export const URL_HEADER = 'http://192.168.0.147:3001'
-// 路由对应页面标题
+// export const URL_HEADER = 'http://localhost:3001'
+var URL_HEADER = 'http://192.168.0.147:3001'; // 路由对应页面标题
 
 var RouterTitle = {
   '/': '',
@@ -1511,7 +1511,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\pages\\_app.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/pages/_app.js";
 
 
 
@@ -2722,11 +2722,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "homeBanner", function() { return homeBanner; });
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-saga/effects */ "redux-saga/effects");
-/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../constants/ActionTypes */ "./constants/ActionTypes.js");
-/* harmony import */ var _constants_ConstTypes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../constants/ConstTypes */ "./constants/ConstTypes.js");
-/* harmony import */ var _actions_home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../actions/home */ "./redux/actions/home.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux-saga/effects */ "redux-saga/effects");
+/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../constants/ActionTypes */ "./constants/ActionTypes.js");
+/* harmony import */ var _constants_ConstTypes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../constants/ConstTypes */ "./constants/ConstTypes.js");
+/* harmony import */ var _actions_home__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../actions/home */ "./redux/actions/home.js");
+
 
 
 var _marked =
@@ -2747,19 +2750,19 @@ function homeBanner() {
           if (false) {}
 
           _context.next = 3;
-          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["select"])(function (state) {
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["select"])(function (state) {
             return state.home.banner;
           });
 
         case 3:
           bannerQuery = _context.sent;
           _context.next = 6;
-          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["take"])(_constants_ActionTypes__WEBPACK_IMPORTED_MODULE_2__["FETCH_HOME_BANNER"]);
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["take"])(_constants_ActionTypes__WEBPACK_IMPORTED_MODULE_3__["FETCH_HOME_BANNER"]);
 
         case 6:
           _context.prev = 6;
           _context.next = 9;
-          return fetch("".concat(_constants_ConstTypes__WEBPACK_IMPORTED_MODULE_3__["URL_HEADER"], "/banner"));
+          return fetch("".concat(_constants_ConstTypes__WEBPACK_IMPORTED_MODULE_4__["URL_HEADER"], "/banner"));
 
         case 9:
           res = _context.sent;
@@ -2770,35 +2773,42 @@ function homeBanner() {
           data = _context.sent;
 
           if (!(data.code === 200)) {
-            _context.next = 16;
+            _context.next = 17;
             break;
           }
 
-          _context.next = 16;
-          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["put"])(Object(_actions_home__WEBPACK_IMPORTED_MODULE_4__["fetchHomeBannerSuccess"])(data.banners));
+          data.banners = data.banners.filter(function (banner) {
+            var type = _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(banner.targetType);
 
-        case 16:
-          _context.next = 22;
+            if (type === 1 || type === 10 || type === 1000) {
+              return true;
+            }
+          });
+          _context.next = 17;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["put"])(Object(_actions_home__WEBPACK_IMPORTED_MODULE_5__["fetchHomeBannerSuccess"])(data.banners));
+
+        case 17:
+          _context.next = 23;
           break;
 
-        case 18:
-          _context.prev = 18;
+        case 19:
+          _context.prev = 19;
           _context.t0 = _context["catch"](6);
-          _context.next = 22;
-          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["put"])(Object(_actions_home__WEBPACK_IMPORTED_MODULE_4__["fetchHomeBannerFail"])(_context.t0));
+          _context.next = 23;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["put"])(Object(_actions_home__WEBPACK_IMPORTED_MODULE_5__["fetchHomeBannerFail"])(_context.t0));
 
-        case 22:
+        case 23:
           _context.next = 0;
           break;
 
-        case 24:
+        case 25:
         case "end":
           return _context.stop();
       }
     }
-  }, _marked, null, [[6, 18]]);
+  }, _marked, null, [[6, 19]]);
 }
-/* harmony default export */ __webpack_exports__["default"] = ([Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["fork"])(homeBanner)]);
+/* harmony default export */ __webpack_exports__["default"] = ([Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["fork"])(homeBanner)]);
 
 /***/ }),
 

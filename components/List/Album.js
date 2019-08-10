@@ -124,19 +124,22 @@ class Album extends Component {
             <div id="album">
                 <Header title="新碟上架" />
                 <div className="scroll_wrapper" ref="onPullUp" onTouchStart={this.touchStart.bind(this)} onTouchEnd={this.touchEnd.bind(this)}>
-                    <ul className="list">
+                    <ul className="list m-music__list">
                         {
                             albumData.map((play, i) => {
                                 return (
                                     <li key={play.id}>
                                         <div className="pic">
-                                            <LazyLoad height="3.72rem" placeholder={<img src="/static/images/img_default.svg" />}>
-                                                <Img imgUrl={play.picUrl + '?param=400y400'} />
-                                            </LazyLoad>
+                                            <Img 
+                                                {...{
+                                                    url: play.picUrl,
+                                                    size: 400,
+                                                }}
+                                            />
                                         </div>
                                         <p className="desc">{play.name}</p>
                                         <Link href={{ pathname: '/detail/album', query: { id: play.id } }}>
-                                            <a className="mask"></a>
+                                            <a className="link"></a>
                                         </Link>
                                     </li>
                                 )

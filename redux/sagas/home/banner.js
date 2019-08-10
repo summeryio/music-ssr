@@ -17,6 +17,14 @@ export function* homeBanner() {
       const res = yield fetch(`${URL_HEADER}/banner`);
       const data = yield res.json();
       if (data.code === 200) {
+        data.banners = data.banners.filter(banner => {
+          let type = parseInt(banner.targetType)
+          
+          if (type === 1 || type === 10 || type === 1000) {
+              return true
+          }
+      })
+        
         yield put(fetchHomeBannerSuccess(data.banners));
       }
     } catch(error) {

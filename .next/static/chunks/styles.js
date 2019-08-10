@@ -30,7 +30,7 @@ module.exports = {"iphone":"iphone","iconfont":"iconfont","header_title":"header
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1565357739892");
+            injectCss(link, link.href.split("?")[0] + "?unix=1565399779625");
           });
       }
     }
