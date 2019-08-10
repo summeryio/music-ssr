@@ -162,10 +162,11 @@ p {
     color: #888;
     font-size: .28rem; }
   .song-list .pic {
-    width: 30%;
-    min-height: 2rem; }
+    width: 2.13rem;
+    height: 2.13rem; }
     .song-list .pic img {
-      width: 100%; }
+      width: 100%;
+      height: 100%; }
   .song-list .link {
     position: absolute;
     left: 0;
@@ -270,14 +271,9 @@ p {
   #home .banner .swiper-slide {
     position: relative; }
   #home .banner img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover; }
+    height: calc(100% + 18.1897%);
+    margin-top: calc(-.1106667 * .314 * (100vw - 1.5rem)); }
   #home .banner .swiper-pagination-bullet {
     background: rgba(255, 255, 255, 0.5);
     opacity: 1;

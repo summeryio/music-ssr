@@ -14,9 +14,10 @@ export default class Header extends Component {
                     <i className="iconfont icon-left"></i>
                 </a>
                 <p>{title}</p>
-                <Link href="/"><a>
+                {/* <Link href="/"><a>
                     <i className="iconfont icon-home"></i>
-                </a></Link>
+                </a></Link> */}
+                <a href="/"><i className="iconfont icon-home"></i></a>
             </div>
         )
     }

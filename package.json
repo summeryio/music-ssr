@@ -31,8 +31,7 @@
     "react-redux": "^7.1.0",
     "redux": "^4.0.3",
     "redux-logger": "^3.0.6",
-    "redux-saga": "^1.0.5",
-    "swiper": "^4.5.0"
+    "redux-saga": "^1.0.5"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.4.4",

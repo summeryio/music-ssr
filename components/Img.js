@@ -32,12 +32,13 @@ class Img extends React.Component {
         let {imgUrl} = this.state
         
         return (
-            <LazyLoad once height="100%">
-            <img
-                src={imgUrl}
-                onLoad={this.handleImageLoaded.bind(this)}
-                onError={this.handleImageErrored.bind(this)}
-            />
+            <LazyLoad once height="100%" placeholder={<img src="/static/images/img_default.svg" alt=""/>}>
+                
+                <img
+                    src={imgUrl}
+                    onLoad={this.handleImageLoaded.bind(this)}
+                    onError={this.handleImageErrored.bind(this)}
+                />
             </LazyLoad>
         );
     }

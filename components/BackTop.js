@@ -29,7 +29,7 @@ export default class Layout extends Component {
     }
     
     handleBackTop() {
-        document.documentElement.scrollTop = 0
+        document.documentElement.scrollTop = document.body.scrollTop = 0
     }
   
     render() {

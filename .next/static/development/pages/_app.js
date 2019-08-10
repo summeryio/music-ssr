@@ -68,7 +68,7 @@ function (_Component) {
   }, {
     key: "handleBackTop",
     value: function handleBackTop() {
-      document.documentElement.scrollTop = 0;
+      document.documentElement.scrollTop = document.body.scrollTop = 0;
     }
   }, {
     key: "render",

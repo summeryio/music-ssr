@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Link from 'next/link';
 import LazyLoad from 'react-lazyload'
 import { connect } from 'react-redux';
@@ -91,7 +91,7 @@ class Home extends Component {
                 </div>
                 {
                     playlistData.length ? (
-                        <div>
+                        <Fragment>
                             <div className="playlist home-list">
                                 <div className="title">
                                     <Link href="/list/playlist"><a>
@@ -119,9 +119,10 @@ class Home extends Component {
                                                         </span>
                                                     </div>
                                                     <p className="desc">{play.name}</p>
-                                                    <Link prefetch href={{ pathname: '/detail/playlist', query: { id: play.id } }}>
+                                                    {/* <Link prefetch href={{ pathname: '/detail/playlist', query: { id: play.id } }}>
                                                         <a className="mask"></a>
-                                                    </Link>
+                                                    </Link> */}
+                                                    <a className="mask" href={`/detail/playlist?id=${play.id}`}></a>
                                                 </li>
                                             )
                                         })
@@ -158,7 +159,7 @@ class Home extends Component {
                                     }
                                 </ul>
                             </div>
-                        </div>
+                        </Fragment>
                     ) : <Loading />
                 }
                 

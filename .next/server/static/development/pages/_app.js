@@ -161,7 +161,7 @@ function (_Component) {
   }, {
     key: "handleBackTop",
     value: function handleBackTop() {
-      document.documentElement.scrollTop = 0;
+      document.documentElement.scrollTop = document.body.scrollTop = 0;
     }
   }, {
     key: "render",
@@ -3428,72 +3428,7 @@ function configureStore(initialState) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = {
-	"iphone": "iphone",
-	"iconfont": "iconfont",
-	"header_title": "header_title",
-	"headerTitle": "header_title",
-	"icon-home": "icon-home",
-	"iconHome": "icon-home",
-	"loading": "loading",
-	"full": "full",
-	"scroll-tip": "scroll-tip",
-	"scrollTip": "scroll-tip",
-	"song-list": "song-list",
-	"songList": "song-list",
-	"intro": "intro",
-	"pic": "pic",
-	"link": "link",
-	"m-music__list": "m-music__list",
-	"mMusicList": "m-music__list",
-	"desc": "desc",
-	"back_top": "back_top",
-	"backTop": "back_top",
-	"show": "show",
-	"home_header": "home_header",
-	"homeHeader": "home_header",
-	"go-player": "go-player",
-	"goPlayer": "go-player",
-	"home_nav": "home_nav",
-	"homeNav": "home_nav",
-	"active": "active",
-	"home": "home",
-	"banner": "banner",
-	"swiper-slide": "swiper-slide",
-	"swiperSlide": "swiper-slide",
-	"swiper-pagination-bullet": "swiper-pagination-bullet",
-	"swiperPaginationBullet": "swiper-pagination-bullet",
-	"swiper-pagination-bullet-active": "swiper-pagination-bullet-active",
-	"swiperPaginationBulletActive": "swiper-pagination-bullet-active",
-	"home-list": "home-list",
-	"homeList": "home-list",
-	"title": "title",
-	"list": "list",
-	"count": "count",
-	"mask": "mask",
-	"rank": "rank",
-	"singer": "singer",
-	"category": "category",
-	"mb": "mb",
-	"playlist_detail": "playlist_detail",
-	"playlistDetail": "playlist_detail",
-	"album_detail": "album_detail",
-	"albumDetail": "album_detail",
-	"header": "header",
-	"bg": "bg",
-	"cont": "cont",
-	"icon-cat": "icon-cat",
-	"iconCat": "icon-cat",
-	"info": "info",
-	"t": "t",
-	"u-img": "u-img",
-	"uImg": "u-img",
-	"play": "play",
-	"singer_list": "singer_list",
-	"singerList": "singer_list",
-	"singer_detail": "singer_detail",
-	"singerDetail": "singer_detail"
-};
+
 
 /***/ }),
 

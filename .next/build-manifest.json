@@ -12,6 +12,14 @@
     "/_error": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
+    ],
+    "/home/newsong": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/home/recommend": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }
