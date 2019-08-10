@@ -227,6 +227,10 @@ p {
   #back_top i {
     font-size: 0.52rem; }
 
+#album .m-music__list .desc {
+  height: .4rem;
+  -webkit-line-clamp: 1; }
+
 #home_header {
   display: none;
   position: relative;

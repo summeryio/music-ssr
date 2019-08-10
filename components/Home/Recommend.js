@@ -106,23 +106,21 @@ class Home extends Component {
                                             
                                             return (
                                                 <li key={play.id}>
-                                                    <div className="pic">
-                                                        <Img 
-                                                            {...{
-                                                                url: play.picUrl,
-                                                                size: 400,
-                                                            }}
-                                                        />
-                                                        <span className="count">
-                                                            <i className="iconfont icon-earphonee"></i>
-                                                            <em>{playCount}</em>
-                                                        </span>
-                                                    </div>
-                                                    <p className="desc">{play.name}</p>
-                                                    {/* <Link prefetch href={{ pathname: '/detail/playlist', query: { id: play.id } }}>
-                                                        <a className="mask"></a>
-                                                    </Link> */}
-                                                    <a className="mask" href={`/detail/playlist?id=${play.id}`}></a>
+                                                    <a href={`/detail/playlist?id=${play.id}`}>
+                                                        <div className="pic">
+                                                            <Img 
+                                                                {...{
+                                                                    url: play.picUrl,
+                                                                    size: 400,
+                                                                }}
+                                                            />
+                                                            <span className="count">
+                                                                <i className="iconfont icon-earphonee"></i>
+                                                                <em>{playCount}</em>
+                                                            </span>
+                                                        </div>
+                                                        <p className="desc">{play.name}</p>
+                                                    </a>
                                                 </li>
                                             )
                                         })
@@ -141,18 +139,17 @@ class Home extends Component {
                                         albumData.map(play => {
                                             return (
                                                 <li key={play.id}>
-                                                    <div className="pic">
-                                                        <Img 
-                                                            {...{
-                                                                url: play.picUrl,
-                                                                size: 400,
-                                                            }}
-                                                        />
-                                                    </div>
-                                                    <p className="desc">{play.name}</p>
-                                                    <Link prefetch href={{ pathname: '/detail/album', query: { id: play.id } }}>
-                                                        <a className="mask"></a>
-                                                    </Link>
+                                                    <Link prefetch href={{ pathname: '/detail/album', query: { id: play.id } }}><a>
+                                                        <div className="pic">
+                                                            <Img 
+                                                                {...{
+                                                                    url: play.picUrl,
+                                                                    size: 400,
+                                                                }}
+                                                            />
+                                                        </div>
+                                                        <p className="desc">{play.name}</p>
+                                                    </a></Link>
                                                 </li>
                                             )
                                         })

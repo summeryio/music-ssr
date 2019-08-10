@@ -305,21 +305,27 @@ function (_Component) {
           lineNumber: 16
         },
         __self: this
-      }, title), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+      }, title), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 17
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("i", {
         className: "iconfont icon-home",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 18
         },
         __self: this
-      })));
+      }))));
     }
   }]);
 
@@ -14873,7 +14879,7 @@ function fetchDetailAlbumFail() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fdetail%2Fplaylist&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fdetail%2Fplaylist.js ***!
   \************************************************************************************************************************************************************/
@@ -14896,5 +14902,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=playlist.js.map

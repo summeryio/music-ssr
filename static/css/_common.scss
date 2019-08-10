@@ -159,3 +159,9 @@
 		font-size: 26px;
 	}
 }
+#album {
+	.m-music__list .desc {
+		height: .4rem;
+		-webkit-line-clamp: 1;
+	}
+}

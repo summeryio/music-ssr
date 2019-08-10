@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -399,21 +399,27 @@ function (_Component) {
           lineNumber: 16
         },
         __self: this
-      }, title), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+      }, title), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 17
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("i", {
         className: "iconfont icon-home",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 18
         },
         __self: this
-      })));
+      }))));
     }
   }]);
 
@@ -1940,7 +1946,7 @@ function fetchDetailAlbumFail() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!****************************************!*\
   !*** multi ./pages/detail/playlist.js ***!
   \****************************************/
