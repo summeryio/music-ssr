@@ -1,15 +1,245 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/home/newsong.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/detail/playlist.js"],{
 
-/***/ "./components/Home/HomeModule.js":
+/***/ "./components/Detail/Playlist.js":
 /*!***************************************!*\
-  !*** ./components/Home/HomeModule.js ***!
+  !*** ./components/Detail/Playlist.js ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return HomeModule; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _redux_actions_detail__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../redux/actions/detail */ "./redux/actions/detail.js");
+/* harmony import */ var _core_util__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../core/util */ "./core/util.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../Header */ "./components/Header.js");
+/* harmony import */ var _Img__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../Img */ "./components/Img.js");
+/* harmony import */ var _SongList__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../SongList */ "./components/SongList.js");
+
+
+
+
+
+
+
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Detail/Playlist.js";
+
+
+
+
+
+
+
+
+
+var Playlist =
+/*#__PURE__*/
+function (_Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Playlist, _Component);
+
+  function Playlist(props) {
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Playlist);
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Playlist).call(this, props));
+    _this.state = {
+      playlistData: props.playlist
+    };
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Playlist, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var query = this.props.router.query;
+
+      if (this.props.isServer) {
+        Object(_redux_actions_detail__WEBPACK_IMPORTED_MODULE_10__["fetchDetailPlaylist"])(query.id);
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var playlistData = this.state.playlistData;
+      var creator = playlistData.creator || {};
+      var playCount = playlistData.playCount > 100000 ? _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(playlistData.playCount / 10000) + '万' : _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_1___default()(playlistData.playCount);
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        id: "playlist_detail",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        title: "",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "header",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "bg",
+        style: {
+          backgroundImage: "url(".concat(playlistData.coverImgUrl + '?param=400y400', ")")
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "cont",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "pic",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+        url: playlistData.coverImgUrl,
+        size: 400
+      }, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
+        className: "count",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
+        className: "iconfont icon-earphonee",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("em", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        },
+        __self: this
+      }, playCount || null)), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
+        className: "icon-cat",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60
+        },
+        __self: this
+      }, "\u6B4C\u5355")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "info",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+        className: "t",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }, playlistData.name), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "u-img",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+        url: creator.avatarUrl,
+        size: 60
+      }, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 65
+        },
+        __self: this
+      })), creator.nickname)))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_SongList__WEBPACK_IMPORTED_MODULE_14__["default"], {
+        songs: playlistData.tracks,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78
+        },
+        __self: this
+      }));
+    }
+  }], [{
+    key: "getDerivedStateFromProps",
+    value: function getDerivedStateFromProps(nextProps, prevState) {
+      if (nextProps.playlist && nextProps.playlist !== prevState.playlistData) {
+        return {
+          playlistData: nextProps.playlist
+        };
+      }
+
+      return null;
+    }
+  }]);
+
+  return Playlist;
+}(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    playlist: state.detail.playlist.playlists
+  };
+};
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return {
+    fetchDetailPlaylist: function fetchDetailPlaylist(id) {
+      dispatch(Object(_redux_actions_detail__WEBPACK_IMPORTED_MODULE_10__["fetchDetailPlaylist"])(id));
+    }
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_9__["connect"])(mapStateToProps, mapDispatchToProps)(Object(next_router__WEBPACK_IMPORTED_MODULE_8__["withRouter"])(Playlist)));
+
+/***/ }),
+
+/***/ "./components/Header.js":
+/*!******************************!*\
+  !*** ./components/Header.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Header; });
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
@@ -19,261 +249,84 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Home/HomeModule.js";
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Header.js";
 
 
 
-var HomeModule =
+
+var Header =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(HomeModule, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Header, _Component);
 
-  function HomeModule() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, HomeModule);
+  function Header() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Header);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(HomeModule).apply(this, arguments));
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Header).apply(this, arguments));
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(HomeModule, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Header, [{
     key: "render",
     value: function render() {
-      var _this$props = this.props,
-          id = _this$props.id,
-          nav = _this$props.nav,
-          children = _this$props.children;
+      var title = this.props.title;
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        id: id,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 9
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        id: "home_header",
+        id: "header_title",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 10
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
-        id: "home_nav",
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        onClick: function onClick() {
+          next_router__WEBPACK_IMPORTED_MODULE_7___default.a.back();
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("i", {
+        className: "iconfont icon-left",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 14
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
-        className: nav === 'recommend' ? 'active' : '',
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        href: "/home/recommend",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        },
-        __self: this
-      }, "\u4E2A\u6027\u63A8\u8350"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
-        className: nav === 'song' ? 'active' : '',
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 16
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        href: "/home/newsong",
+      }, title), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 20
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("i", {
+        className: "iconfont icon-home",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 20
         },
         __self: this
-      }, "\u65B0\u6B4C"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
-        className: nav === 'rank' ? 'active' : '',
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        href: "/home/rank",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        },
-        __self: this
-      }, "\u6392\u884C\u699C"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
-        className: nav === 'singer' ? 'active' : '',
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        href: "/home/singer",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        },
-        __self: this
-      }, "\u6B4C\u624B")))), children);
+      })));
     }
   }]);
 
-  return HomeModule;
+  return Header;
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
 
-
-/***/ }),
-
-/***/ "./components/Home/Newsong.js":
-/*!************************************!*\
-  !*** ./components/Home/Newsong.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _HomeModule__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./HomeModule */ "./components/Home/HomeModule.js");
-/* harmony import */ var _Loading__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Loading */ "./components/Loading.js");
-/* harmony import */ var _SongList__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../SongList */ "./components/SongList.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _redux_actions_home__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../redux/actions/home */ "./redux/actions/home.js");
-
-
-
-
-
-
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Home/Newsong.js";
-
-
-
-
-
-
-
-var Newsong =
-/*#__PURE__*/
-function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Newsong, _Component);
-
-  function Newsong(props) {
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Newsong);
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Newsong).call(this, props));
-    var newsong = props.newsong;
-    _this.state = {
-      newsongData: newsong
-    };
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Newsong, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      if (this.props.isServer) {
-        this.props.fetchNewsong();
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var newsongData = this.state.newsongData;
-      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_HomeModule__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-        id: 'new_song',
-        nav: 'song'
-      }, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_SongList__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        songs: newsongData,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 44
-        },
-        __self: this
-      }));
-    }
-  }], [{
-    key: "getDerivedStateFromProps",
-    value: function getDerivedStateFromProps(nextProps, prevState) {
-      if (nextProps.newsong && nextProps.newsong !== prevState.newsongData) {
-        return {
-          newsongData: nextProps.newsong
-        };
-      }
-
-      return null;
-    }
-  }]);
-
-  return Newsong;
-}(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
-
-;
-
-var mapStateToProps = function mapStateToProps(state) {
-  return {
-    newsong: state.home.newsong.newsongs
-  };
-};
-
-var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-  return {
-    fetchNewsong: function fetchNewsong() {
-      dispatch(Object(_redux_actions_home__WEBPACK_IMPORTED_MODULE_11__["fetchNewsong"])());
-    }
-  };
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_10__["connect"])(mapStateToProps, mapDispatchToProps)(Newsong));
 
 /***/ }),
 
@@ -653,6 +706,134 @@ var FETCH_DETAIL_ALBUM_SUCCESS = 'FETCH_DETAIL_ALBUM_SUCCESS';
 
 /***/ }),
 
+/***/ "./core/util.js":
+/*!**********************!*\
+  !*** ./core/util.js ***!
+  \**********************/
+/*! exports provided: splitArray, formatDateYMD, formatDate, formatDateHM, formatCommentDate, formatStringLine */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "splitArray", function() { return splitArray; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "formatDateYMD", function() { return formatDateYMD; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "formatDate", function() { return formatDate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "formatDateHM", function() { return formatDateHM; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "formatCommentDate", function() { return formatCommentDate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "formatStringLine", function() { return formatStringLine; });
+/**
+ * 
+ * @param {要拆分的数组} arr 
+ * @param {拆分的数组中length} len 
+ */
+function splitArray(arr, len) {
+  var result = [];
+
+  for (var i = 0; i < arr.length; i += len) {
+    result.push(arr.slice(i, i + len));
+  }
+
+  return result;
+} // 格式化时间戳成 年-月-日
+
+function formatDateYMD(timestamp) {
+  var ts = timestamp || new Date().getTime();
+  var year = new Date(ts).getFullYear();
+  var month = new Date(ts).getMonth() + 1 > 9 ? new Date(ts).getMonth() + 1 : '0' + (new Date(ts).getMonth() + 1);
+  var day = new Date(ts).getDate() > 9 ? new Date(ts).getDate() : '0' + new Date(ts).getDate();
+  return year + '-' + month + '-' + day;
+} // 格式化时间戳成 月-日
+
+function formatDate(timestamp) {
+  var ts = timestamp || new Date().getTime();
+  var month = new Date(ts).getMonth() + 1 > 9 ? new Date(ts).getMonth() + 1 : '0' + (new Date(ts).getMonth() + 1);
+  var day = new Date(ts).getDate() > 9 ? new Date(ts).getDate() : '0' + new Date(ts).getDate();
+  return month + '月' + day + '日';
+} // 格式化时间戳成 时-分
+
+function formatDateHM(timestamp) {
+  var ts = timestamp;
+  var min = new Date(ts).getMinutes() > 9 ? new Date(ts).getMinutes() : '0' + new Date(ts).getMinutes();
+  var sed = new Date(ts).getSeconds() > 9 ? new Date(ts).getSeconds() : '0' + new Date(ts).getSeconds();
+  return min + ':' + sed;
+}
+/**
+ * 格式化评论日期
+ * @param {时间戳} ts 
+ */
+
+function formatCommentDate(ts) {
+  var getDate = new Date(ts);
+  var year = getDate.getFullYear();
+  var month = getDate.getMonth() + 1;
+  var day = getDate.getDate();
+  var hour = getDate.getHours() > 9 ? getDate.getHours() : '0' + getDate.getHours();
+  var min = getDate.getMinutes() > 9 ? getDate.getMinutes() : '0' + getDate.getMinutes();
+
+  if (isThisYear(ts)) {
+    // 今年
+    if (isYestday(ts) || isToday(ts)) {
+      // 今天||昨天
+      if (isYestday(ts)) {
+        // 昨天
+        return '昨天' + hour + ':' + min;
+      } else {
+        // 今天
+        if (isHour(ts)) {
+          // 一小时内
+          if (isMinute(ts)) {
+            // 一分钟内
+            return '刚刚';
+          } else {
+            var minLeft = new Date(new Date().getTime() - ts).getMinutes();
+            return minLeft + '分钟前';
+          }
+        } else {
+          return hour + ':' + min;
+        }
+      }
+    } else {
+      return month + '月' + day + '日' + hour + ':' + min;
+    }
+  } else {
+    return year + '年' + month + '月' + day + '日';
+  }
+
+  function isThisYear(timestamp) {
+    return new Date(timestamp).getFullYear() === new Date().getFullYear();
+  }
+
+  function isYestday(timestamp) {
+    var nowDate = new Date();
+    var todayTamp = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate()).getTime();
+    var yestdayTamp = new Date(todayTamp - 24 * 3600 * 1000).getTime();
+    return timestamp < todayTamp && yestdayTamp <= timestamp;
+  }
+
+  function isToday(timestamp) {
+    var nowDate = new Date();
+    var todayTamp = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate()).getTime();
+    var nowTamp = new Date().getTime();
+    return timestamp >= todayTamp && timestamp < nowTamp;
+  }
+
+  function isHour(timestamp) {
+    var nowTamp = new Date().getTime();
+    return nowTamp - timestamp < 3600000;
+  }
+
+  function isMinute(timestamp) {
+    var nowTamp = new Date().getTime();
+    return nowTamp - timestamp < 60000;
+  }
+} // 将字符串中的换行符替换
+
+function formatStringLine(str) {
+  return str.replace(/\n/g, '<br />');
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js ***!
@@ -749,6 +930,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "./no
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/set-prototype-of */ "./node_modules/core-js/library/fn/object/set-prototype-of.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/parse-int.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/parse-int */ "./node_modules/core-js/library/fn/parse-int.js");
 
 /***/ }),
 
@@ -1592,6 +1784,19 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
 
 __webpack_require__(/*! ../../modules/es6.object.set-prototype-of */ "./node_modules/core-js/library/modules/es6.object.set-prototype-of.js");
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.setPrototypeOf;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/parse-int.js":
+/*!******************************************************!*\
+  !*** ./node_modules/core-js/library/fn/parse-int.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../modules/es6.parse-int */ "./node_modules/core-js/library/modules/es6.parse-int.js");
+module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/core-js/library/modules/_core.js").parseInt;
 
 
 /***/ }),
@@ -3369,6 +3574,26 @@ module.exports = function (KEY, exec) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/_parse-int.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_parse-int.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $parseInt = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js").parseInt;
+var $trim = __webpack_require__(/*! ./_string-trim */ "./node_modules/core-js/library/modules/_string-trim.js").trim;
+var ws = __webpack_require__(/*! ./_string-ws */ "./node_modules/core-js/library/modules/_string-ws.js");
+var hex = /^[-+]?0[xX]/;
+
+module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? function parseInt(str, radix) {
+  var string = $trim(String(str), 3);
+  return $parseInt(string, (radix >>> 0) || (hex.test(string) ? 16 : 10));
+} : $parseInt;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/_perform.js":
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_perform.js ***!
@@ -3686,6 +3911,60 @@ module.exports = function (TO_STRING) {
       : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
   };
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_string-trim.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_string-trim.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+var defined = __webpack_require__(/*! ./_defined */ "./node_modules/core-js/library/modules/_defined.js");
+var fails = __webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js");
+var spaces = __webpack_require__(/*! ./_string-ws */ "./node_modules/core-js/library/modules/_string-ws.js");
+var space = '[' + spaces + ']';
+var non = '\u200b\u0085';
+var ltrim = RegExp('^' + space + space + '*');
+var rtrim = RegExp(space + space + '*$');
+
+var exporter = function (KEY, exec, ALIAS) {
+  var exp = {};
+  var FORCE = fails(function () {
+    return !!spaces[KEY]() || non[KEY]() != non;
+  });
+  var fn = exp[KEY] = FORCE ? exec(trim) : spaces[KEY];
+  if (ALIAS) exp[ALIAS] = fn;
+  $export($export.P + $export.F * FORCE, 'String', exp);
+};
+
+// 1 -> String#trimLeft
+// 2 -> String#trimRight
+// 3 -> String#trim
+var trim = exporter.trim = function (string, TYPE) {
+  string = String(defined(string));
+  if (TYPE & 1) string = string.replace(ltrim, '');
+  if (TYPE & 2) string = string.replace(rtrim, '');
+  return string;
+};
+
+module.exports = exporter;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_string-ws.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_string-ws.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003' +
+  '\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF';
 
 
 /***/ }),
@@ -4196,6 +4475,21 @@ $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(/*! ./_set-pr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.parse-int.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.parse-int.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+var $parseInt = __webpack_require__(/*! ./_parse-int */ "./node_modules/core-js/library/modules/_parse-int.js");
+// 18.2.5 parseInt(string, radix)
+$export($export.G + $export.F * (parseInt != $parseInt), { parseInt: $parseInt });
 
 
 /***/ }),
@@ -6416,21 +6710,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhome%2Fnewsong&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fhome%2Fnewsong.js!./":
-/*!**************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhome%2Fnewsong&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fhome%2Fnewsong.js ***!
-  \**************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdetail%2Fplaylist&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fdetail%2Fplaylist.js!./":
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdetail%2Fplaylist&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fdetail%2Fplaylist.js ***!
+  \********************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/home/newsong", function() {
-      var page = __webpack_require__(/*! ./pages/home/newsong.js */ "./pages/home/newsong.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/detail/playlist", function() {
+      var page = __webpack_require__(/*! ./pages/detail/playlist.js */ "./pages/detail/playlist.js")
       if(true) {
-        module.hot.accept(/*! ./pages/home/newsong.js */ "./pages/home/newsong.js", function() {
-          if(!next.router.components["/home/newsong"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/home/newsong.js */ "./pages/home/newsong.js")
-          next.router.update("/home/newsong", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/detail/playlist.js */ "./pages/detail/playlist.js", function() {
+          if(!next.router.components["/detail/playlist"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/detail/playlist.js */ "./pages/detail/playlist.js")
+          next.router.update("/detail/playlist", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -14461,10 +14755,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/home/newsong.js":
-/*!*******************************!*\
-  !*** ./pages/home/newsong.js ***!
-  \*******************************/
+/***/ "./pages/detail/playlist.js":
+/*!**********************************!*\
+  !*** ./pages/detail/playlist.js ***!
+  \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -14473,36 +14767,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _components_Home_Newsong__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Home/Newsong */ "./components/Home/Newsong.js");
-/* harmony import */ var _redux_actions_home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../redux/actions/home */ "./redux/actions/home.js");
+/* harmony import */ var _components_Detail_Playlist__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Detail/Playlist */ "./components/Detail/Playlist.js");
+/* harmony import */ var _redux_actions_detail__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../redux/actions/detail */ "./redux/actions/detail.js");
 
 
 
 
 
-_components_Home_Newsong__WEBPACK_IMPORTED_MODULE_2__["default"].getInitialProps =
+_components_Detail_Playlist__WEBPACK_IMPORTED_MODULE_2__["default"].getInitialProps =
 /*#__PURE__*/
 function () {
   var _ref = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
   /*#__PURE__*/
   _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(props) {
-    var _props$ctx, store, isServer;
+    var _props$ctx, store, isServer, query;
 
     return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            _props$ctx = props.ctx, store = _props$ctx.store, isServer = _props$ctx.isServer;
-
-            if (store.getState().home.newsong.newsongs.length === 0) {
-              store.dispatch(Object(_redux_actions_home__WEBPACK_IMPORTED_MODULE_3__["fetchNewsong"])());
-            }
-
+            _props$ctx = props.ctx, store = _props$ctx.store, isServer = _props$ctx.isServer, query = _props$ctx.query;
+            store.getState().detail.playlist.playlists = {};
+            store.dispatch(Object(_redux_actions_detail__WEBPACK_IMPORTED_MODULE_3__["fetchDetailPlaylist"])(query.id));
             return _context.abrupt("return", {
               isServer: isServer
             });
 
-          case 3:
+          case 4:
           case "end":
             return _context.stop();
         }
@@ -14515,132 +14806,81 @@ function () {
   };
 }();
 
-/* harmony default export */ __webpack_exports__["default"] = (_components_Home_Newsong__WEBPACK_IMPORTED_MODULE_2__["default"]);
+/* harmony default export */ __webpack_exports__["default"] = (_components_Detail_Playlist__WEBPACK_IMPORTED_MODULE_2__["default"]);
 
 /***/ }),
 
-/***/ "./redux/actions/home.js":
-/*!*******************************!*\
-  !*** ./redux/actions/home.js ***!
-  \*******************************/
-/*! exports provided: fetchHomeBanner, fetchHomeBannerSuccess, fetchHomeBannerFail, fetchHomePlaylist, fetchHomePlaylistSuccess, fetchHomePlaylistFail, fetchHomeAlbum, fetchHomeAlbumSuccess, fetchHomeAlbumFail, fetchNewsong, fetchNewsongSuccess, fetchNewsongFail, fetchRank, fetchRankSuccess, fetchRankFail */
+/***/ "./redux/actions/detail.js":
+/*!*********************************!*\
+  !*** ./redux/actions/detail.js ***!
+  \*********************************/
+/*! exports provided: fetchDetailPlaylist, fetchDetailPlaylistSuccess, fetchDetailPlaylistFail, fetchDetailAlbum, fetchDetailAlbumSuccess, fetchDetailAlbumFail */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchHomeBanner", function() { return fetchHomeBanner; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchHomeBannerSuccess", function() { return fetchHomeBannerSuccess; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchHomeBannerFail", function() { return fetchHomeBannerFail; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchHomePlaylist", function() { return fetchHomePlaylist; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchHomePlaylistSuccess", function() { return fetchHomePlaylistSuccess; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchHomePlaylistFail", function() { return fetchHomePlaylistFail; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchHomeAlbum", function() { return fetchHomeAlbum; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchHomeAlbumSuccess", function() { return fetchHomeAlbumSuccess; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchHomeAlbumFail", function() { return fetchHomeAlbumFail; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchNewsong", function() { return fetchNewsong; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchNewsongSuccess", function() { return fetchNewsongSuccess; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchNewsongFail", function() { return fetchNewsongFail; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchRank", function() { return fetchRank; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchRankSuccess", function() { return fetchRankSuccess; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchRankFail", function() { return fetchRankFail; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDetailPlaylist", function() { return fetchDetailPlaylist; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDetailPlaylistSuccess", function() { return fetchDetailPlaylistSuccess; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDetailPlaylistFail", function() { return fetchDetailPlaylistFail; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDetailAlbum", function() { return fetchDetailAlbum; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDetailAlbumSuccess", function() { return fetchDetailAlbumSuccess; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchDetailAlbumFail", function() { return fetchDetailAlbumFail; });
 /* harmony import */ var _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../constants/ActionTypes */ "./constants/ActionTypes.js");
 
-function fetchHomeBanner(pageSize) {
+function fetchDetailPlaylist(id) {
   return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_BANNER"],
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_DETAIL_PLSYLIST"],
     payload: {
-      pageSize: pageSize
+      id: id
     }
   };
 }
-function fetchHomeBannerSuccess(data) {
+function fetchDetailPlaylistSuccess(data) {
   return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_BANNER_SUCCESS"],
-    payload: data
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_DETAIL_PLSYLIST_SUCCESS"],
+    payload: {
+      data: data
+    }
   };
 }
-function fetchHomeBannerFail() {
+function fetchDetailPlaylistFail() {
   return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_BANNER_FAIL"]
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_DETAIL_PLSYLIST_FAIL"]
   };
 }
-function fetchHomePlaylist() {
+function fetchDetailAlbum(id) {
   return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_PLAYLIST"]
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_DETAIL_ALBUM"],
+    payload: {
+      id: id
+    }
   };
 }
-function fetchHomePlaylistSuccess(data) {
+function fetchDetailAlbumSuccess(data, more) {
   return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_PLAYLIST_SUCCESS"],
-    payload: data
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_DETAIL_ALBUM_SUCCESS"],
+    payload: {
+      data: data,
+      more: more
+    }
   };
 }
-function fetchHomePlaylistFail() {
+function fetchDetailAlbumFail() {
   return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_PLAYLIST_FAIL"]
-  };
-}
-function fetchHomeAlbum() {
-  return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_ALBUM"]
-  };
-}
-function fetchHomeAlbumSuccess(data) {
-  return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_ALBUM_SUCCESS"],
-    payload: data
-  };
-}
-function fetchHomeAlbumFail() {
-  return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_ALBUM_FAIL"]
-  };
-} // 新歌
-
-function fetchNewsong() {
-  return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_NEWSONG"]
-  };
-}
-function fetchNewsongSuccess(data) {
-  return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_NEWSONG_SUCCESS"],
-    payload: data
-  };
-}
-function fetchNewsongFail() {
-  return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_NEWSONG_FAIL"]
-  };
-} // 榜单
-
-function fetchRank() {
-  return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_RANK"]
-  };
-}
-function fetchRankSuccess(data) {
-  return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_RANK_SUCCESS"],
-    payload: data
-  };
-}
-function fetchRankFail() {
-  return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_RANK_FAIL"]
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_DETAIL_ALBUM_FAIL"]
   };
 }
 
 /***/ }),
 
 /***/ 2:
-/*!******************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fhome%2Fnewsong&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fhome%2Fnewsong.js ***!
-  \******************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fdetail%2Fplaylist&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fdetail%2Fplaylist.js ***!
+  \************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fhome%2Fnewsong&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fhome%2Fnewsong.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhome%2Fnewsong&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fhome%2Fnewsong.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fdetail%2Fplaylist&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fdetail%2Fplaylist.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdetail%2Fplaylist&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fdetail%2Fplaylist.js!./");
 
 
 /***/ }),
@@ -14657,4 +14897,4 @@ module.exports = dll_6dc2816e14fab51b8269;
 /***/ })
 
 },[[2,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=newsong.js.map
+//# sourceMappingURL=playlist.js.map

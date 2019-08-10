@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/home/recommend.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
 /***/ "./components/Home/HomeModule.js":
 /*!***************************************!*\
@@ -6701,21 +6701,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhome%2Frecommend&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fhome%2Frecommend.js!./":
-/*!******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhome%2Frecommend&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fhome%2Frecommend.js ***!
-  \******************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Findex.js!./":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Findex.js ***!
+  \***************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/home/recommend", function() {
-      var page = __webpack_require__(/*! ./pages/home/recommend.js */ "./pages/home/recommend.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
+      var page = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
       if(true) {
-        module.hot.accept(/*! ./pages/home/recommend.js */ "./pages/home/recommend.js", function() {
-          if(!next.router.components["/home/recommend"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/home/recommend.js */ "./pages/home/recommend.js")
-          next.router.update("/home/recommend", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
+          if(!next.router.components["/"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+          next.router.update("/", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -14746,10 +14746,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/home/recommend.js":
-/*!*********************************!*\
-  !*** ./pages/home/recommend.js ***!
-  \*********************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -14758,8 +14758,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _components_Home_Recommend__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Home/Recommend */ "./components/Home/Recommend.js");
-/* harmony import */ var _redux_actions_home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../redux/actions/home */ "./redux/actions/home.js");
+/* harmony import */ var _components_Home_Recommend__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Home/Recommend */ "./components/Home/Recommend.js");
+/* harmony import */ var _redux_actions_home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../redux/actions/home */ "./redux/actions/home.js");
 
 
 
@@ -14927,13 +14927,13 @@ function fetchRankFail() {
 /***/ }),
 
 /***/ 1:
-/*!**********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fhome%2Frecommend&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fhome%2Frecommend.js ***!
-  \**********************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Findex.js ***!
+  \*******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fhome%2Frecommend&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fhome%2Frecommend.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhome%2Frecommend&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Fhome%2Frecommend.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Findex.js!./");
 
 
 /***/ }),
@@ -14950,4 +14950,4 @@ module.exports = dll_6dc2816e14fab51b8269;
 /***/ })
 
 },[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=recommend.js.map
+//# sourceMappingURL=index.js.map

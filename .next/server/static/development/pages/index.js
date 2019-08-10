@@ -1,7 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = require('../../../../ssr-module-cache.js');
+/******/ 	var installedModules = require('../../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -1813,10 +1813,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/home/recommend.js":
-/*!*********************************!*\
-  !*** ./pages/home/recommend.js ***!
-  \*********************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1825,8 +1825,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _components_Home_Recommend__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Home/Recommend */ "./components/Home/Recommend.js");
-/* harmony import */ var _redux_actions_home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../redux/actions/home */ "./redux/actions/home.js");
+/* harmony import */ var _components_Home_Recommend__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Home/Recommend */ "./components/Home/Recommend.js");
+/* harmony import */ var _redux_actions_home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../redux/actions/home */ "./redux/actions/home.js");
 
 
 
@@ -1994,13 +1994,13 @@ function fetchRankFail() {
 /***/ }),
 
 /***/ 3:
-/*!***************************************!*\
-  !*** multi ./pages/home/recommend.js ***!
-  \***************************************/
+/*!******************************!*\
+  !*** multi ./pages/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/a123/Desktop/Web/music-ssr/pages/home/recommend.js */"./pages/home/recommend.js");
+module.exports = __webpack_require__(/*! /Users/a123/Desktop/Web/music-ssr/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -2215,4 +2215,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=recommend.js.map
+//# sourceMappingURL=index.js.map
