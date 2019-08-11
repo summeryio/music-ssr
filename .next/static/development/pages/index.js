@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
 
 /***/ "./components/Home/HomeModule.js":
 /*!***************************************!*\
@@ -24,7 +24,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Home/HomeModule.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Home\\HomeModule.js";
 
 
 
@@ -193,7 +193,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Home/Recommend.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Home\\Recommend.js";
 
 
 
@@ -607,7 +607,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Img.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Img.js";
 
 
 
@@ -712,7 +712,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Loading.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Loading.js";
 
 
 var Loading =
@@ -758,7 +758,7 @@ function (_Component) {
 /*!**********************************!*\
   !*** ./constants/ActionTypes.js ***!
   \**********************************/
-/*! exports provided: FETCH_HOME_BANNER, FETCH_HOME_BANNER_FAIL, FETCH_HOME_BANNER_SUCCESS, FETCH_HOME_PLAYLIST, FETCH_HOME_PLAYLIST_FAIL, FETCH_HOME_PLAYLIST_SUCCESS, FETCH_HOME_ALBUM, FETCH_HOME_ALBUM_FAIL, FETCH_HOME_ALBUM_SUCCESS, FETCH_HOME_NEWSONG, FETCH_HOME_NEWSONG_FAIL, FETCH_HOME_NEWSONG_SUCCESS, FETCH_HOME_RANK, FETCH_HOME_RANK_FAIL, FETCH_HOME_RANK_SUCCESS, FETCH_LIST_PLSYLIST, FETCH_LIST_PLSYLIST_FAIL, FETCH_LIST_PLSYLIST_SUCCESS, FETCH_LIST_ALBUM, FETCH_LIST_ALBUM_FAIL, FETCH_LIST_ALBUM_SUCCESS, FETCH_DETAIL_PLSYLIST, FETCH_DETAIL_PLSYLIST_FAIL, FETCH_DETAIL_PLSYLIST_SUCCESS, FETCH_DETAIL_ALBUM, FETCH_DETAIL_ALBUM_FAIL, FETCH_DETAIL_ALBUM_SUCCESS */
+/*! exports provided: FETCH_HOME_BANNER, FETCH_HOME_BANNER_FAIL, FETCH_HOME_BANNER_SUCCESS, FETCH_HOME_PLAYLIST, FETCH_HOME_PLAYLIST_FAIL, FETCH_HOME_PLAYLIST_SUCCESS, FETCH_HOME_ALBUM, FETCH_HOME_ALBUM_FAIL, FETCH_HOME_ALBUM_SUCCESS, FETCH_HOME_NEWSONG, FETCH_HOME_NEWSONG_FAIL, FETCH_HOME_NEWSONG_SUCCESS, FETCH_HOME_RANK, FETCH_HOME_RANK_FAIL, FETCH_HOME_RANK_SUCCESS, FETCH_LIST_PLSYLIST, FETCH_LIST_PLSYLIST_FAIL, FETCH_LIST_PLSYLIST_SUCCESS, FETCH_LIST_ALBUM, FETCH_LIST_ALBUM_FAIL, FETCH_LIST_ALBUM_SUCCESS, FETCH_DETAIL_PLSYLIST, FETCH_DETAIL_PLSYLIST_FAIL, FETCH_DETAIL_PLSYLIST_SUCCESS, FETCH_DETAIL_ALBUM, FETCH_DETAIL_ALBUM_FAIL, FETCH_DETAIL_ALBUM_SUCCESS, FETCH_COMMON_COMMENT, FETCH_COMMON_COMMENT_FAIL, FETCH_COMMON_COMMENT_SUCCESS */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -790,6 +790,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_ALBUM", function() { return FETCH_DETAIL_ALBUM; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_ALBUM_FAIL", function() { return FETCH_DETAIL_ALBUM_FAIL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_ALBUM_SUCCESS", function() { return FETCH_DETAIL_ALBUM_SUCCESS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_COMMON_COMMENT", function() { return FETCH_COMMON_COMMENT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_COMMON_COMMENT_FAIL", function() { return FETCH_COMMON_COMMENT_FAIL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_COMMON_COMMENT_SUCCESS", function() { return FETCH_COMMON_COMMENT_SUCCESS; });
 // ================= 首页 ==================== //
 var FETCH_HOME_BANNER = 'FETCH_HOME_BANNER';
 var FETCH_HOME_BANNER_FAIL = 'FETCH_HOME_BANNER_FAIL';
@@ -819,7 +822,11 @@ var FETCH_DETAIL_PLSYLIST_FAIL = 'FETCH_DETAIL_PLSYLIST_FAIL';
 var FETCH_DETAIL_PLSYLIST_SUCCESS = 'FETCH_DETAIL_PLSYLIST_SUCCESS';
 var FETCH_DETAIL_ALBUM = 'FETCH_DETAIL_ALBUM';
 var FETCH_DETAIL_ALBUM_FAIL = 'FETCH_DETAIL_ALBUM_FAIL';
-var FETCH_DETAIL_ALBUM_SUCCESS = 'FETCH_DETAIL_ALBUM_SUCCESS';
+var FETCH_DETAIL_ALBUM_SUCCESS = 'FETCH_DETAIL_ALBUM_SUCCESS'; // ================= 公用评论 ==================== //
+
+var FETCH_COMMON_COMMENT = 'FETCH_COMMON_COMMENT';
+var FETCH_COMMON_COMMENT_FAIL = 'FETCH_COMMON_COMMENT_FAIL';
+var FETCH_COMMON_COMMENT_SUCCESS = 'FETCH_COMMON_COMMENT_SUCCESS';
 
 /***/ }),
 
@@ -6699,10 +6706,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Findex.js!./":
-/*!***************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Findex.js ***!
-  \***************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Csummeryio%5CDesktop%5Cmusic-ssr%5Cpages%5Cindex.js!./":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Csummeryio%5CDesktop%5Cmusic-ssr%5Cpages%5Cindex.js ***!
+  \******************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14925,13 +14932,13 @@ function fetchRankFail() {
 /***/ }),
 
 /***/ 3:
-/*!*******************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Findex.js ***!
-  \*******************************************************************************************************************************/
+/*!**********************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Csummeryio%5CDesktop%5Cmusic-ssr%5Cpages%5Cindex.js ***!
+  \**********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Csummeryio%5CDesktop%5Cmusic-ssr%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Csummeryio%5CDesktop%5Cmusic-ssr%5Cpages%5Cindex.js!./");
 
 
 /***/ }),

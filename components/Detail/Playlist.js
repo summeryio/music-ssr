@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'next/router'
 import { connect } from 'react-redux';
 import { fetchDetailPlaylist } from '../../redux/actions/detail';
+import LazyLoad from 'react-lazyload';
 
 import {formatDateYMD} from '../../core/util'
 import Header from '../Header'
@@ -77,7 +78,9 @@ class Playlist extends Component {
                     {/* <PlayAll songs={playlistData.tracks} /> */}
                 </div>
                 {/* <SongList songs={playlistData.tracks} /> */}
-                <Comment />
+                <LazyLoad>
+                    <Comment />
+                </LazyLoad>
             </div>
         )
     }

@@ -102,7 +102,6 @@ module.exports =
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Comment; });
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
@@ -112,15 +111,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react_lazyload__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-lazyload */ "react-lazyload");
 /* harmony import */ var react_lazyload__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_lazyload__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _Loading__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Loading */ "./components/Loading.js");
-/* harmony import */ var _Img__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Img */ "./components/Img.js");
-/* harmony import */ var _PullLoadData__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./PullLoadData */ "./components/PullLoadData.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _redux_actions_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../redux/actions/common */ "./redux/actions/common.js");
+/* harmony import */ var _Loading__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Loading */ "./components/Loading.js");
+/* harmony import */ var _Img__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Img */ "./components/Img.js");
+/* harmony import */ var _PullLoadData__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./PullLoadData */ "./components/PullLoadData.js");
 
 
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Comment.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Comment.js";
+
+
 
 
 
@@ -139,60 +143,65 @@ function (_Component) {
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Comment, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      Object(_redux_actions_common__WEBPACK_IMPORTED_MODULE_8__["fetchCommonComment"])(2890484841);
+    }
+  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         id: "comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 23
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h6", {
         className: "t",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 24
         },
         __self: this
       }, "\u7CBE\u5F69\u8BC4\u8BBA"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 25
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 26
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "pic",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 27
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
         src: "https://p2.music.126.net/LV_gejukDUaZVDrhHNXZ6w==/109951164164207949.webp?imageView&thumbnail=60x0&quality=75&tostatic=0&type=webp",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 27
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "intro",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 28
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "top",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 29
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
@@ -200,72 +209,93 @@ function (_Component) {
         className: "name",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 30
         },
         __self: this
       }, "\u53D1\u862A\u7684\u8461\u8404\u5E72"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
         className: "time",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 31
         },
         __self: this
       }, "2019\u5E747\u670820\u65E5"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
         className: "like",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 32
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 33
         },
         __self: this
       }, "99"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("i", {
         className: "iconfont icon-like",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 34
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "replied",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 39
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
         className: "self",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 40
         },
         __self: this
       }, "\u56DE\u590D", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 40
         },
         __self: this
       }, "@\u53D1\u862A\u7684\u8461\u8404\u5E72"), "\uFF1A\u54C8\u54C8\u54C8\u54C8"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
         className: "to",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 41
         },
         __self: this
       }, "@\u53D1\u862A\u7684\u8461\u8404\u5E72\u4E3A\u4EC0\u4E48\u5C01\u9762\u662F\u83DC\u5C0F\u59D0\uFF0C\u82E5\u4E0D\u662F\u8FD9\u5C01\u9762\u5404\u4F4D\u600E\u4E48\u4F1A\u76F8\u89C1\u5462"))))));
+    }
+  }], [{
+    key: "getDerivedStateFromProps",
+    value: function getDerivedStateFromProps(nextProps, prevState) {
+      console.log(nextProps);
+      return null;
     }
   }]);
 
   return Comment;
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    comment: state.common.comment.comments,
+    more: state.common.comment.more
+  };
+};
 
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return {
+    fetchCommonComment: function fetchCommonComment(id) {
+      dispatch(Object(_redux_actions_common__WEBPACK_IMPORTED_MODULE_8__["fetchCommonComment"])(id));
+    }
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_7__["connect"])(mapStateToProps, mapDispatchToProps)(Comment));
 
 /***/ }),
 
@@ -293,11 +323,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _redux_actions_detail__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../redux/actions/detail */ "./redux/actions/detail.js");
-/* harmony import */ var _core_util__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../core/util */ "./core/util.js");
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../Header */ "./components/Header.js");
-/* harmony import */ var _Img__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../Img */ "./components/Img.js");
-/* harmony import */ var _SongList__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../SongList */ "./components/SongList.js");
-/* harmony import */ var _Comment__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../Comment */ "./components/Comment.js");
+/* harmony import */ var react_lazyload__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-lazyload */ "react-lazyload");
+/* harmony import */ var react_lazyload__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react_lazyload__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _core_util__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../core/util */ "./core/util.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../Header */ "./components/Header.js");
+/* harmony import */ var _Img__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../Img */ "./components/Img.js");
+/* harmony import */ var _SongList__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../SongList */ "./components/SongList.js");
+/* harmony import */ var _Comment__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../Comment */ "./components/Comment.js");
 
 
 
@@ -305,7 +337,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Detail/Playlist.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Detail\\Playlist.js";
+
 
 
 
@@ -352,21 +385,21 @@ function (_Component) {
         id: "playlist_detail",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 46
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_13__["default"], {
         title: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 47
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "header",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 48
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
@@ -376,96 +409,102 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 49
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "cont",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 50
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "pic",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 51
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_14__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
         url: playlistData.coverImgUrl,
         size: 400
       }, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 52
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
         className: "count",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 58
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
         className: "iconfont icon-earphonee",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 59
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("em", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 60
         },
         __self: this
       }, playCount || null)), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
         className: "icon-cat",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 62
         },
         __self: this
       }, "\u6B4C\u5355")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "info",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 64
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
         className: "t",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 65
         },
         __self: this
       }, playlistData.name), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "u-img",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 66
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_14__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
         url: creator.avatarUrl,
         size: 60
       }, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 67
         },
         __self: this
-      })), creator.nickname)))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Comment__WEBPACK_IMPORTED_MODULE_15__["default"], {
+      })), creator.nickname)))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_lazyload__WEBPACK_IMPORTED_MODULE_11___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 81
         },
         __self: this
-      }));
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Comment__WEBPACK_IMPORTED_MODULE_16__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 82
+        },
+        __self: this
+      })));
     }
   }], [{
     key: "getDerivedStateFromProps",
@@ -527,7 +566,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Header.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Header.js";
 
 
 
@@ -630,7 +669,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Img.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Img.js";
 
 
 
@@ -735,7 +774,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Loading.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\Loading.js";
 
 
 var Loading =
@@ -800,7 +839,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/PullLoadData.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\PullLoadData.js";
 
 
 
@@ -1006,7 +1045,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/SongList.js";
+var _jsxFileName = "C:\\Users\\summeryio\\Desktop\\music-ssr\\components\\SongList.js";
 
 
 
@@ -1117,7 +1156,7 @@ function (_Component) {
 /*!**********************************!*\
   !*** ./constants/ActionTypes.js ***!
   \**********************************/
-/*! exports provided: FETCH_HOME_BANNER, FETCH_HOME_BANNER_FAIL, FETCH_HOME_BANNER_SUCCESS, FETCH_HOME_PLAYLIST, FETCH_HOME_PLAYLIST_FAIL, FETCH_HOME_PLAYLIST_SUCCESS, FETCH_HOME_ALBUM, FETCH_HOME_ALBUM_FAIL, FETCH_HOME_ALBUM_SUCCESS, FETCH_HOME_NEWSONG, FETCH_HOME_NEWSONG_FAIL, FETCH_HOME_NEWSONG_SUCCESS, FETCH_HOME_RANK, FETCH_HOME_RANK_FAIL, FETCH_HOME_RANK_SUCCESS, FETCH_LIST_PLSYLIST, FETCH_LIST_PLSYLIST_FAIL, FETCH_LIST_PLSYLIST_SUCCESS, FETCH_LIST_ALBUM, FETCH_LIST_ALBUM_FAIL, FETCH_LIST_ALBUM_SUCCESS, FETCH_DETAIL_PLSYLIST, FETCH_DETAIL_PLSYLIST_FAIL, FETCH_DETAIL_PLSYLIST_SUCCESS, FETCH_DETAIL_ALBUM, FETCH_DETAIL_ALBUM_FAIL, FETCH_DETAIL_ALBUM_SUCCESS */
+/*! exports provided: FETCH_HOME_BANNER, FETCH_HOME_BANNER_FAIL, FETCH_HOME_BANNER_SUCCESS, FETCH_HOME_PLAYLIST, FETCH_HOME_PLAYLIST_FAIL, FETCH_HOME_PLAYLIST_SUCCESS, FETCH_HOME_ALBUM, FETCH_HOME_ALBUM_FAIL, FETCH_HOME_ALBUM_SUCCESS, FETCH_HOME_NEWSONG, FETCH_HOME_NEWSONG_FAIL, FETCH_HOME_NEWSONG_SUCCESS, FETCH_HOME_RANK, FETCH_HOME_RANK_FAIL, FETCH_HOME_RANK_SUCCESS, FETCH_LIST_PLSYLIST, FETCH_LIST_PLSYLIST_FAIL, FETCH_LIST_PLSYLIST_SUCCESS, FETCH_LIST_ALBUM, FETCH_LIST_ALBUM_FAIL, FETCH_LIST_ALBUM_SUCCESS, FETCH_DETAIL_PLSYLIST, FETCH_DETAIL_PLSYLIST_FAIL, FETCH_DETAIL_PLSYLIST_SUCCESS, FETCH_DETAIL_ALBUM, FETCH_DETAIL_ALBUM_FAIL, FETCH_DETAIL_ALBUM_SUCCESS, FETCH_COMMON_COMMENT, FETCH_COMMON_COMMENT_FAIL, FETCH_COMMON_COMMENT_SUCCESS */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1149,6 +1188,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_ALBUM", function() { return FETCH_DETAIL_ALBUM; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_ALBUM_FAIL", function() { return FETCH_DETAIL_ALBUM_FAIL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_ALBUM_SUCCESS", function() { return FETCH_DETAIL_ALBUM_SUCCESS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_COMMON_COMMENT", function() { return FETCH_COMMON_COMMENT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_COMMON_COMMENT_FAIL", function() { return FETCH_COMMON_COMMENT_FAIL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_COMMON_COMMENT_SUCCESS", function() { return FETCH_COMMON_COMMENT_SUCCESS; });
 // ================= 首页 ==================== //
 var FETCH_HOME_BANNER = 'FETCH_HOME_BANNER';
 var FETCH_HOME_BANNER_FAIL = 'FETCH_HOME_BANNER_FAIL';
@@ -1178,7 +1220,11 @@ var FETCH_DETAIL_PLSYLIST_FAIL = 'FETCH_DETAIL_PLSYLIST_FAIL';
 var FETCH_DETAIL_PLSYLIST_SUCCESS = 'FETCH_DETAIL_PLSYLIST_SUCCESS';
 var FETCH_DETAIL_ALBUM = 'FETCH_DETAIL_ALBUM';
 var FETCH_DETAIL_ALBUM_FAIL = 'FETCH_DETAIL_ALBUM_FAIL';
-var FETCH_DETAIL_ALBUM_SUCCESS = 'FETCH_DETAIL_ALBUM_SUCCESS';
+var FETCH_DETAIL_ALBUM_SUCCESS = 'FETCH_DETAIL_ALBUM_SUCCESS'; // ================= 公用评论 ==================== //
+
+var FETCH_COMMON_COMMENT = 'FETCH_COMMON_COMMENT';
+var FETCH_COMMON_COMMENT_FAIL = 'FETCH_COMMON_COMMENT_FAIL';
+var FETCH_COMMON_COMMENT_SUCCESS = 'FETCH_COMMON_COMMENT_SUCCESS';
 
 /***/ }),
 
@@ -2259,6 +2305,44 @@ function () {
 
 /***/ }),
 
+/***/ "./redux/actions/common.js":
+/*!*********************************!*\
+  !*** ./redux/actions/common.js ***!
+  \*********************************/
+/*! exports provided: fetchCommonComment, fetchCommonCommentSuccess, fetchCommonCommentFail */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchCommonComment", function() { return fetchCommonComment; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchCommonCommentSuccess", function() { return fetchCommonCommentSuccess; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchCommonCommentFail", function() { return fetchCommonCommentFail; });
+/* harmony import */ var _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../constants/ActionTypes */ "./constants/ActionTypes.js");
+
+function fetchCommonComment(id) {
+  return {
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_COMMON_COMMENT"],
+    payload: {
+      id: id
+    }
+  };
+}
+function fetchCommonCommentSuccess(data) {
+  return {
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_COMMON_COMMENT_SUCCESS"],
+    payload: {
+      data: data
+    }
+  };
+}
+function fetchCommonCommentFail() {
+  return {
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_COMMON_COMMENT_FAIL"]
+  };
+}
+
+/***/ }),
+
 /***/ "./redux/actions/detail.js":
 /*!*********************************!*\
   !*** ./redux/actions/detail.js ***!
@@ -2329,7 +2413,7 @@ function fetchDetailAlbumFail() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/a123/Desktop/Web/music-ssr/pages/detail/playlist.js */"./pages/detail/playlist.js");
+module.exports = __webpack_require__(/*! C:\Users\summeryio\Desktop\music-ssr\pages\detail\playlist.js */"./pages/detail/playlist.js");
 
 
 /***/ }),

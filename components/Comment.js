@@ -1,11 +1,23 @@
 import React, { Component } from 'react'
 import LazyLoad from 'react-lazyload';
+import { connect } from 'react-redux';
+import { fetchCommonComment } from '../redux/actions/common';
 
 import Loading from './Loading'
 import Img from './Img'
 import PullLoadData from './PullLoadData'
 
-export default class Comment extends Component {
+class Comment extends Component {
+    componentDidMount() {
+        fetchCommonComment(2890484841)
+    }
+
+    static getDerivedStateFromProps(nextProps, prevState) {
+        console.log(nextProps);
+        
+        return null; 
+    }
+    
     render() {
         return (
             <div id="comment">
@@ -35,3 +47,16 @@ export default class Comment extends Component {
         )
     }
 }
+
+const mapStateToProps = state => ({
+    comment: state.common.comment.comments,
+    more:  state.common.comment.more
+});
+  
+const mapDispatchToProps = dispatch => ({
+    fetchCommonComment(id) {
+      dispatch(fetchCommonComment(id));
+    }
+});
+  
+export default connect(mapStateToProps, mapDispatchToProps)(Comment);
