@@ -7,6 +7,7 @@ import {formatDateYMD} from '../../core/util'
 import Header from '../Header'
 import Img from '../Img'
 import SongList from '../SongList'
+import Comment from '../Comment'
 
 class Playlist extends Component {
     constructor(props) {
@@ -75,7 +76,8 @@ class Playlist extends Component {
                     </div>
                     {/* <PlayAll songs={playlistData.tracks} /> */}
                 </div>
-                <SongList songs={playlistData.tracks} />
+                {/* <SongList songs={playlistData.tracks} /> */}
+                <Comment />
             </div>
         )
     }

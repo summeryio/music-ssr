@@ -93,6 +93,182 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/Comment.js":
+/*!*******************************!*\
+  !*** ./components/Comment.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Comment; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_lazyload__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-lazyload */ "react-lazyload");
+/* harmony import */ var react_lazyload__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_lazyload__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _Loading__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Loading */ "./components/Loading.js");
+/* harmony import */ var _Img__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Img */ "./components/Img.js");
+/* harmony import */ var _PullLoadData__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./PullLoadData */ "./components/PullLoadData.js");
+
+
+
+
+
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Comment.js";
+
+
+
+
+
+
+var Comment =
+/*#__PURE__*/
+function (_Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Comment, _Component);
+
+  function Comment() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Comment);
+
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Comment).apply(this, arguments));
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Comment, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        id: "comment",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h6", {
+        className: "t",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, "\u7CBE\u5F69\u8BC4\u8BBA"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "pic",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "https://p2.music.126.net/LV_gejukDUaZVDrhHNXZ6w==/109951164164207949.webp?imageView&thumbnail=60x0&quality=75&tostatic=0&type=webp",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "intro",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "top",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "/",
+        className: "name",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }, "\u53D1\u862A\u7684\u8461\u8404\u5E72"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        className: "time",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
+      }, "2019\u5E747\u670820\u65E5"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        className: "like",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, "99"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("i", {
+        className: "iconfont icon-like",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "replied",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        className: "self",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }, "\u56DE\u590D", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }, "@\u53D1\u862A\u7684\u8461\u8404\u5E72"), "\uFF1A\u54C8\u54C8\u54C8\u54C8"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        className: "to",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, "@\u53D1\u862A\u7684\u8461\u8404\u5E72\u4E3A\u4EC0\u4E48\u5C01\u9762\u662F\u83DC\u5C0F\u59D0\uFF0C\u82E5\u4E0D\u662F\u8FD9\u5C01\u9762\u5404\u4F4D\u600E\u4E48\u4F1A\u76F8\u89C1\u5462"))))));
+    }
+  }]);
+
+  return Comment;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+
+
+/***/ }),
+
 /***/ "./components/Detail/Playlist.js":
 /*!***************************************!*\
   !*** ./components/Detail/Playlist.js ***!
@@ -121,6 +297,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../Header */ "./components/Header.js");
 /* harmony import */ var _Img__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../Img */ "./components/Img.js");
 /* harmony import */ var _SongList__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../SongList */ "./components/SongList.js");
+/* harmony import */ var _Comment__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../Comment */ "./components/Comment.js");
 
 
 
@@ -129,6 +306,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Detail/Playlist.js";
+
 
 
 
@@ -174,21 +352,21 @@ function (_Component) {
         id: "playlist_detail",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_12__["default"], {
         title: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 46
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "header",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 47
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
@@ -198,21 +376,21 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 48
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "cont",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 49
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "pic",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 50
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -221,55 +399,55 @@ function (_Component) {
       }, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 51
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
         className: "count",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 57
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
         className: "iconfont icon-earphonee",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 58
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("em", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 59
         },
         __self: this
       }, playCount || null)), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
         className: "icon-cat",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 61
         },
         __self: this
       }, "\u6B4C\u5355")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "info",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 63
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
         className: "t",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 64
         },
         __self: this
       }, playlistData.name), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "u-img",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 65
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Img__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -278,14 +456,13 @@ function (_Component) {
       }, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 66
         },
         __self: this
-      })), creator.nickname)))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_SongList__WEBPACK_IMPORTED_MODULE_14__["default"], {
-        songs: playlistData.tracks,
+      })), creator.nickname)))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Comment__WEBPACK_IMPORTED_MODULE_15__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 80
         },
         __self: this
       }));
@@ -594,6 +771,205 @@ function (_Component) {
   }]);
 
   return Loading;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./components/PullLoadData.js":
+/*!************************************!*\
+  !*** ./components/PullLoadData.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PullLoadData; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _Loading__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Loading */ "./components/Loading.js");
+
+
+
+
+
+var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/PullLoadData.js";
+
+
+
+var PullLoadData =
+/*#__PURE__*/
+function (_Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(PullLoadData, _Component);
+
+  function PullLoadData(props) {
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, PullLoadData);
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(PullLoadData).call(this, props));
+    _this.state = {
+      page: 0,
+      isFoot: true,
+      len: 0
+    };
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(PullLoadData, [{
+    key: "touchStart",
+    //接触屏幕
+    value: function touchStart(e) {
+      this.startx = e.touches[0].pageX;
+      this.starty = e.touches[0].pageY;
+    } //离开屏幕（[e.changedTouches][2]）
+
+  }, {
+    key: "touchEnd",
+    value: function touchEnd(e) {
+      var endx, endy;
+      endx = e.changedTouches[0].pageX;
+      endy = e.changedTouches[0].pageY;
+      var direction = this.getDirection(this.startx, this.starty, endx, endy);
+
+      switch (direction) {
+        case 0:
+          // console.log("未滑动！");
+          break;
+
+        case 1:
+          // console.log("向上！");
+          this.loadData();
+          break;
+
+        case 2:
+          // console.log("向下！");
+          break;
+
+        case 3:
+          // console.log("向左！");
+          break;
+
+        case 4:
+          // console.log("向右！");
+          break;
+
+        default:
+      }
+    } //触摸点和离开点连线与[x轴角度][3]
+
+  }, {
+    key: "getAngle",
+    value: function getAngle(angx, angy) {
+      return Math.atan2(angy, angx) * 180 / Math.PI;
+    } //根据接触和离开判断方向 1向上 2向下 3向左 4向右 0未发生滑动（[Math.abs][4]）
+
+  }, {
+    key: "getDirection",
+    value: function getDirection(startx, starty, endx, endy) {
+      var angx = endx - startx;
+      var angy = endy - starty;
+      var result = 0; //如果滑动距离太短
+
+      if (Math.abs(angx) < 2 && Math.abs(angy) < 2) {
+        return result;
+      }
+
+      var angle = this.getAngle(angx, angy);
+
+      if (angle >= -135 && angle <= -45) {
+        result = 1;
+      } else if (angle > 45 && angle < 135) {
+        result = 2;
+      } else if (angle >= 135 && angle <= 180 || angle >= -180 && angle < -135) {
+        result = 3;
+      } else if (angle >= -45 && angle <= 45) {
+        result = 4;
+      }
+
+      return result;
+    }
+  }, {
+    key: "loadData",
+    value: function loadData() {
+      var _this2 = this;
+
+      var fetchData = this.props.fetchData;
+      var dataHeight = this.refs.onPullUp.clientHeight;
+      var scrollHeight = document.body.scrollTop || document.documentElement.scrollTop;
+      var screenHeight = document.documentElement.clientHeight;
+      var h = 10; //自定义距离底部多少时concat数据
+
+      if (dataHeight - scrollHeight - h < screenHeight && this.state.isFoot) {
+        this.setState({
+          isFoot: false,
+          page: this.state.page + 1
+        }, function () {
+          fetchData(_this2.state.page);
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          more = _this$props.more,
+          len = _this$props.len,
+          children = _this$props.children;
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "scroll_wrapper",
+        ref: "onPullUp",
+        onTouchStart: this.touchStart.bind(this),
+        onTouchEnd: this.touchEnd.bind(this),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 108
+        },
+        __self: this
+      }, children, more ? len && this.state.isFoot ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        className: "scroll-tip",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 112
+        },
+        __self: this
+      }, "\u4E0A\u62C9\u52A0\u8F7D\u66F4\u591A") : react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Loading__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 112
+        },
+        __self: this
+      }) : react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        className: "scroll-tip",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 114
+        },
+        __self: this
+      }, "\u6211\u662F\u6709\u5E95\u7EBF\u7684"));
+    }
+  }], [{
+    key: "getDerivedStateFromProps",
+    value: function getDerivedStateFromProps(nextProps, prevState) {
+      if (nextProps.len && nextProps.len !== prevState.len) {
+        return {
+          len: nextProps.len,
+          isFoot: true
+        };
+      }
+
+      return null;
+    }
+  }]);
+
+  return PullLoadData;
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
 

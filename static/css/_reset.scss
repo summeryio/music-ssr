@@ -41,12 +41,13 @@ body {
     -webkit-text-size-adjust: 100%!important;
     -ms-text-size-adjust: 100%!important;
     text-size-adjust: 100%!important;
-    background-color: #fcfcfd;
     -webkit-tap-highlight-color: transparent;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     color: #101d37;
+    // background-color: #fcfcfd;
+	background-color: #f8f8f8;
     max-width: 750px;
     min-width: 320px;
     margin: 0 auto;
