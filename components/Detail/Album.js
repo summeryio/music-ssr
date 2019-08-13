@@ -13,8 +13,6 @@ class Album extends Component {
     constructor(props) {
         super(props)
         
-        // const { router: { query } } = props;
-
         this.state = {
             albumData: {}
         }

@@ -37,10 +37,10 @@ export function fetchDetailAlbum (id) {
         payload: {id}
     };
 }
-export function fetchDetailAlbumSuccess (data, more) {
+export function fetchDetailAlbumSuccess (data) {
     return {
         type: FETCH_DETAIL_ALBUM_SUCCESS,
-        payload: {data, more}
+        payload: {data}
     };
 }
 export function fetchDetailAlbumFail () {
@@ -50,16 +50,16 @@ export function fetchDetailAlbumFail () {
 }
 
 
-export function fetchDetailPlaylistComment (id, page) {
+export function fetchDetailPlaylistComment (id) {
     return {
         type: FETCH_DETAIL_PLSYLIST_COMMENT,
-        payload: {id, page}
+        payload: {id}
     };
 }
-export function fetchDetailPlaylistCommentSuccess (data, more) {
+export function fetchDetailPlaylistCommentSuccess (data) {
     return {
         type: FETCH_DETAIL_PLSYLIST_COMMENT_SUCCESS,
-        payload: {data, more}
+        payload: {data}
     };
 }
 export function fetchDetailPlaylistCommentFail () {

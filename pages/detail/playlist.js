@@ -8,7 +8,7 @@ Playlist.getInitialProps = async (props) => {
   store.dispatch(fetchDetailPlaylist(query.id));
 
   store.getState().detail.comment.comments = {}
-  store.dispatch(fetchDetailPlaylistComment(query.id, 0));
+  store.dispatch(fetchDetailPlaylistComment(query.id));
 
   return { isServer };
 };

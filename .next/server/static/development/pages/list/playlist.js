@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1850,7 +1850,7 @@ function fetchListAlbumFail() {
 
 /***/ }),
 
-/***/ 10:
+/***/ 3:
 /*!**************************************!*\
   !*** multi ./pages/list/playlist.js ***!
   \**************************************/

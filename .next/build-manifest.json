@@ -1,67 +1,49 @@
 {
-  "devFiles": [],
+  "devFiles": [
+    "static/development/dll/dll_599a58a60c43245180de.js"
+  ],
   "pages": {
     "/": [
-      "static/runtime/webpack-8ed9452df514b4d17d80.js",
-      "static/chunks/commons.1d98b152f6475a7444f3.js",
-      "static/runtime/main-aaf1541444c7e3a662c9.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_app": [
-      "static/runtime/webpack-8ed9452df514b4d17d80.js",
-      "static/chunks/commons.1d98b152f6475a7444f3.js",
-      "static/css/styles.88905988.chunk.css",
-      "static/chunks/styles.ac0e75f1cbaaf04d60f1.js",
-      "static/runtime/main-aaf1541444c7e3a662c9.js"
+      "static/runtime/webpack.js",
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
+      "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack-8ed9452df514b4d17d80.js",
-      "static/chunks/commons.1d98b152f6475a7444f3.js",
-      "static/runtime/main-aaf1541444c7e3a662c9.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/detail/album": [
-      "static/runtime/webpack-8ed9452df514b4d17d80.js",
-      "static/chunks/commons.1d98b152f6475a7444f3.js",
-      "static/runtime/main-aaf1541444c7e3a662c9.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/detail/playlist": [
-      "static/runtime/webpack-8ed9452df514b4d17d80.js",
-      "static/chunks/commons.1d98b152f6475a7444f3.js",
-      "static/runtime/main-aaf1541444c7e3a662c9.js"
-    ],
-    "/home/newsong": [
-      "static/runtime/webpack-8ed9452df514b4d17d80.js",
-      "static/chunks/commons.1d98b152f6475a7444f3.js",
-      "static/runtime/main-aaf1541444c7e3a662c9.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/home/rank": [
-      "static/runtime/webpack-8ed9452df514b4d17d80.js",
-      "static/chunks/commons.1d98b152f6475a7444f3.js",
-      "static/runtime/main-aaf1541444c7e3a662c9.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/home/recommend": [
-      "static/runtime/webpack-8ed9452df514b4d17d80.js",
-      "static/chunks/commons.1d98b152f6475a7444f3.js",
-      "static/runtime/main-aaf1541444c7e3a662c9.js"
-    ],
-    "/home/singer": [
-      "static/runtime/webpack-8ed9452df514b4d17d80.js",
-      "static/chunks/commons.1d98b152f6475a7444f3.js",
-      "static/runtime/main-aaf1541444c7e3a662c9.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/index": [
-      "static/runtime/webpack-8ed9452df514b4d17d80.js",
-      "static/chunks/commons.1d98b152f6475a7444f3.js",
-      "static/runtime/main-aaf1541444c7e3a662c9.js"
-    ],
-    "/list/album": [
-      "static/runtime/webpack-8ed9452df514b4d17d80.js",
-      "static/chunks/commons.1d98b152f6475a7444f3.js",
-      "static/runtime/main-aaf1541444c7e3a662c9.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/list/playlist": [
-      "static/runtime/webpack-8ed9452df514b4d17d80.js",
-      "static/chunks/commons.1d98b152f6475a7444f3.js",
-      "static/runtime/main-aaf1541444c7e3a662c9.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/next/dist/pages/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

@@ -41,7 +41,7 @@ class Playlist extends Component {
         
         if (this.props.isServer) {
             fetchDetailPlaylist(query.id)
-            fetchDetailPlaylistComment(query.id, 0)
+            fetchDetailPlaylistComment(query.id)
         }
     }
     
@@ -106,8 +106,8 @@ const mapDispatchToProps = dispatch => ({
       dispatch(fetchDetailPlaylist(id));
     },
 
-    fetchDetailPlaylistComment(id, page) {
-        dispatch(fetchDetailPlaylistComment(id, page));
+    fetchDetailPlaylistComment(id) {
+        dispatch(fetchDetailPlaylistComment(id));
     }
 });
   
