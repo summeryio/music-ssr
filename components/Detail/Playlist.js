@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'next/router'
 import { connect } from 'react-redux';
-import { fetchDetailPlaylist } from '../../redux/actions/detail';
+import { fetchDetailPlaylist, fetchDetailPlaylistComment } from '../../redux/actions/detail';
 import LazyLoad from 'react-lazyload';
 
 import {formatDateYMD} from '../../core/util'
@@ -15,7 +15,8 @@ class Playlist extends Component {
         super(props)
 
         this.state = {
-            playlistData: props.playlist
+            playlistData: props.playlist,
+            commentData: props.comment
         }
     }
 
@@ -23,6 +24,12 @@ class Playlist extends Component {
         if (nextProps.playlist && nextProps.playlist !== prevState.playlistData) {
             return {
                 playlistData: nextProps.playlist
+            };
+        }
+
+        if (nextProps.comment && nextProps.comment !== prevState.commentData) {
+            return {
+                commentData: nextProps.comment
             };
         }
         
@@ -34,11 +41,12 @@ class Playlist extends Component {
         
         if (this.props.isServer) {
             fetchDetailPlaylist(query.id)
+            fetchDetailPlaylistComment(query.id, 0)
         }
     }
     
     render() {
-        let {playlistData} = this.state
+        let {playlistData, commentData} = this.state
         let creator = playlistData.creator || {}
         let playCount = playlistData.playCount > 100000 ? parseInt(playlistData.playCount / 10000) + '万' : parseInt(playlistData.playCount)
 
@@ -77,10 +85,10 @@ class Playlist extends Component {
                     </div>
                     {/* <PlayAll songs={playlistData.tracks} /> */}
                 </div>
-                {/* <SongList songs={playlistData.tracks} /> */}
-                <LazyLoad>
-                    <Comment />
-                </LazyLoad>
+                <SongList songs={playlistData.tracks} />
+                <Comment {...{
+                    data: commentData
+                }} />
             </div>
         )
     }
@@ -88,12 +96,18 @@ class Playlist extends Component {
 
 
 const mapStateToProps = state => ({
-    playlist: state.detail.playlist.playlists
+    playlist: state.detail.playlist.playlists,
+    comment: state.detail.comment.comments,
+    more:  state.detail.comment.more
 });
   
 const mapDispatchToProps = dispatch => ({
     fetchDetailPlaylist(id) {
       dispatch(fetchDetailPlaylist(id));
+    },
+
+    fetchDetailPlaylistComment(id, page) {
+        dispatch(fetchDetailPlaylistComment(id, page));
     }
 });
   

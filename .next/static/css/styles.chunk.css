@@ -40,7 +40,7 @@ body {
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
   color: #101d37;
-  background-color: #f8f8f8;
+  background-color: #fcfcfd;
   max-width: 15rem;
   min-width: 6.4rem;
   margin: 0 auto; }
@@ -306,7 +306,8 @@ p {
       font-size: 0.4rem; }
 
 #comment .cont {
-  margin-top: 0.12rem; }
+  margin-top: 0.12rem;
+  line-height: 1.4; }
 
 #comment .replied {
   margin-top: 0.12rem; }
@@ -640,6 +641,9 @@ p {
 #album_detail .song-list {
   margin: 0;
   padding: 0 .2rem; }
+
+#playlist_detail .song-list {
+  height: 100%; }
 
 #singer_list .list {
   margin: 0 .2rem; }
