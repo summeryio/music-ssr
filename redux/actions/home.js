@@ -20,10 +20,9 @@ import {
   FETCH_HOME_RANK_SUCCESS,
 } from '../../constants/ActionTypes';
 
-export function fetchHomeBanner (pageSize) {
+export function fetchHomeBanner () {
   return {
-    type: FETCH_HOME_BANNER,
-    payload: {pageSize}
+    type: FETCH_HOME_BANNER
   };
 }
 export function fetchHomeBannerSuccess (data) {

@@ -17,19 +17,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/detail/album": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/detail/playlist": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/home/rank": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/home/recommend": [
+    "/home/singer": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
@@ -38,6 +30,10 @@
       "static/runtime/main.js"
     ],
     "/list/playlist": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/list/singer": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],

@@ -158,7 +158,7 @@ var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/Layout.js";
 /*!**********************************!*\
   !*** ./constants/ActionTypes.js ***!
   \**********************************/
-/*! exports provided: FETCH_HOME_BANNER, FETCH_HOME_BANNER_FAIL, FETCH_HOME_BANNER_SUCCESS, FETCH_HOME_PLAYLIST, FETCH_HOME_PLAYLIST_FAIL, FETCH_HOME_PLAYLIST_SUCCESS, FETCH_HOME_ALBUM, FETCH_HOME_ALBUM_FAIL, FETCH_HOME_ALBUM_SUCCESS, FETCH_HOME_NEWSONG, FETCH_HOME_NEWSONG_FAIL, FETCH_HOME_NEWSONG_SUCCESS, FETCH_HOME_RANK, FETCH_HOME_RANK_FAIL, FETCH_HOME_RANK_SUCCESS, FETCH_LIST_PLSYLIST, FETCH_LIST_PLSYLIST_FAIL, FETCH_LIST_PLSYLIST_SUCCESS, FETCH_LIST_ALBUM, FETCH_LIST_ALBUM_FAIL, FETCH_LIST_ALBUM_SUCCESS, FETCH_DETAIL_PLSYLIST, FETCH_DETAIL_PLSYLIST_FAIL, FETCH_DETAIL_PLSYLIST_SUCCESS, FETCH_DETAIL_ALBUM, FETCH_DETAIL_ALBUM_FAIL, FETCH_DETAIL_ALBUM_SUCCESS, FETCH_DETAIL_PLSYLIST_COMMENT, FETCH_DETAIL_PLSYLIST_COMMENT_FAIL, FETCH_DETAIL_PLSYLIST_COMMENT_SUCCESS */
+/*! exports provided: FETCH_HOME_BANNER, FETCH_HOME_BANNER_FAIL, FETCH_HOME_BANNER_SUCCESS, FETCH_HOME_PLAYLIST, FETCH_HOME_PLAYLIST_FAIL, FETCH_HOME_PLAYLIST_SUCCESS, FETCH_HOME_ALBUM, FETCH_HOME_ALBUM_FAIL, FETCH_HOME_ALBUM_SUCCESS, FETCH_HOME_NEWSONG, FETCH_HOME_NEWSONG_FAIL, FETCH_HOME_NEWSONG_SUCCESS, FETCH_HOME_RANK, FETCH_HOME_RANK_FAIL, FETCH_HOME_RANK_SUCCESS, FETCH_LIST_PLSYLIST, FETCH_LIST_PLSYLIST_FAIL, FETCH_LIST_PLSYLIST_SUCCESS, FETCH_LIST_ALBUM, FETCH_LIST_ALBUM_FAIL, FETCH_LIST_ALBUM_SUCCESS, FETCH_LIST_SINGER, FETCH_LIST_SINGER_FAIL, FETCH_LIST_SINGER_SUCCESS, FETCH_DETAIL_PLSYLIST, FETCH_DETAIL_PLSYLIST_FAIL, FETCH_DETAIL_PLSYLIST_SUCCESS, FETCH_DETAIL_ALBUM, FETCH_DETAIL_ALBUM_FAIL, FETCH_DETAIL_ALBUM_SUCCESS, FETCH_DETAIL_PLSYLIST_COMMENT, FETCH_DETAIL_PLSYLIST_COMMENT_FAIL, FETCH_DETAIL_PLSYLIST_COMMENT_SUCCESS */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -184,6 +184,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_ALBUM", function() { return FETCH_LIST_ALBUM; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_ALBUM_FAIL", function() { return FETCH_LIST_ALBUM_FAIL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_ALBUM_SUCCESS", function() { return FETCH_LIST_ALBUM_SUCCESS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_SINGER", function() { return FETCH_LIST_SINGER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_SINGER_FAIL", function() { return FETCH_LIST_SINGER_FAIL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_SINGER_SUCCESS", function() { return FETCH_LIST_SINGER_SUCCESS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_PLSYLIST", function() { return FETCH_DETAIL_PLSYLIST; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_PLSYLIST_FAIL", function() { return FETCH_DETAIL_PLSYLIST_FAIL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_PLSYLIST_SUCCESS", function() { return FETCH_DETAIL_PLSYLIST_SUCCESS; });
@@ -215,7 +218,10 @@ var FETCH_LIST_PLSYLIST_FAIL = 'FETCH_LIST_PLSYLIST_FAIL';
 var FETCH_LIST_PLSYLIST_SUCCESS = 'FETCH_LIST_PLSYLIST_SUCCESS';
 var FETCH_LIST_ALBUM = 'FETCH_LIST_ALBUM';
 var FETCH_LIST_ALBUM_FAIL = 'FETCH_LIST_ALBUM_FAIL';
-var FETCH_LIST_ALBUM_SUCCESS = 'FETCH_LIST_ALBUM_SUCCESS'; // ================= 歌单/专辑 详情   ==================== //
+var FETCH_LIST_ALBUM_SUCCESS = 'FETCH_LIST_ALBUM_SUCCESS';
+var FETCH_LIST_SINGER = 'FETCH_LIST_SINGER';
+var FETCH_LIST_SINGER_FAIL = 'FETCH_LIST_SINGER_FAIL';
+var FETCH_LIST_SINGER_SUCCESS = 'FETCH_LIST_SINGER_SUCCESS'; // ================= 歌单/专辑 详情   ==================== //
 
 var FETCH_DETAIL_PLSYLIST = 'FETCH_DETAIL_PLSYLIST';
 var FETCH_DETAIL_PLSYLIST_FAIL = 'FETCH_DETAIL_PLSYLIST_FAIL';
@@ -14759,7 +14765,7 @@ exports.devToolsEnhancer = (
 /*!***********************************************************************!*\
   !*** ./node_modules/redux-saga/dist/redux-saga-core-npm-proxy.esm.js ***!
   \***********************************************************************/
-/*! exports provided: default, CANCEL, SAGA_LOCATION, buffers, detach, runSaga, END, isEnd, eventChannel, channel, multicastChannel, stdChannel */
+/*! exports provided: CANCEL, SAGA_LOCATION, buffers, detach, runSaga, END, isEnd, eventChannel, channel, multicastChannel, stdChannel, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17553,12 +17559,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchRankFail", function() { return fetchRankFail; });
 /* harmony import */ var _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../constants/ActionTypes */ "./constants/ActionTypes.js");
 
-function fetchHomeBanner(pageSize) {
+function fetchHomeBanner() {
   return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_BANNER"],
-    payload: {
-      pageSize: pageSize
-    }
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_BANNER"]
   };
 }
 function fetchHomeBannerSuccess(data) {
@@ -17645,7 +17648,7 @@ function fetchRankFail() {
 /*!*******************************!*\
   !*** ./redux/actions/list.js ***!
   \*******************************/
-/*! exports provided: fetchListPlaylist, fetchListPlaylistSuccess, fetchListPlaylistFail, fetchListAlbum, fetchListAlbumSuccess, fetchListAlbumFail */
+/*! exports provided: fetchListPlaylist, fetchListPlaylistSuccess, fetchListPlaylistFail, fetchListAlbum, fetchListAlbumSuccess, fetchListAlbumFail, fetchListSinger, fetchListSingerSuccess, fetchListSingerFail */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17656,6 +17659,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchListAlbum", function() { return fetchListAlbum; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchListAlbumSuccess", function() { return fetchListAlbumSuccess; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchListAlbumFail", function() { return fetchListAlbumFail; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchListSinger", function() { return fetchListSinger; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchListSingerSuccess", function() { return fetchListSingerSuccess; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchListSingerFail", function() { return fetchListSingerFail; });
 /* harmony import */ var _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../constants/ActionTypes */ "./constants/ActionTypes.js");
 
 function fetchListPlaylist(page) {
@@ -17700,6 +17706,29 @@ function fetchListAlbumSuccess(data, more) {
 function fetchListAlbumFail() {
   return {
     type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_LIST_ALBUM_FAIL"]
+  };
+}
+function fetchListSinger(page, singerId) {
+  return {
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_LIST_SINGER"],
+    payload: {
+      page: page,
+      singerId: singerId
+    }
+  };
+}
+function fetchListSingerSuccess(data, more) {
+  return {
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_LIST_SINGER_SUCCESS"],
+    payload: {
+      data: data,
+      more: more
+    }
+  };
+}
+function fetchListSingerFail() {
+  return {
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_LIST_SINGER_FAIL"]
   };
 }
 
@@ -17842,10 +17871,6 @@ var banner = function banner() {
 
   switch (type) {
     case _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_2__["FETCH_HOME_BANNER"]:
-      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
-        pageSize: payload.pageSize
-      });
-
     case _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_2__["FETCH_HOME_BANNER_FAIL"]:
       return initialState;
 
@@ -17996,8 +18021,10 @@ __webpack_require__.r(__webpack_exports__);
 var initialState = {
   playlists: [],
   albums: [],
+  singers: [],
   page: 0,
-  more: true
+  more: true,
+  singerId: null
 };
 
 var playlist = function playlist() {
@@ -18052,9 +18079,37 @@ var album = function album() {
   }
 };
 
+var singer = function singer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+  var type = action.type,
+      payload = action.payload;
+
+  switch (type) {
+    case _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_2__["FETCH_LIST_SINGER"]:
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
+        page: payload.page,
+        singerId: payload.singerId
+      });
+
+    case _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_2__["FETCH_LIST_SINGER_FAIL"]:
+      return initialState;
+
+    case _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_2__["FETCH_LIST_SINGER_SUCCESS"]:
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
+        singers: payload.data,
+        more: payload.more
+      });
+
+    default:
+      return state;
+  }
+};
+
 /* harmony default export */ __webpack_exports__["default"] = (Object(redux__WEBPACK_IMPORTED_MODULE_1__["combineReducers"])({
   playlist: playlist,
-  album: album
+  album: album,
+  singer: singer
 }));
 
 /***/ }),
@@ -18677,13 +18732,14 @@ function rootSagas() {
 /*!*****************************!*\
   !*** ./redux/sagas/list.js ***!
   \*****************************/
-/*! exports provided: playlist, album, default */
+/*! exports provided: playlist, album, singer, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "playlist", function() { return playlist; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "album", function() { return album; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "singer", function() { return singer; });
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
@@ -18699,7 +18755,10 @@ var _marked =
 _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(playlist),
     _marked2 =
 /*#__PURE__*/
-_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(album);
+_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(album),
+    _marked3 =
+/*#__PURE__*/
+_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(singer);
 
 
 
@@ -18846,7 +18905,83 @@ function album() {
     }
   }, _marked2, null, [[5, 22]]);
 }
-var listSagas = [Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["fork"])(playlist), Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["fork"])(album)];
+function singer() {
+  var _query2, singers, id, _res2, _data2;
+
+  return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function singer$(_context3) {
+    while (1) {
+      switch (_context3.prev = _context3.next) {
+        case 0:
+          if (false) {}
+
+          _context3.next = 3;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["select"])(function (state) {
+            return state.list.singer;
+          });
+
+        case 3:
+          _query2 = _context3.sent;
+          singers = _query2.singers;
+          id = _query2.singerId;
+          _context3.prev = 6;
+          _context3.next = 9;
+          return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()("".concat(_constants_ConstTypes__WEBPACK_IMPORTED_MODULE_4__["URL_HEADER"], "/artist/list?cat=").concat(id, "&offset=").concat(_query2.page * 20, "&limit=20"));
+
+        case 9:
+          _res2 = _context3.sent;
+          _context3.next = 12;
+          return _res2.json();
+
+        case 12:
+          _data2 = _context3.sent;
+
+          if (!(_data2.code === 200)) {
+            _context3.next = 21;
+            break;
+          }
+
+          if (!(_query2.page === 0)) {
+            _context3.next = 19;
+            break;
+          }
+
+          _context3.next = 17;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["put"])(Object(_actions_list__WEBPACK_IMPORTED_MODULE_5__["fetchListSingerSuccess"])(_data2.artists, true));
+
+        case 17:
+          _context3.next = 21;
+          break;
+
+        case 19:
+          _context3.next = 21;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["put"])(Object(_actions_list__WEBPACK_IMPORTED_MODULE_5__["fetchListSingerSuccess"])(singers.concat(_data2.artists), _data2.more));
+
+        case 21:
+          _context3.next = 27;
+          break;
+
+        case 23:
+          _context3.prev = 23;
+          _context3.t0 = _context3["catch"](6);
+          _context3.next = 27;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["put"])(Object(_actions_list__WEBPACK_IMPORTED_MODULE_5__["fetchListSingerFail"])(_context3.t0));
+
+        case 27:
+          _context3.next = 29;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["take"])(_constants_ActionTypes__WEBPACK_IMPORTED_MODULE_3__["FETCH_LIST_SINGER"]);
+
+        case 29:
+          _context3.next = 0;
+          break;
+
+        case 31:
+        case "end":
+          return _context3.stop();
+      }
+    }
+  }, _marked3, null, [[6, 23]]);
+}
+var listSagas = [Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["fork"])(playlist), Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["fork"])(album), Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_2__["fork"])(singer)];
 /* harmony default export */ __webpack_exports__["default"] = (listSagas);
 
 /***/ }),

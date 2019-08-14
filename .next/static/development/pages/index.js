@@ -235,7 +235,7 @@ function (_Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       if (this.props.isServer) {
-        this.props.fetchHomeBanner(2);
+        this.props.fetchHomeBanner();
         this.props.fetchHomePlaylist();
         this.props.fetchHomeAlbum();
       }
@@ -568,8 +568,8 @@ var mapStateToProps = function mapStateToProps(state) {
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
-    fetchHomeBanner: function fetchHomeBanner(pageSize) {
-      dispatch(Object(_redux_actions_home__WEBPACK_IMPORTED_MODULE_11__["fetchHomeBanner"])(pageSize));
+    fetchHomeBanner: function fetchHomeBanner() {
+      dispatch(Object(_redux_actions_home__WEBPACK_IMPORTED_MODULE_11__["fetchHomeBanner"])());
     },
     fetchHomePlaylist: function fetchHomePlaylist() {
       dispatch(Object(_redux_actions_home__WEBPACK_IMPORTED_MODULE_11__["fetchHomePlaylist"])());
@@ -758,7 +758,7 @@ function (_Component) {
 /*!**********************************!*\
   !*** ./constants/ActionTypes.js ***!
   \**********************************/
-/*! exports provided: FETCH_HOME_BANNER, FETCH_HOME_BANNER_FAIL, FETCH_HOME_BANNER_SUCCESS, FETCH_HOME_PLAYLIST, FETCH_HOME_PLAYLIST_FAIL, FETCH_HOME_PLAYLIST_SUCCESS, FETCH_HOME_ALBUM, FETCH_HOME_ALBUM_FAIL, FETCH_HOME_ALBUM_SUCCESS, FETCH_HOME_NEWSONG, FETCH_HOME_NEWSONG_FAIL, FETCH_HOME_NEWSONG_SUCCESS, FETCH_HOME_RANK, FETCH_HOME_RANK_FAIL, FETCH_HOME_RANK_SUCCESS, FETCH_LIST_PLSYLIST, FETCH_LIST_PLSYLIST_FAIL, FETCH_LIST_PLSYLIST_SUCCESS, FETCH_LIST_ALBUM, FETCH_LIST_ALBUM_FAIL, FETCH_LIST_ALBUM_SUCCESS, FETCH_DETAIL_PLSYLIST, FETCH_DETAIL_PLSYLIST_FAIL, FETCH_DETAIL_PLSYLIST_SUCCESS, FETCH_DETAIL_ALBUM, FETCH_DETAIL_ALBUM_FAIL, FETCH_DETAIL_ALBUM_SUCCESS, FETCH_DETAIL_PLSYLIST_COMMENT, FETCH_DETAIL_PLSYLIST_COMMENT_FAIL, FETCH_DETAIL_PLSYLIST_COMMENT_SUCCESS */
+/*! exports provided: FETCH_HOME_BANNER, FETCH_HOME_BANNER_FAIL, FETCH_HOME_BANNER_SUCCESS, FETCH_HOME_PLAYLIST, FETCH_HOME_PLAYLIST_FAIL, FETCH_HOME_PLAYLIST_SUCCESS, FETCH_HOME_ALBUM, FETCH_HOME_ALBUM_FAIL, FETCH_HOME_ALBUM_SUCCESS, FETCH_HOME_NEWSONG, FETCH_HOME_NEWSONG_FAIL, FETCH_HOME_NEWSONG_SUCCESS, FETCH_HOME_RANK, FETCH_HOME_RANK_FAIL, FETCH_HOME_RANK_SUCCESS, FETCH_LIST_PLSYLIST, FETCH_LIST_PLSYLIST_FAIL, FETCH_LIST_PLSYLIST_SUCCESS, FETCH_LIST_ALBUM, FETCH_LIST_ALBUM_FAIL, FETCH_LIST_ALBUM_SUCCESS, FETCH_LIST_SINGER, FETCH_LIST_SINGER_FAIL, FETCH_LIST_SINGER_SUCCESS, FETCH_DETAIL_PLSYLIST, FETCH_DETAIL_PLSYLIST_FAIL, FETCH_DETAIL_PLSYLIST_SUCCESS, FETCH_DETAIL_ALBUM, FETCH_DETAIL_ALBUM_FAIL, FETCH_DETAIL_ALBUM_SUCCESS, FETCH_DETAIL_PLSYLIST_COMMENT, FETCH_DETAIL_PLSYLIST_COMMENT_FAIL, FETCH_DETAIL_PLSYLIST_COMMENT_SUCCESS */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -784,6 +784,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_ALBUM", function() { return FETCH_LIST_ALBUM; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_ALBUM_FAIL", function() { return FETCH_LIST_ALBUM_FAIL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_ALBUM_SUCCESS", function() { return FETCH_LIST_ALBUM_SUCCESS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_SINGER", function() { return FETCH_LIST_SINGER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_SINGER_FAIL", function() { return FETCH_LIST_SINGER_FAIL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_SINGER_SUCCESS", function() { return FETCH_LIST_SINGER_SUCCESS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_PLSYLIST", function() { return FETCH_DETAIL_PLSYLIST; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_PLSYLIST_FAIL", function() { return FETCH_DETAIL_PLSYLIST_FAIL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_PLSYLIST_SUCCESS", function() { return FETCH_DETAIL_PLSYLIST_SUCCESS; });
@@ -815,7 +818,10 @@ var FETCH_LIST_PLSYLIST_FAIL = 'FETCH_LIST_PLSYLIST_FAIL';
 var FETCH_LIST_PLSYLIST_SUCCESS = 'FETCH_LIST_PLSYLIST_SUCCESS';
 var FETCH_LIST_ALBUM = 'FETCH_LIST_ALBUM';
 var FETCH_LIST_ALBUM_FAIL = 'FETCH_LIST_ALBUM_FAIL';
-var FETCH_LIST_ALBUM_SUCCESS = 'FETCH_LIST_ALBUM_SUCCESS'; // ================= 歌单/专辑 详情   ==================== //
+var FETCH_LIST_ALBUM_SUCCESS = 'FETCH_LIST_ALBUM_SUCCESS';
+var FETCH_LIST_SINGER = 'FETCH_LIST_SINGER';
+var FETCH_LIST_SINGER_FAIL = 'FETCH_LIST_SINGER_FAIL';
+var FETCH_LIST_SINGER_SUCCESS = 'FETCH_LIST_SINGER_SUCCESS'; // ================= 歌单/专辑 详情   ==================== //
 
 var FETCH_DETAIL_PLSYLIST = 'FETCH_DETAIL_PLSYLIST';
 var FETCH_DETAIL_PLSYLIST_FAIL = 'FETCH_DETAIL_PLSYLIST_FAIL';
@@ -14843,12 +14849,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchRankFail", function() { return fetchRankFail; });
 /* harmony import */ var _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../constants/ActionTypes */ "./constants/ActionTypes.js");
 
-function fetchHomeBanner(pageSize) {
+function fetchHomeBanner() {
   return {
-    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_BANNER"],
-    payload: {
-      pageSize: pageSize
-    }
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_HOME_BANNER"]
   };
 }
 function fetchHomeBannerSuccess(data) {
@@ -14931,7 +14934,7 @@ function fetchRankFail() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!*******************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fa123%2FDesktop%2FWeb%2Fmusic-ssr%2Fpages%2Findex.js ***!
   \*******************************************************************************************************************************/
@@ -14954,5 +14957,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

@@ -43,8 +43,8 @@ export default class Singer extends Component {
                                 <li key={key} className={mb}>
                                     <Link 
                                         href={{
-                                            pathname: `/singer-list/${key}`, 
-                                            query: {title: val}
+                                            pathname: `/list/singer`, 
+                                            query: {title: val, id: key}
                                         }}
                                     ><a>
                                         <span>{val}</span>

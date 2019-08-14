@@ -7,14 +7,20 @@ import {
 
     FETCH_LIST_ALBUM,
     FETCH_LIST_ALBUM_FAIL,
-    FETCH_LIST_ALBUM_SUCCESS
+    FETCH_LIST_ALBUM_SUCCESS,
+
+    FETCH_LIST_SINGER,
+    FETCH_LIST_SINGER_FAIL,
+    FETCH_LIST_SINGER_SUCCESS
 } from '../../constants/ActionTypes';
   
 const initialState = {
     playlists: [],
     albums: [],
+    singers: [],
     page: 0,
-    more: true
+    more: true,
+    singerId: null
 };
   
 const playlist = (state = initialState, action) => {
@@ -61,8 +67,32 @@ const album = (state = initialState, action) => {
     }
 }
 
+const singer = (state = initialState, action) => {
+  let { type, payload } = action
+
+  switch (type) {
+    case FETCH_LIST_SINGER:
+      return {
+        ...state,
+        page: payload.page,
+        singerId: payload.singerId
+      }; 
+    case FETCH_LIST_SINGER_FAIL:
+      return initialState;
+    case FETCH_LIST_SINGER_SUCCESS:
+      return {
+        ...state,
+        singers: payload.data,
+        more: payload.more
+      };  
+    default:
+      return state;
+  }
+}
+
 export default combineReducers({
     playlist,
-    album
+    album,
+    singer
 })
   

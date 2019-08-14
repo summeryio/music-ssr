@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Loading from './Loading'
+import { withRouter } from 'next/router'
 
-export default class PullLoadData extends Component {
+class PullLoadData extends Component {
     constructor(props) {
         super(props);
 
@@ -85,7 +86,7 @@ export default class PullLoadData extends Component {
     }
 
     loadData() {
-        let {fetchData} = this.props
+        let {fetchData, router} = this.props
         
         let dataHeight = this.refs.onPullUp.clientHeight;
         let scrollHeight = document.body.scrollTop || document.documentElement.scrollTop;
@@ -96,7 +97,11 @@ export default class PullLoadData extends Component {
                 isFoot: false,
                 page: this.state.page + 1
             }, () => {
-                fetchData(this.state.page)
+                if (router.pathname === '/list/singer') {
+                    fetchData(this.state.page, router.query.id)    
+                } {
+                    fetchData(this.state.page)
+                }
             });
         }
     }
@@ -108,13 +113,20 @@ export default class PullLoadData extends Component {
             <div className="scroll_wrapper" ref="onPullUp" onTouchStart={this.touchStart.bind(this)} onTouchEnd={this.touchEnd.bind(this)}>
                 {children}
                 {
+                    len ?
+
                     more ? (
                         len && this.state.isFoot ? <p className="scroll-tip">上拉加载更多</p> : <Loading />
                     ) : (
                         <p className="scroll-tip">我是有底线的</p>
                     )
+
+                    : null
                 }
             </div>
         )
     }
 }
+
+
+export default withRouter(PullLoadData)

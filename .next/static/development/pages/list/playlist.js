@@ -489,7 +489,6 @@ function (_Component) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PullLoadData; });
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
@@ -498,12 +497,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _Loading__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Loading */ "./components/Loading.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
 
 
 var _jsxFileName = "/Users/a123/Desktop/Web/music-ssr/components/PullLoadData.js";
+
 
 
 
@@ -604,7 +606,9 @@ function (_Component) {
     value: function loadData() {
       var _this2 = this;
 
-      var fetchData = this.props.fetchData;
+      var _this$props = this.props,
+          fetchData = _this$props.fetchData,
+          router = _this$props.router;
       var dataHeight = this.refs.onPullUp.clientHeight;
       var scrollHeight = document.body.scrollTop || document.documentElement.scrollTop;
       var screenHeight = document.documentElement.clientHeight;
@@ -615,17 +619,23 @@ function (_Component) {
           isFoot: false,
           page: this.state.page + 1
         }, function () {
-          fetchData(_this2.state.page);
+          if (router.pathname === '/list/singer') {
+            fetchData(_this2.state.page, router.query.id);
+          }
+
+          {
+            fetchData(_this2.state.page);
+          }
         });
       }
     }
   }, {
     key: "render",
     value: function render() {
-      var _this$props = this.props,
-          more = _this$props.more,
-          len = _this$props.len,
-          children = _this$props.children;
+      var _this$props2 = this.props,
+          more = _this$props2.more,
+          len = _this$props2.len,
+          children = _this$props2.children;
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "scroll_wrapper",
         ref: "onPullUp",
@@ -633,30 +643,30 @@ function (_Component) {
         onTouchEnd: this.touchEnd.bind(this),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 113
         },
         __self: this
-      }, children, more ? len && this.state.isFoot ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+      }, children, len ? more ? len && this.state.isFoot ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
         className: "scroll-tip",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 119
         },
         __self: this
       }, "\u4E0A\u62C9\u52A0\u8F7D\u66F4\u591A") : react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Loading__WEBPACK_IMPORTED_MODULE_6__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 119
         },
         __self: this
       }) : react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
         className: "scroll-tip",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114
+          lineNumber: 121
         },
         __self: this
-      }, "\u6211\u662F\u6709\u5E95\u7EBF\u7684"));
+      }, "\u6211\u662F\u6709\u5E95\u7EBF\u7684") : null);
     }
   }], [{
     key: "getDerivedStateFromProps",
@@ -675,7 +685,7 @@ function (_Component) {
   return PullLoadData;
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
-
+/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_7__["withRouter"])(PullLoadData));
 
 /***/ }),
 
@@ -683,7 +693,7 @@ function (_Component) {
 /*!**********************************!*\
   !*** ./constants/ActionTypes.js ***!
   \**********************************/
-/*! exports provided: FETCH_HOME_BANNER, FETCH_HOME_BANNER_FAIL, FETCH_HOME_BANNER_SUCCESS, FETCH_HOME_PLAYLIST, FETCH_HOME_PLAYLIST_FAIL, FETCH_HOME_PLAYLIST_SUCCESS, FETCH_HOME_ALBUM, FETCH_HOME_ALBUM_FAIL, FETCH_HOME_ALBUM_SUCCESS, FETCH_HOME_NEWSONG, FETCH_HOME_NEWSONG_FAIL, FETCH_HOME_NEWSONG_SUCCESS, FETCH_HOME_RANK, FETCH_HOME_RANK_FAIL, FETCH_HOME_RANK_SUCCESS, FETCH_LIST_PLSYLIST, FETCH_LIST_PLSYLIST_FAIL, FETCH_LIST_PLSYLIST_SUCCESS, FETCH_LIST_ALBUM, FETCH_LIST_ALBUM_FAIL, FETCH_LIST_ALBUM_SUCCESS, FETCH_DETAIL_PLSYLIST, FETCH_DETAIL_PLSYLIST_FAIL, FETCH_DETAIL_PLSYLIST_SUCCESS, FETCH_DETAIL_ALBUM, FETCH_DETAIL_ALBUM_FAIL, FETCH_DETAIL_ALBUM_SUCCESS, FETCH_DETAIL_PLSYLIST_COMMENT, FETCH_DETAIL_PLSYLIST_COMMENT_FAIL, FETCH_DETAIL_PLSYLIST_COMMENT_SUCCESS */
+/*! exports provided: FETCH_HOME_BANNER, FETCH_HOME_BANNER_FAIL, FETCH_HOME_BANNER_SUCCESS, FETCH_HOME_PLAYLIST, FETCH_HOME_PLAYLIST_FAIL, FETCH_HOME_PLAYLIST_SUCCESS, FETCH_HOME_ALBUM, FETCH_HOME_ALBUM_FAIL, FETCH_HOME_ALBUM_SUCCESS, FETCH_HOME_NEWSONG, FETCH_HOME_NEWSONG_FAIL, FETCH_HOME_NEWSONG_SUCCESS, FETCH_HOME_RANK, FETCH_HOME_RANK_FAIL, FETCH_HOME_RANK_SUCCESS, FETCH_LIST_PLSYLIST, FETCH_LIST_PLSYLIST_FAIL, FETCH_LIST_PLSYLIST_SUCCESS, FETCH_LIST_ALBUM, FETCH_LIST_ALBUM_FAIL, FETCH_LIST_ALBUM_SUCCESS, FETCH_LIST_SINGER, FETCH_LIST_SINGER_FAIL, FETCH_LIST_SINGER_SUCCESS, FETCH_DETAIL_PLSYLIST, FETCH_DETAIL_PLSYLIST_FAIL, FETCH_DETAIL_PLSYLIST_SUCCESS, FETCH_DETAIL_ALBUM, FETCH_DETAIL_ALBUM_FAIL, FETCH_DETAIL_ALBUM_SUCCESS, FETCH_DETAIL_PLSYLIST_COMMENT, FETCH_DETAIL_PLSYLIST_COMMENT_FAIL, FETCH_DETAIL_PLSYLIST_COMMENT_SUCCESS */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -709,6 +719,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_ALBUM", function() { return FETCH_LIST_ALBUM; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_ALBUM_FAIL", function() { return FETCH_LIST_ALBUM_FAIL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_ALBUM_SUCCESS", function() { return FETCH_LIST_ALBUM_SUCCESS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_SINGER", function() { return FETCH_LIST_SINGER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_SINGER_FAIL", function() { return FETCH_LIST_SINGER_FAIL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_LIST_SINGER_SUCCESS", function() { return FETCH_LIST_SINGER_SUCCESS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_PLSYLIST", function() { return FETCH_DETAIL_PLSYLIST; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_PLSYLIST_FAIL", function() { return FETCH_DETAIL_PLSYLIST_FAIL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_DETAIL_PLSYLIST_SUCCESS", function() { return FETCH_DETAIL_PLSYLIST_SUCCESS; });
@@ -740,7 +753,10 @@ var FETCH_LIST_PLSYLIST_FAIL = 'FETCH_LIST_PLSYLIST_FAIL';
 var FETCH_LIST_PLSYLIST_SUCCESS = 'FETCH_LIST_PLSYLIST_SUCCESS';
 var FETCH_LIST_ALBUM = 'FETCH_LIST_ALBUM';
 var FETCH_LIST_ALBUM_FAIL = 'FETCH_LIST_ALBUM_FAIL';
-var FETCH_LIST_ALBUM_SUCCESS = 'FETCH_LIST_ALBUM_SUCCESS'; // ================= 歌单/专辑 详情   ==================== //
+var FETCH_LIST_ALBUM_SUCCESS = 'FETCH_LIST_ALBUM_SUCCESS';
+var FETCH_LIST_SINGER = 'FETCH_LIST_SINGER';
+var FETCH_LIST_SINGER_FAIL = 'FETCH_LIST_SINGER_FAIL';
+var FETCH_LIST_SINGER_SUCCESS = 'FETCH_LIST_SINGER_SUCCESS'; // ================= 歌单/专辑 详情   ==================== //
 
 var FETCH_DETAIL_PLSYLIST = 'FETCH_DETAIL_PLSYLIST';
 var FETCH_DETAIL_PLSYLIST_FAIL = 'FETCH_DETAIL_PLSYLIST_FAIL';
@@ -14621,7 +14637,7 @@ function () {
 /*!*******************************!*\
   !*** ./redux/actions/list.js ***!
   \*******************************/
-/*! exports provided: fetchListPlaylist, fetchListPlaylistSuccess, fetchListPlaylistFail, fetchListAlbum, fetchListAlbumSuccess, fetchListAlbumFail */
+/*! exports provided: fetchListPlaylist, fetchListPlaylistSuccess, fetchListPlaylistFail, fetchListAlbum, fetchListAlbumSuccess, fetchListAlbumFail, fetchListSinger, fetchListSingerSuccess, fetchListSingerFail */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14632,6 +14648,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchListAlbum", function() { return fetchListAlbum; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchListAlbumSuccess", function() { return fetchListAlbumSuccess; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchListAlbumFail", function() { return fetchListAlbumFail; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchListSinger", function() { return fetchListSinger; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchListSingerSuccess", function() { return fetchListSingerSuccess; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchListSingerFail", function() { return fetchListSingerFail; });
 /* harmony import */ var _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../constants/ActionTypes */ "./constants/ActionTypes.js");
 
 function fetchListPlaylist(page) {
@@ -14676,6 +14695,29 @@ function fetchListAlbumSuccess(data, more) {
 function fetchListAlbumFail() {
   return {
     type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_LIST_ALBUM_FAIL"]
+  };
+}
+function fetchListSinger(page, singerId) {
+  return {
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_LIST_SINGER"],
+    payload: {
+      page: page,
+      singerId: singerId
+    }
+  };
+}
+function fetchListSingerSuccess(data, more) {
+  return {
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_LIST_SINGER_SUCCESS"],
+    payload: {
+      data: data,
+      more: more
+    }
+  };
+}
+function fetchListSingerFail() {
+  return {
+    type: _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["FETCH_LIST_SINGER_FAIL"]
   };
 }
 

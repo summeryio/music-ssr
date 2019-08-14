@@ -35,10 +35,6 @@ const banner = (state = initialState, action) => {
 
     switch (type) {
         case FETCH_HOME_BANNER:
-        return {
-            ...state,
-            pageSize: payload.pageSize
-        };  
         case FETCH_HOME_BANNER_FAIL:
         return initialState;
         case FETCH_HOME_BANNER_SUCCESS:

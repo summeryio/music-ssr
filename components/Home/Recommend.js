@@ -52,7 +52,7 @@ class Home extends Component {
 
     componentDidMount() {
         if(this.props.isServer) {
-            this.props.fetchHomeBanner(2)
+            this.props.fetchHomeBanner()
             this.props.fetchHomePlaylist()
             this.props.fetchHomeAlbum()
         }
@@ -173,8 +173,8 @@ const mapStateToProps = state => ({
 });
   
 const mapDispatchToProps = dispatch => ({
-    fetchHomeBanner(pageSize) {
-      dispatch(fetchHomeBanner(pageSize));
+    fetchHomeBanner() {
+      dispatch(fetchHomeBanner());
     },
   
     fetchHomePlaylist() {

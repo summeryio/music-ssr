@@ -2,7 +2,8 @@ import fetch from 'isomorphic-unfetch'
 import { take, put, fork, select } from 'redux-saga/effects';
 import { 
   FETCH_LIST_PLSYLIST,
-  FETCH_LIST_ALBUM
+  FETCH_LIST_ALBUM,
+  FETCH_LIST_SINGER
 } from '../../constants/ActionTypes';
 import { URL_HEADER } from '../../constants/ConstTypes';
 import { 
@@ -10,7 +11,10 @@ import {
   fetchListPlaylistSuccess,
 
   fetchListAlbumFail, 
-  fetchListAlbumSuccess
+  fetchListAlbumSuccess,
+
+  fetchListSingerFail, 
+  fetchListSingerSuccess
 } from '../actions/list';
 
 export function* playlist() {
@@ -59,10 +63,36 @@ export function* album() {
   }
 }
 
+export function* singer() {
+  while(true) {
+    const query = yield select(state => state.list.singer)
+    const {singers} = query
+    let id = query.singerId
+
+    try {
+      const res = yield fetch(`${URL_HEADER}/artist/list?cat=${id}&offset=${(query.page) * 20}&limit=20`);
+      const data = yield res.json();
+      
+      if (data.code === 200) {
+        if (query.page === 0) {
+          yield put(fetchListSingerSuccess(data.artists, true));
+        } else {
+          yield put(fetchListSingerSuccess(singers.concat(data.artists), data.more));
+        }
+      }
+    } catch(error) {
+      yield put(fetchListSingerFail(error));
+    }
+
+    yield take(FETCH_LIST_SINGER);
+  }
+}
+
 
 const listSagas = [
   fork(playlist),
-  fork(album)
+  fork(album),
+  fork(singer)
 ];
 
 export default listSagas;
